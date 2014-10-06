@@ -1,0 +1,135 @@
+body {
+  background: #FFFFF;
+  margin: 0;
+  color: #00000;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+// headlines
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 42px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: .5em;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 15px;
+  line-height: 1.25em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  color: #00000;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 15px;
+  line-height: 35px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+// general link styles
+
+a:link {
+  color: #006db2;
+  text-decoration: none;
+  outline: none;
+}
+
+/* visited link */
+a:visited {
+    color: #006db2;
+	text-decoration: none;
+	outline: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #006db2;
+	text-decoration: none;
+	outline: none;
+}
+
+/* selected link */
+a:active {
+    color: #006db2;
+	text-decoration: none;
+	outline: none;
+}
+
+// optional header image uploaded in site settings
+
+.header-image-wrap {
+  max-height: 520px;
+  overflow: hidden;
+}
+
+.header-image {
+  width: 100%;
+}
+
+.width-container {
+  width: 92%;
+  margin: 0 4% 0 4%;
+  padding: 1px 4% 0 4%;
+  background: #F5F5F5;
+}
+
+.width-candidates {
+  width: 92%;
+  margin: 0 4% 0 4%;
+  padding: 1px 4% 0 4%;
+  background: #FFFFF;
+}
+
+// share box which appears after a user submits an action
+
+flash-share {
+  margin: 0 0 -.625em 0;
+}
+
+
+
+.pattern {
+  overflow: hidden;
+}
+
+// site wide footer
+.footer-wrap {
+}
+
+footer.width-container {
+  padding-top: 10px;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background: #bac0c0;
+  padding-bottom: 2%;
+}
