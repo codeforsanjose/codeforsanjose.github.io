@@ -7,6 +7,24 @@
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+// TODO move to external js file.
+// Modified from http://stackoverflow.com/questions/9050763/format-date-in-jquery
+function getISODateTime(d){
+    // padding function
+    var s = function(a,b){return(1e15+a+"").slice(-b)};
+
+    // default date parameter
+    if (typeof d === 'undefined'){
+        d = new Date();
+    };
+
+    // return ISO datetime
+    return d.getFullYear() + '-' +
+        s(d.getMonth()+1,2) + '-' +
+        s(d.getDate(),2);
+}
+</script>
 </head>
 <body>
 
@@ -16,6 +34,7 @@
 
 <ul id="projects">
 <script>
+// CfA projects endpoint sorts by last updated
 $.getJSON("http://codeforamerica.org/api/organizations/Code-for-San-Jose/projects?per_page=999", function(response) {
       $.each(response.objects, function(i, project) {
         var html = " ";
@@ -23,7 +42,11 @@ $.getJSON("http://codeforamerica.org/api/organizations/Code-for-San-Jose/project
         html += "<strong>Description:</strong>  " + project.description;
         html += "<br/><strong>Language:</strong>  " + project.github_details.language;
         html += "<br/><strong>Code Repository:</strong>:  <a href=" + project.code_url + ">" + project.code_url + "</a>";
-        html += "<br/><strong>Last update:</strong>  " + project.last_updated;
+        
+        // simplify the date (strip hours and minutes)
+        var lastUpdated = project.last_updated;
+        html += "<br/><strong>Last update:</strong>  " + getISODateTime(new Date(lastUpdated));
+ 
         html += "<br/><strong>Number of contributors</strong> (" + project.github_details.contributors.length + "), <strong>open issues</strong> (" +
  project.github_details.open_issues + ")";
 
@@ -32,6 +55,8 @@ $.getJSON("http://codeforamerica.org/api/organizations/Code-for-San-Jose/project
     });
 </script>
 </ul>
+</body>
+</html>
 
 
 
