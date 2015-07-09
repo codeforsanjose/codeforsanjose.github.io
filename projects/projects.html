@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects - Code For San Jose</title>
+  <link rel="canonical" href="http://codeforsanjose.com/projects/" />
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+
+  <h1>Projects - Code for San Jose</h1>
+
+<p>Got an idea for a new project? Post it on our <a href="https://github.com/codeforsanjose/Project-Ideas">GitHub Project Ideas</a> page and then come pitch it to the group at our next <a href="http://www.meetup.com/Code-for-San-Jose/">Civic Hack Night!</a></p>
+
+<ul id="projects">
+<script>
+$.getJSON("http://codeforamerica.org/api/organizations/Code-for-San-Jose/projects?per_page=999", function(response) {
+      $.each(response.objects, function(i, project) {
+        var html = " ";
+        html += "<h3><a href=" + project.code_url +">" + project.name + "</a></h3>";
+        html += "<strong>Description:</strong>  " + project.description;
+        html += "<br/><strong>Language:</strong>  " + project.github_details.language;
+        html += "<br/><strong>Code Repository:</strong>:  <a href=" + project.code_url + ">" + project.code_url + "</a>";
+        html += "<br/><strong>Last update:</strong>  " + project.last_updated;
+        html += "<br/><strong>Number of contributors</strong> (" + project.github_details.contributors.length + "), <strong>open issues</strong> (" +
+ project.github_details.open_issues + ")";
+
+        $("#projects").append(html);
+       })
+    });
+</script>
+</ul>
+
+
+
+</body>
+</html>
