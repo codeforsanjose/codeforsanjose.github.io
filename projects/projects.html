@@ -51,17 +51,17 @@ $.getJSON("http://codeforamerica.org/api/organizations/Code-for-San-Jose/project
         var html = " ";
         html += "<h3><a href=" + project.code_url +">" + project.name + "</a></h3>";
         html += "<strong>Description:</strong>  " + project.description;
+        html += "<br/><strong>Skills needed:</strong>  " + " coming soon";
+
         html += "<br/><strong>Language:</strong>  " + project.github_details.language;
-        html += "<br/><strong>Code Repository:</strong>:  <a href=" + project.code_url + ">" + project.code_url + "</a>";
+        html += "<br/><strong>Source</strong>:  <a href=" + project.code_url + ">" + project.code_url + "</a>";
         
-        // simplify the date (strip hours and minutes)
-        var lastUpdated = project.last_updated;
-        html += "<br/><strong>Last update:</strong>  " + getISODateTime(new Date(lastUpdated));
-        
+        var lastUpdated = project.last_updated;        
         var numContributors = project.github_details.contributors.length;
         var numOpenIssues = project.github_details.open_issues;
  
         html += "<br/>" +
+            "<strong>Last updated</strong> " + getISODateTime(new Date(lastUpdated)) + ",  " +
         	numContributors + " <strong>contributor" + (numContributors == 1 ? "" : "s") + "</strong>,  " +
         	numOpenIssues   + " <strong>open issue"  + (numOpenIssues == 1 ? "" : "s") + "</strong>";
 
