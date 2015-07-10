@@ -6,7 +6,7 @@
   <link rel="canonical" href="http://codeforsanjose.com/projects/" />
 
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
 // TODO move to external js file.
 // Modified from http://stackoverflow.com/questions/9050763/format-date-in-jquery
@@ -57,9 +57,13 @@ $.getJSON("http://codeforamerica.org/api/organizations/Code-for-San-Jose/project
         // simplify the date (strip hours and minutes)
         var lastUpdated = project.last_updated;
         html += "<br/><strong>Last update:</strong>  " + getISODateTime(new Date(lastUpdated));
+        
+        var numContributors = project.github_details.contributors.length;
+        var numOpenIssues = project.github_details.open_issues;
  
-        html += "<br/><strong>Number of contributors</strong> (" + project.github_details.contributors.length + "), <strong>open issues</strong> (" +
- project.github_details.open_issues + ")";
+        html += "<br/>" +
+        	numContributors + " <strong>contributor" + (numContributors == 1 ? "" : "s") + "</strong>,  " +
+        	numOpenIssues   + " <strong>open issue"  + (numOpenIssues == 1 ? "" : "s") + "</strong>";
 
         $("#projects").append(html);
     	}
