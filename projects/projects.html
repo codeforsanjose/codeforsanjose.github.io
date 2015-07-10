@@ -59,11 +59,16 @@ $.getJSON("http://codeforamerica.org/api/organizations/Code-for-San-Jose/project
         var lastUpdated = project.last_updated;        
         var numContributors = project.github_details.contributors.length;
         var numOpenIssues = project.github_details.open_issues;
+        var watcherCnt = project.github_details.watchers_count;
+
  
         html += "<br/>" +
             "<strong>Last updated</strong> " + getISODateTime(new Date(lastUpdated)) + ",  " +
-        	numContributors + " <strong>contributor" + (numContributors == 1 ? "" : "s") + "</strong>,  " +
-        	numOpenIssues   + " <strong>open issue"  + (numOpenIssues == 1 ? "" : "s") + "</strong>";
+        	numContributors + "</a> <strong>contributor" + (numContributors == 1 ? "" : "s") + "</strong>,  " +
+        	numOpenIssues   + " <strong>open issue"  + (numOpenIssues == 1 ? "" : "s") + "</strong>,  " +
+        	watcherCnt   + " <strong>watcher"  + (watcherCnt == 1 ? "" : "s") + "</strong>";
+
+        	
 
         $("#projects").append(html);
     	}
