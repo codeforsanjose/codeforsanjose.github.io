@@ -25,6 +25,14 @@ function getISODateTime(d){
         s(d.getDate(),2);
 }
 </script>
+<script>
+// TODO move to external file.
+// TODO read excludes list from a file.
+function isProjectExcluded(projectName) {
+   return projectName == "projecttemplate" || projectName == "dummy";
+}
+</script>
+
 </head>
 <body>
 
@@ -37,6 +45,9 @@ function getISODateTime(d){
 // CfA projects endpoint sorts by last updated
 $.getJSON("http://codeforamerica.org/api/organizations/Code-for-San-Jose/projects?per_page=999", function(response) {
       $.each(response.objects, function(i, project) {
+       // skip excluded projects
+       if (!isProjectExcluded(project.name)) {
+
         var html = " ";
         html += "<h3><a href=" + project.code_url +">" + project.name + "</a></h3>";
         html += "<strong>Description:</strong>  " + project.description;
@@ -51,6 +62,7 @@ $.getJSON("http://codeforamerica.org/api/organizations/Code-for-San-Jose/project
  project.github_details.open_issues + ")";
 
         $("#projects").append(html);
+    	}
        })
     });
 </script>
