@@ -3,13 +3,9 @@
 <html>
 <head>
   <title>Projects - Code For San Jose</title>
-  <link rel="canonical" href="http://codeforsanjose.com/projects/" />
-
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/projects.js"></script>
-
-
 
 </head>
 <body>
@@ -20,8 +16,11 @@
 
 <ul id="projects">
 <script>
-// CfA projects endpoint sorts by last updated
-$.getJSON("http://codeforamerica.org/api/organizations/Code-for-San-Jose/projects?per_page=999", function(response) {
+// Use the Code for America projects API to extract metadata about projects from GitHub
+// API doc:  http://codeforamerica.org/api/
+// The API's projects endpoint sorts by last updated
+var codeForAmerica_Projects_endpoint = "http://codeforamerica.org/api/organizations/Code-for-San-Jose/projects?per_page=999";
+$.getJSON(codeForAmerica_Projects_endpoint, function(response) {
       $.each(response.objects, function(i, project) {
        // skip excluded projects
        if (!isProjectExcluded(project.name)) {
@@ -30,21 +29,19 @@ $.getJSON("http://codeforamerica.org/api/organizations/Code-for-San-Jose/project
         html += "<h3><a href=" + project.code_url +">" + project.name + "</a></h3>";
         html += "<strong>Description:</strong>  " + project.description;
         html += "<br/><strong>Skills needed:</strong>  " + " coming soon";
-
         html += "<br/><strong>Language:</strong>  " + project.github_details.language;
         html += "<br/><strong>Source</strong>:  <a href=" + project.code_url + ">" + project.code_url + "</a>";
         
         var lastUpdated = project.last_updated;        
         var numContributors = project.github_details.contributors.length;
         var numOpenIssues = project.github_details.open_issues;
-        var watcherCnt = project.github_details.watchers_count;
-
+        var numWathers = project.github_details.watchers_count;
  
         html += "<br/>" +
             "<strong>Last updated</strong> " + getDate_YMD(new Date(lastUpdated)) + ",  " +
         	numContributors + "</a> <strong>contributor" + (numContributors == 1 ? "" : "s") + "</strong>,  " +
         	numOpenIssues   + " <strong>open issue"  + (numOpenIssues == 1 ? "" : "s") + "</strong>,  " +
-        	watcherCnt   + " <strong>watcher"  + (watcherCnt == 1 ? "" : "s") + "</strong>";
+        	numWathers   + " <strong>watcher"  + (numWathers == 1 ? "" : "s") + "</strong>";
 
         	
 
@@ -54,10 +51,5 @@ $.getJSON("http://codeforamerica.org/api/organizations/Code-for-San-Jose/project
     });
 </script>
 </ul>
-</body>
-</html>
-
-
-
 </body>
 </html>
