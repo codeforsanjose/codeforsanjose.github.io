@@ -6,32 +6,10 @@
   <link rel="canonical" href="http://codeforsanjose.com/projects/" />
 
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>
-// TODO move to external js file.
-// Modified from http://stackoverflow.com/questions/9050763/format-date-in-jquery
-function getISODateTime(d){
-    // padding function
-    var s = function(a,b){return(1e15+a+"").slice(-b)};
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/projects.js"></script>
 
-    // default date parameter
-    if (typeof d === 'undefined'){
-        d = new Date();
-    };
 
-    // return ISO datetime
-    return d.getFullYear() + '-' +
-        s(d.getMonth()+1,2) + '-' +
-        s(d.getDate(),2);
-}
-</script>
-<script>
-// TODO move to external file.
-// TODO read excludes list from a file.
-function isProjectExcluded(projectName) {
-   return projectName == "projecttemplate" || projectName == "dummy";
-}
-</script>
 
 </head>
 <body>
@@ -63,7 +41,7 @@ $.getJSON("http://codeforamerica.org/api/organizations/Code-for-San-Jose/project
 
  
         html += "<br/>" +
-            "<strong>Last updated</strong> " + getISODateTime(new Date(lastUpdated)) + ",  " +
+            "<strong>Last updated</strong> " + getDate_YMD(new Date(lastUpdated)) + ",  " +
         	numContributors + "</a> <strong>contributor" + (numContributors == 1 ? "" : "s") + "</strong>,  " +
         	numOpenIssues   + " <strong>open issue"  + (numOpenIssues == 1 ? "" : "s") + "</strong>,  " +
         	watcherCnt   + " <strong>watcher"  + (watcherCnt == 1 ? "" : "s") + "</strong>";
