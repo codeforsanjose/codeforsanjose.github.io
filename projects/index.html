@@ -26,14 +26,12 @@ $.ajax({
 	  // add query string params, if needed, per http://codeforamerica.org/api/#api-projects
   },
   success: function( data ) {
-  	var sortedProjects = sortProjects(data);
+  	var sortedProjects = sortProjects(data.objects);
   	renderProjects(sortedProjects);
   }
 });
 
-function sortProjects(data) {
-	var projects = data.objects;
-	
+function sortProjects(projects) {	
 	// sort projects on (primary) number of open issues, (secondary) number of contributors.
 	projects.sort(function(a, b) {
 		var numOpenIssuesA = a.github_details.open_issues;
@@ -69,9 +67,9 @@ function renderProjects(projects) {
  
         	html += "<br/>" +
             "<strong>Last updated</strong> " + getDate_YMD(new Date(lastUpdated)) + ",  " +
-            numOpenIssues   + " <strong>open issue"  + (numOpenIssues == 1 ? "" : "s") + "</strong>,  " +
+            numOpenIssues   + " open <strong>issue"  + (numOpenIssues == 1 ? "" : "s") + "</strong>,  " +
         	numContributors + "</a> <strong>contributor" + (numContributors == 1 ? "" : "s") + "</strong>,  " +
-        	numWathers   + " <strong>watcher"  + (numWathers == 1 ? "" : "s") + "</strong>";
+        	numWathers   + " watcher"  + (numWathers == 1 ? "" : "s");
             
             $("#projects").append(html);
 
