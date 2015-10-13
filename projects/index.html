@@ -26,12 +26,12 @@ $.ajax({
 	  // add query string params, if needed, per http://codeforamerica.org/api/#api-projects
   },
   success: function( data ) {
-  	var sortedProjects = sortProjects(data.objects);
+  	var sortedProjects = sortProjectsByLastUpdated(data.objects);
   	renderProjects(sortedProjects);
   }
 });
 
-function sortProjects(projects) {	
+function sortProjectsByNumberOfOpenIssues(projects) {	
 	// sort projects on (primary) number of open issues, (secondary) number of contributors.
 	projects.sort(function(a, b) {
 		var numOpenIssuesA = a.github_details.open_issues;
@@ -45,6 +45,27 @@ function sortProjects(projects) {
 	})
 	return projects;
 }
+
+function sortProjectsByLastUpdated(projects) {	
+	projects.sort(function(a, b) {
+	
+		// Project-Ideas is always first
+		if (a.name == "Project-Ideas") return -1;
+		if (b.name == "Project-Ideas") return 1;
+		
+		// else sort by descending last updated
+		var lastUpdatedA = new Date(a.last_updated);
+		var lastUpdatedB = new Date(b.last_updated);
+		
+		var result = (lastUpdatedB - lastUpdatedA);
+		//console.log("lastUpdatedA=" + lastUpdatedA + ", lastUpdatedB=" + lastUpdatedB + ", result=" + result);
+
+		  
+		return result;
+	})
+	return projects;
+}
+
 
 
 
