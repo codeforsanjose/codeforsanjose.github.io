@@ -79,7 +79,8 @@ function renderProjects(projects) {
         	html += "<strong>Description:</strong>  " + project.description;
         	html += "<br/><strong>Status:</strong>  " + project.status;
         	// html += "<br/><strong>Skills needed:</strong>  " + " coming soon";
-        	html += "<br/><strong>Language:</strong>  " + (project.languages == null ? '' : project.languages);
+        	// html += "<br/><strong>Language:</strong>  " + (project.languages == null ? '' : project.languages);
+        	html += "<br/><strong>Language:</strong>  " + (project.languages == null ? 'No Code!' : project.languages);
         	html += "<br/><strong>Source</strong>:  <a href=" + project.code_url + ">" + project.code_url + "</a>";
         
         	var lastUpdated = project.last_updated;
