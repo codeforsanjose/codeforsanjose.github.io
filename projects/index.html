@@ -78,8 +78,8 @@ function renderProjects(projects) {
         	html += "<h3><a href=" + project.code_url +">" + project.name + "</a></h3>";
         	html += "<strong>Description:</strong>  " + project.description;
         	html += "<br/><strong>Status:</strong>  " + project.status;
-        	html += "<br/><strong>Skills needed:</strong>  " + " coming soon";
-        	html += "<br/><strong>Language:</strong>  " + project.github_details.language;
+        	// html += "<br/><strong>Skills needed:</strong>  " + " coming soon";
+        	html += "<br/><strong>Language:</strong>  " + project.languages;
         	html += "<br/><strong>Source</strong>:  <a href=" + project.code_url + ">" + project.code_url + "</a>";
         
         	var lastUpdated = project.last_updated;
