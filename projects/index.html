@@ -14,6 +14,9 @@
 <p>Got an idea for a new project? Post it on our <a href="https://github.com/codeforsanjose/Project-Ideas">GitHub Project Ideas</a> page and then come pitch it to the group at our next <a href="http://www.meetup.com/Code-for-San-Jose/">Civic Hack Night!</a></p>
 
 <ul id="projects">
+</ul>
+
+<!-- Placed at the end of the document so the pages load faster -->
 <script>
 // Use the Code for America projects API to extract metadata about projects from GitHub
 // API doc:  http://codeforamerica.org/api/
@@ -21,91 +24,76 @@
 var codeForAmerica_Projects_endpoint = "http://codeforamerica.org/api/organizations/Code-for-San-Jose/projects?per_page=999";
 
 $.ajax({
-  url: codeForAmerica_Projects_endpoint,
-  data: {
-	  // add query string params, if needed, per http://codeforamerica.org/api/#api-projects
-  },
-  success: function( data ) {
-  	var sortedProjects = sortProjectsByLastUpdated(data.objects);
-  	renderProjects(sortedProjects);
-  }
+    url: codeForAmerica_Projects_endpoint,
+    data: {
+        // add query string params, if needed, per http://codeforamerica.org/api/#api-projects
+    },
+    success: function (data) {
+        var sortedProjects = sortProjectsByLastUpdated(data.objects);
+        renderProjects(sortedProjects);
+    }
 });
 
-function sortProjectsByNumberOfOpenIssues(projects) {	
-	// sort projects on (primary) number of open issues, (secondary) number of contributors.
-	projects.sort(function(a, b) {
-		var numOpenIssuesA = a.github_details.open_issues;
-		var numOpenIssuesB = b.github_details.open_issues;
-		
-		var result = (numOpenIssuesA == numOpenIssuesB) ?
-						(b.github_details.contributors.length - a.github_details.contributors.length) :
-		  				(numOpenIssuesB -  numOpenIssuesA);
-		  
-		return result;
-	})
-	return projects;
+function sortProjectsByNumberOfOpenIssues(projects) {
+    // sort projects on (primary) number of open issues, (secondary) number of contributors.
+    projects.sort(function (a, b) {
+        var numOpenIssuesA = a.github_details.open_issues;
+        var numOpenIssuesB = b.github_details.open_issues;
+
+        var result = (numOpenIssuesA == numOpenIssuesB) ? (b.github_details.contributors.length - a.github_details.contributors.length) : (numOpenIssuesB - numOpenIssuesA);
+
+        return result;
+    });
+    return projects;
 }
 
-function sortProjectsByLastUpdated(projects) {	
-	projects.sort(function(a, b) {
-	
-		// Project-Ideas is always first
-		if (a.name == "Project-Ideas") return -1;
-		if (b.name == "Project-Ideas") return 1;
-		
-		// else sort by descending last updated
-		var lastUpdatedA = new Date(a.last_updated);
-		var lastUpdatedB = new Date(b.last_updated);
-		
-		var result = (lastUpdatedB - lastUpdatedA);
-		//console.log("lastUpdatedA=" + lastUpdatedA + ", lastUpdatedB=" + lastUpdatedB + ", result=" + result);
+function sortProjectsByLastUpdated(projects) {
+    projects.sort(function (a, b) {
 
-		  
-		return result;
-	})
-	return projects;
+        // Project-Ideas is always first
+        if (a.name == "Project-Ideas") return -1;
+        if (b.name == "Project-Ideas") return 1;
+
+        // else sort by descending last updated
+        var lastUpdatedA = new Date(a.last_updated);
+        var lastUpdatedB = new Date(b.last_updated);
+
+        var result = (lastUpdatedB - lastUpdatedA);
+        //console.log("lastUpdatedA=" + lastUpdatedA + ", lastUpdatedB=" + lastUpdatedB + ", result=" + result);
+
+        return result;
+    });
+    return projects;
 }
-
-
-
 
 function renderProjects(projects) {
-	$.each(projects, function(i, project) {
-       // skip excluded projects
-		if (!isProjectExcluded(project.name)) {
+    var output = [];
+    $.each(projects, function (i, project) {
+        // skip excluded projects
+        if (!isProjectExcluded(project.name)) {
+            output.push('<li>');
+            output.push("<h3><a href=" + project.code_url + ">" + project.name + "</a></h3>");
+            output.push("<strong>Description:</strong>  " + project.description);
+            output.push("<br/><strong>Status:</strong>  " + project.status);
+            // html += "<br/><strong>Skills needed:</strong>  " + " coming soon";
+            // html += "<br/><strong>Language:</strong>  " + (project.languages == null ? '' : project.languages);
+            output.push("<br/><strong>Language:</strong>  " + (project.languages == null ? 'No Code!' : project.languages));
+            output.push("<br/><strong>Source</strong>:  <a href=" + project.code_url + ">" + project.code_url + "</a>");
 
-        	var html = " ";
-        	html += "<h3><a href=" + project.code_url +">" + project.name + "</a></h3>";
-        	html += "<strong>Description:</strong>  " + project.description;
-        	html += "<br/><strong>Status:</strong>  " + project.status;
-        	// html += "<br/><strong>Skills needed:</strong>  " + " coming soon";
-        	// html += "<br/><strong>Language:</strong>  " + (project.languages == null ? '' : project.languages);
-        	html += "<br/><strong>Language:</strong>  " + (project.languages == null ? 'No Code!' : project.languages);
-        	html += "<br/><strong>Source</strong>:  <a href=" + project.code_url + ">" + project.code_url + "</a>";
-        
-        	var lastUpdated = project.last_updated;
-        	var numOpenIssues = project.github_details.open_issues;
-        	var numContributors = project.github_details.contributors.length;
-        	var numWathers = project.github_details.watchers_count;
- 
-        	html += "<br/>" +
-            "<strong>Last updated</strong> " + getDate_YMD(new Date(lastUpdated)) + ",  " +
-            numOpenIssues   + " open <strong>issue"  + (numOpenIssues == 1 ? "" : "s") + "</strong>,  " +
-        	numContributors + "</a> <strong>contributor" + (numContributors == 1 ? "" : "s") + "</strong>,  " +
-        	numWathers   + " watcher"  + (numWathers == 1 ? "" : "s");
-            
-            $("#projects").append(html);
+            var lastUpdated = project.last_updated;
+            var numOpenIssues = project.github_details.open_issues;
+            var numContributors = project.github_details.contributors.length;
+            var numWathers = project.github_details.watchers_count;
 
+            output.push("<br/>" +
+                "<strong>Last updated</strong> " + getDate_YMD(new Date(lastUpdated)) + ",  " + numOpenIssues + " open <strong>issue" + (numOpenIssues == 1 ? "" : "s") + "</strong>,  " + numContributors + "</a> <strong>contributor" + (numContributors == 1 ? "" : "s") + "</strong>,  " + numWathers + " watcher" + (numWathers == 1 ? "" : "s"));
+            output.push('</li>');
         }
-
     });
+    $("#projects").append(output.join(''));
 }
-
 </script>
-</ul>
-<!-- Placed at the end of the document so the pages load faster -->
 <script src="js/projects.js"></script>
-
 
 </body>
 </html>
