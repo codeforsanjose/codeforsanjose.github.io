@@ -67,31 +67,32 @@ function sortProjectsByLastUpdated(projects) {
 }
 
 function renderProjects(projects) {
-    var output = [];
-    $.each(projects, function (i, project) {
-        // skip excluded projects
-        if (!isProjectExcluded(project.name)) {
-            output.push('<li>');
-            output.push("<h3><a href=" + project.code_url + ">" + project.name + "</a></h3>");
-            output.push("<strong>Description:</strong>  " + project.description);
-            output.push("<br/><strong>Status:</strong>  " + project.status);
-            // html += "<br/><strong>Skills needed:</strong>  " + " coming soon";
-            // html += "<br/><strong>Language:</strong>  " + (project.languages == null ? '' : project.languages);
-            output.push("<br/><strong>Language:</strong>  " + (project.languages == null ? 'No Code!' : project.languages));
-            output.push("<br/><strong>Source</strong>:  <a href=" + project.code_url + ">" + project.code_url + "</a>");
-
-            var lastUpdated = project.last_updated;
-            var numOpenIssues = project.github_details.open_issues;
-            var numContributors = project.github_details.contributors.length;
-            var numWathers = project.github_details.watchers_count;
-
-            output.push("<br/>" +
-                "<strong>Last updated</strong> " + getDate_YMD(new Date(lastUpdated)) + ",  " + numOpenIssues + " open <strong>issue" + (numOpenIssues == 1 ? "" : "s") + "</strong>,  " + numContributors + "</a> <strong>contributor" + (numContributors == 1 ? "" : "s") + "</strong>,  " + numWathers + " watcher" + (numWathers == 1 ? "" : "s"));
-            output.push('</li>');
-        }
-    });
-    $("#projects").append(output.join(''));
+  jQuery.each(projects, function(i, project) {
+    if (!isProjectExcluded(project.name)) {
+      var output = [];
+      output.push("<a href=" + project.code_url +">" + project.name + "</a>");
+      output.push("<br/><strong>Description</strong>:&nbsp;&nbsp;" + project.description);
+      output.push("<br/><strong>Status</strong>:&nbsp;&nbsp;" + (project.status == null ? "N/A" : project.status));
+      output.push("<br/><strong>Languages</strong>:&nbsp;&nbsp;" + (project.languages == null ? 'No Code!' : project.languages));
+      output.push("<br/><strong>Source</strong>:&nbsp;&nbsp;<a href=" + project.code_url + ">" + project.code_url + "</a>");
+      var lastUpdated = project.last_updated;
+      var numOpenIssues = project.github_details.open_issues;
+      var numContributors = project.github_details.contributors.length;
+      var numWatchers = project.github_details.watchers_count;
+      output.push("<br/>" + "<strong>Last updated</strong> " + getDate_YMD(new Date(lastUpdated)) + ",  " + numOpenIssues   + " open issue"  + (numOpenIssues == 1 ? "" : "s") + ",  " + numContributors + "</a> contributor" +(numContributors == 1 ? "" : "s") + ",  " +
+numWatchers   + " watcher"  + (numWatchers == 1 ? "" : "s"));
+      output.push('<br/>&nbsp;');
+      var itemElement = document.createElement('li');
+      var html = output.join('');
+      itemElement.innerHTML = html;
+      //var itemText = document.createTextNode(project.name);
+      //item.appendChild(itemText);
+      jQuery("#projects").append(itemElement);
+    }
+  });
 }
+
+
 </script>
 <script src="js/projects.js"></script>
 
