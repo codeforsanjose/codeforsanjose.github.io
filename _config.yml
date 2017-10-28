@@ -6,8 +6,6 @@ description:
 url: https://codeforsanjose.github.io # the base hostname & protocol for your site
 git_address: https://github.com/codeforsanjose/codeforsanjose
 git_edit_address: https://github.com/codeforsanjose/codeforsanjose.github.io/blob/gh-pages
-facebook: https://www.facebook.com/codeforsanjose/
-twitter: https://www.twitter.com/codeforsanjose/
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
