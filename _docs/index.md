@@ -4,47 +4,22 @@ permalink: /docs/home/
 redirect_from: /docs/index.html
 ---
 
-## Getting started
+## Code for San José
 
-[GitHub Pages](https://pages.github.com) can automatically generate and serve the website for you.
-Let's say you have a username/organisation `my-org` and project `my-proj`; if you locate Jekyll source under `docs` folder of master branch in your repo `github.com/my-org/my-proj`, the website will be served on `my-org.github.io/my-proj`.
-The good thing about coupling your documentation with the source repo is, whenever you merge features with regarding content to master branch, it will also be published in the webpage instantly.
+We are a group of volunteer developers, designers, researchers and policy wonks who build civic apps, data visualizations and media projects. 
 
-1. Just download the source from [github.com/aksakalli/jekyll-doc-theme](https://github.com/aksakalli/jekyll-doc-theme/master) into your repo under `docs` folder.
-2. Edit site settings in  `_config.yml` file according to your project.
-3. Replace `favicon.ico` and `img/logonav.png` with your own logo.
+We create a space for San Jose’s civic tech community to meet, experiment and collaborate on all kinds of projects through our twice-monthly civic hack nights. 
 
-## Writing content
+Technical skills are not required to contribute. We need project managers, subject matter experts, communications gurus and community organizers! 
 
-### Docs
 
-Docs are [collections](https://jekyllrb.com/docs/collections/) of pages stored under `_docs` folder. To create a new page:
+## How to Get Involved
 
-**1.** Create a new Markdown as `_docs/my-page.md` and write [front matter](https://jekyllrb.com/docs/frontmatter/) & content such as:
+Come to civic hack nights. Find teams to collaborate with. Keep tabs on our schedule by joining our [Meetup group]( meetup.com/code-for-san-jose). We typically meet every 2nd and 4th Thursdays 6:30-9:00pm in downtown San José. 
 
-```
----
-title: My Page
-permalink: /docs/my-page/
----
+Pitch a design, data or coding project for our volunteers to work on. You can [share your idea](https://github.com/codeforsanjose/Project-Ideas/issues) or email [Michelle Thong, Code for San José Captain](emailto:mthong@gmail.com). 
 
-Hello World!
-```
+Share our activities with your friends and colleagues. 
+ 
+Join us on [slack](https://slackin-c4sj.herokuapp.com/) to discuss ideas, projects and colalboration. 
 
-**2.** Add the pagename to `_data/docs.yml` file in order to list in docs navigation panel:
-
-```
-- title: My Group Title
-  docs:
-  - my-page
-```
-
-### Blog posts
-
-Add a new Markdown file such as `2017-05-09-my-post.md` and write the content similar to other post examples.
-
-### Pages
-
-The home page is located under `index.html` file. You can change the content or design completely different welcome page for your taste. (You can use [bootstrap componenets](http://getbootstrap.com/components/))
-
-In order to add a new page, create a new html or markdown file under root directory and link it in `_includes/topnav.html`.
