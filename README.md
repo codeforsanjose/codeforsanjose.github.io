@@ -1,5 +1,5 @@
-# Code for San Jose Website
-[Demo](codeforsanjose.github.io)
+# Code for San José Website
+[Demo](http://www.codeforsanjose.com)
 ========================
 
 ## How To Run
@@ -25,3 +25,6 @@ bundle exec jekyll serve
 * Bootwatch Paper Bootstrap Theme
 * Typeahead title search
 * SEO and RSS feed
+
+## How to Contribute
+Check the issues for bugs, features, or issues to contribute to. Join the #website channel on our [Slack channel](https://slackin-c4sj.herokuapp.com/). 
