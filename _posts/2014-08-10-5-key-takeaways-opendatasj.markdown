@@ -5,7 +5,7 @@ author: Michelle Thong
 date:   2014-08-10 20:36:53 -0700
 categories:  storytelling
 ---
-![Panel picture](img/blog001.jpg?raw=true "Panel 2 on Collaborating across the Civic Tech Ecosystem, with moderator Robb Korinke and panelists Kalen Gallagher, Ed Shikada, Mark Headd and Julia Burkhead. Photo credit: Silicon Valley Talent Partnership")  
+![Panel picture](/img/blog001.jpg?raw=true "Panel on Collaborating across the Civic Tech Ecosystem, with moderator Robb Korinke and panelists Kalen Gallagher, Ed Shikada, Mark Headd and Julia Burkhead. Photo credit: Silicon Valley Talent Partnership")  
 ###### Panel 2 on “Collaborating across the Civic Tech Ecosystem,” with moderator Robb Korinke and panelists Kalen Gallagher, Ed Shikada, Mark Headd and Julia Burkhead. Photo credit: Silicon Valley Talent Partnership  
 
 Our goal in bringing the [California Open Data Roadshow](https://www.eventbrite.com/e/california-open-data-roadshow-kickstarting-the-conversation-in-san-jose-registration-12080451957) to San Jose on July 10 was to kickstart the conversation on open data with local public, private and nonprofit leaders.  
