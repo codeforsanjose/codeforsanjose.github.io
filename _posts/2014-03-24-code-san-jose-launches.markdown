@@ -5,7 +5,7 @@ author: Michelle Thong
 date:   2014-03-24 20:36:53 -0700
 categories:  cartodb, CSS, hackforchange, html5, jquery
 ---
-![hack night picture](/img/blog003.jpg)  
+![hack night picture](/img/first_hack_night.png)  
 
 As of this week, there’s a new group in San Jose focused on promoting open data and creating civic tech tools for the community. Our name is Code for San Jose, and we welcome volunteers of all skills who want to use open data and technology to address real needs in our communities.
 
