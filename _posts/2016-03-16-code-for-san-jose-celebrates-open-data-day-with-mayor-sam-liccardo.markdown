@@ -5,6 +5,8 @@ author: Radhika Nair
 date:   2016-03-16 20:36:53 -0700
 categories: CodeAcross, Mayor, OpenDataDay, OpenDataJam
 ---
+![OpenDataJamPhoto](/img/cfsj_opendatajam2016.jpg)
+
 Code for San Jose recently held an Open Data Jam, to coincide with the International Open Data Day on March 5, 2016 and CodeAcross events taking place throughout the Code for America network.  
 
 The Open Data Jam brought together 40 data enthusiasts, civic hackers, government staff, and a Mayor; all united in their desire to improve San Jose through technology. [The Tech Museum of Innovation](https://www.thetech.org) hosted the event while [Microsoft](http://www.microsoftsiliconvalley.com/) provided food, beverages, and support.  
