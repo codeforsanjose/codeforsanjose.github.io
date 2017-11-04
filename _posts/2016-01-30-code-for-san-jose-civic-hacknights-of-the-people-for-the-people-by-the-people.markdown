@@ -7,6 +7,8 @@ categories:  hacknight, Inspiration, projects
 ---
 >*“Life’s most urgent question is, what are you doing for others? ”* -  Martin Luther King Jr.  
 
+![civichacknight2016](/img/cfsj_2016.jpg)
+
 This profound wisdom sums up so much when it comes to my new year resolution—develop a sense of belonging to the place I live in. It has been almost two long years since I stepped into the Land of Opportunity. Yet, I hardly know anything about the community I am part of.  
 
 My quest for the right opportunity to make sincere community connections brought me to Code for San Jose. [Kyle Falconer](https://github.com/netinept), an IBMer and active member of Code for San Jose, told me about the vibrant community at Code for San Jose and suggested that I attend the first Civic HackNight of the year. Being an avid FOSS follower and a civic enthusiast I resolved to attend.  
