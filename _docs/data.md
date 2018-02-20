@@ -7,6 +7,7 @@ permalink: /docs/data/
   <div class="col-sm-12">
     <h3 class="text-center">Local Data Sources</h3>
     <ul>
+      <li><a href="https://github.com/vta/GIS-Resources-Santa-Clara-County" target="_blank">GIS Resources in Santa Clara County</a></li>
       <li>City of San Jose’s existing <a href="http://data.sanjoseca.gov/home/" target="_blank">data catalog</a></li>
       <li>Code for San Jose’s <a href="https://docs.google.com/spreadsheets/d/1XQcEmeoR3JDb0xyg4iOnufAoE3X9VToupfXguZRyl9w/edit#gid=0" target="_blank">San Jose Data Inventory</a> (this is a work-in-progress, please add to it!)</li>
       <li>VTA <a href="https://data.vta.org/" target="_blank">Open Data Portal</a></li>
