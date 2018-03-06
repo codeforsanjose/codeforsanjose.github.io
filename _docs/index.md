@@ -38,7 +38,9 @@ No, Code for San Jose is not a place that teaches members how to code.
 Check out San Jose Public Library [online resources](https://www.sjpl.org/blog/learn-how-code), such as [Team Treehouse](https://www.sjpl.org/treehouseaccount) or [Lynda](https://www.sjpl.org/eresource/lyndacom) to learn new skills. 
 
 ### How did it all begin? 
-Launched in March 2014, [Kalen Gallagher](https://www.linkedin.com/in/kalengallagher) and [Michelle Thong](https://www.linkedin.com/in/mthong) founded Code for San Jose, a local Code for America brigade. We are a group of volunteers who are passionate about using our skills to advance civic innovation in San Jose. Our members represent a range of skill sets and interests, spanning the high tech, local government and non-profit sectors. Our Captains are [Michelle Thong](https://www.linkedin.com/in/mthong) and [Vivek Bansal](https://www.linkedin.com/in/3vivekb/).
+Launched in March 2014, [Kalen Gallagher](https://www.linkedin.com/in/kalengallagher) and [Michelle Thong](https://www.linkedin.com/in/mthong) founded Code for San Jose, a local Code for America brigade. We are a group of volunteers who are passionate about using our skills to advance civic innovation in San Jose. Our members represent a range of skill sets and interests, spanning the high tech, local government and non-profit sectors. 
+
+Our Captains are [Michelle Thong](https://www.linkedin.com/in/mthong), [Yan-Yin Choy](https://linkedin.com/in/yanyinchoy), [Vivek Bansal](https://www.linkedin.com/in/3vivekb/).
 
 ### What is a Code for America Brigade?
 A Code for America Brigade is a group of volunteers who meet regularly to collaborate on technology, data, policy and design projects that strengthen their communities. There are over 30 Brigades in the United States. Brigades build participatory power in their cities by holding regular civic hack nights, advocating for open data, and deploying apps.
