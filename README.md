@@ -4,7 +4,7 @@
 
 ## How To Run
 ```bash
- install bundler
+# install bundler
 gem install bundler
 
 # clone the project
