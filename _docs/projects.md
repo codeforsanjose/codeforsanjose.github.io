@@ -6,6 +6,9 @@ permalink: /docs/projects/
 <div class="row">
   <div class="col-sm-12">
     <h3 class="text-center">Current Projects</h3>
+    <div class="text-center">
+      <a href="https://docs.google.com/document/d/e/2PACX-1vRxyQGbgNroYwpQVPIPYV-EhGFAJMMWa__pqx2Ou6CqbJ9VEaWZWnYHQUqLWrg_pe0pprvs2Y_ajPm_/pub?embedded=true" target="_blank">Open just the Active Projects Google Doc in a separate window / tab</a>
+    </div>
     <div class="iframe-container"><iframe width="600" height="200" src="https://docs.google.com/document/d/e/2PACX-1vRxyQGbgNroYwpQVPIPYV-EhGFAJMMWa__pqx2Ou6CqbJ9VEaWZWnYHQUqLWrg_pe0pprvs2Y_ajPm_/pub?embedded=true"></iframe>
   </div>
   <div class="col-md-12">
