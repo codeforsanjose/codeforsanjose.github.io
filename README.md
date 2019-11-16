@@ -2,6 +2,14 @@
 [Demo](http://www.codeforsanjose.com)
 ========================
 
+Code for San Jose is the San Jose chapter of [Code for America](https://www.codeforamerica.org/). The San Jose Website is the central location where people can learn about the organization. The site hosts the community's:
+
+* Code of Conduct - Community Behavior Guideline
+* Local Meetups - Biweekly Events
+* Open Source Projects - Active Civic Tech Projects
+* Blog - Personal Reflections on our Projects and Events
+* Social Channels - Twitter, Slack
+
 ## How To Run
 ```bash
 # install bundler
@@ -28,3 +36,4 @@ bundle exec jekyll serve
 
 ## How to Contribute
 Check the issues for bugs, features, or issues to contribute to. Join the #website channel on our [Slack channel](https://slackin-c4sj.herokuapp.com/). 
+f
