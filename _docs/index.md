@@ -13,10 +13,12 @@ Technical skills are not required to contribute. Project managers, subject matte
 ## How to Get Involved
 
 ### Civic Hack Nights
-Come to civic hack nights. Find teams to collaborate with. Keep tabs on our schedule by joining our [Meetup group]( https://meetup.com/code-for-san-jose). We typically meet every 2nd and 4th Thursdays 6:30-9:00pm in downtown San José. 
+Come to civic hack nights. Find teams to collaborate with. 
+Keep tabs on our upcoming events by joining our [Meetup group](https://meetup.com/code-for-san-jose). 
+We typically meet every 2nd and 4th Thursdays 6:30-9:00pm in downtown San José. 
 
 ### Collaborate and Create
-Pitch a design, data or coding project for our volunteers to work on. You can [share your idea](https://github.com/codeforsanjose/Project-Ideas/issues) or email [Michelle Thong, Code for San José Captain](emailto:mthong@gmail.com). 
+Pitch a design, data or coding project for our volunteers to work on. You can [share your idea](https://github.com/codeforsanjose/Project-Ideas/issues) or <a href="mailto:codeforsanjose@gmail.com">email us</a>. 
 
 Learn more about our current [projects](/docs/projects/).
 
@@ -26,21 +28,46 @@ Share our activities with your friends and colleagues.
 Join us on [slack](https://slackin-c4sj.herokuapp.com/) to discuss ideas, projects and colalboration. 
 ## Frequently Asked Questions
 
-### Do you need to know coding to participate? 
-No, you do not need to know coding to participate. There are many ways non-technical volunteers can contribute.
+### Do you need to know how to code to participate? 
+No, you do not need to know coding to participate. 
+There are many ways to contribute non-technical skills, e.g. user research, design, blogging, social media, onboarding volunteers, event organizing, fundraising, etc.
 
 Check out a creative video project made by our members [Lorin Camargo](https://www.linkedin.com/in/lorincamargo) and [Clarence Leung](https://github.com/clarle) to showcase the construction of a protected bikeway pop-up on 4th Street, between St. John and San Salvador in San Jose, California:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y1rJJxqDo7Y" frameborder="0" allowfullscreen></iframe>
 
-### Does Code for San Jose teach you how to code?
+### Does Code for San Jose teach you how to code?Vivek
 No, Code for San Jose is not a place that teaches members how to code. 
 
 Check out San Jose Public Library [online resources](https://www.sjpl.org/blog/learn-how-code), such as [Team Treehouse](https://www.sjpl.org/treehouseaccount) or [Lynda](https://www.sjpl.org/eresource/lyndacom) to learn new skills. 
 
 ### How did it all begin? 
-Launched in March 2014, [Kalen Gallagher](https://www.linkedin.com/in/kalengallagher) and [Michelle Thong](https://www.linkedin.com/in/mthong) founded Code for San Jose, a local Code for America brigade. We are a group of volunteers who are passionate about using our skills to advance civic innovation in San Jose. Our members represent a range of skill sets and interests, spanning the high tech, local government and non-profit sectors. 
+In March 2014, [Kalen Gallagher](https://www.linkedin.com/in/kalengallagher) and [Michelle Thong](https://www.linkedin.com/in/mthong) co-founded Code for San Jose, a local Code for America brigade. We are a group of volunteers who are passionate about using our skills to advance civic innovation in San Jose. Our members represent a range of skill sets and interests, spanning the high tech, local government and non-profit sectors. 
 
-Our Captains are [Michelle Thong](https://www.linkedin.com/in/mthong), [Yan-Yin Choy](https://linkedin.com/in/yanyinchoy), [Vivek Bansal](https://www.linkedin.com/in/3vivekb/).
+### Our Team
+
+Captains:
+- [Yan-Yin Choy](https://linkedin.com/in/yanyinchoy)
+- [Joseph Richardson](https://www.linkedin.com/in/joseph-richardson-97206953//)
+- [Annie Steenson](https://www.linkedin.com/in/anniesteenson/)
+
+Leadership Team Members:
+- [Lorin Camargo](https://www.linkedin.com/in/lorincamargo/)
+- [Namrata Challa](https://www.linkedin.com/in/namratachalla/)
+- [Jason Gardner](https://www.linkedin.com/in/jason-gardner-6b65b8bb/)
+- [Kyle Falconer](https://www.linkedin.com/in/kylefalconer/)
+- [Erika Hudiono](https://www.linkedin.com/in/erika-hudiono/)
+- [Clarence Leung](https://github.com/clarle)
+- [Minh Nguyễn](http://notes.1ec5.org/)
+- [Dane Olsen](https://www.linkedin.com/in/danekolsen/)
+- [Emily Ramos](https://www.linkedin.com/in/emilyannramos/)
+- [Helen Skinner](https://www.linkedin.com/in/helen-skinner/)
+- [Lena Tran](https://www.linkedin.com/in/lenatran4/)
+- [Michelle Thong](https://www.linkedin.com/in/mthong/)
+
+Our former captains: 
+- [Michelle Thong](https://www.linkedin.com/in/mthong/)
+- [Vivek Bansal](https://www.linkedin.com/in/3vivekb/)
+- [Kalen Gallagher](https://www.linkedin.com/in/kalengallagher)
 
 ### What is a Code for America Brigade?
 A Code for America Brigade is a group of volunteers who meet regularly to collaborate on technology, data, policy and design projects that strengthen their communities. There are over 30 Brigades in the United States. Brigades build participatory power in their cities by holding regular civic hack nights, advocating for open data, and deploying apps.
