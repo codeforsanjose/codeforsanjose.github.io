@@ -35,7 +35,7 @@ There are many ways to contribute non-technical skills, e.g. user research, desi
 Check out a creative video project made by our members [Lorin Camargo](https://www.linkedin.com/in/lorincamargo) and [Clarence Leung](https://github.com/clarle) to showcase the construction of a protected bikeway pop-up on 4th Street, between St. John and San Salvador in San Jose, California:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y1rJJxqDo7Y" frameborder="0" allowfullscreen></iframe>
 
-### Does Code for San Jose teach you how to code?Vivek
+### Does Code for San Jose teach you how to code?
 No, Code for San Jose is not a place that teaches members how to code. 
 
 Check out San Jose Public Library [online resources](https://www.sjpl.org/blog/learn-how-code), such as [Team Treehouse](https://www.sjpl.org/treehouseaccount) or [Lynda](https://www.sjpl.org/eresource/lyndacom) to learn new skills. 
