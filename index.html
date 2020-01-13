@@ -35,13 +35,16 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#codeofconduct">Code of Conduct</a>
+              <a class="nav-link" href="#codeOfConduct">Code of Conduct</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.meetup.com/Code-for-San-Jose/" download>Meetup</a>
+              <a class="nav-link" href="#data">Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.meetup.com/Code-for-San-Jose/">Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://medium.com/code-for-san-jose">Blog</a>
@@ -49,11 +52,17 @@
             <li class="nav-item">
               <a class="nav-link" href="https://github.com/codeforsanjose/">GitHub</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#donate">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
-    <div class="container headline-container">
+    <div class="container">
       <div class="headline-container">
         <div class="row">
           <div class="col-md-2 col-4">
@@ -67,50 +76,323 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-4">
-            <h1 class="text-center"><i class="fa fa-comments" aria-hidden="true"></i></h1>
-            <h3 class="text-center">Discuss</h3>
-            <p>
-            Join ongoing discussions to create solutions.
-            </p>
-            <p style="display:flex;justify-content:center;"><a class="btn btn-primary" href="https://slackin-c4sj.herokuapp.com/" role="button">Join us on Slack</a></p>
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Create</h3>
+            <p class="card-text">Collaborate with teams to work on projects that make San Jose and the South Bay a better place</p>
+            <p class="card-text"><a class="btn btn-primary" href="#projects" role="button">Learn more about our projects</a></p>
+          </div>
         </div>
-        <div class="col-sm-4">
-            <h1 class="text-center"><i class="fa fa-users" aria-hidden="true"></i></h1>
-            <h3 class="text-center">Connect</h3>
-            <p>
-            Connect with project teams.
-            </p>
-            <p style="display:flex;justify-content:center;"><a class="btn btn-primary" href="https://www.meetup.com/Code-for-San-Jose/" role="button">Join us at a Meetup</a></p>
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title"><i class="fa fa-comments" aria-hidden="true"></i> Discuss</h3>
+            <p class="card-text">Join ongoing discussions to create solutions.</p>
+            <p class="card-text"><a class="btn btn-primary" href="https://slackin-c4sj.herokuapp.com/" role="button">Join us on Slack</a></p>
+          </div>
         </div>
-        <div class="col-sm-4">
-            <h1 class="text-center"><i class="fa fa-code-fork" aria-hidden="true"></i></h1>
-            <h3 class="text-center">Create</h3>
-            <p>
-            Start a new project or join an existing multidisciplinary team.</p>
-            <p style="display:flex;justify-content:center;"><a class="btn btn-primary" href="https://github.com/codeforsanjose" role="button">Join us on Github</a></p>
-        </div>
-      </div>
- 
-      <!-- Projects -->
-      <div class="container">
-        <div class="projects">
-          <h2>Projects</h2>
-          <p>Learn more about our projects. For more information about the project, or to get involved, <a href="https://slackin-c4sj.herokuapp.com/" target="_blank">join us on Slack</a>, visit the slack channel listed in the project details, and message the project lead.</p>
-          <div class="container">
-            <div class="card-deck">
-              <section id="projects"></section>
-            </div>
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title"><i class="fa fa-users" aria-hidden="true"></i> Connect</h3>
+            <p class="card-text">Connect with project teams.</p>
+            <p class="card-text"><a class="btn btn-primary" href="https://www.meetup.com/Code-for-San-Jose/" role="button">Join us at a Meetup</a></p>
           </div>
         </div>
       </div>
 
-      <!-- New to Code for San Jose? -->
+      <!-- Projects -->
+      <div class="container headline-container">
+        <div class="projects">
+          <div class="container"> 
+            <section id="projects">
+              <div class="container">
+                <h2>Projects</h2>
+                <p>Learn more about our projects. For more information about the project, or to get involved, <a href="https://slackin-c4sj.herokuapp.com/" target="_blank">join us on Slack</a>, visit the slack channel listed in the project details, and message the project lead.</p>
+                <p>
+                  Have an idea? Pitch a design, data or coding project for our volunteers to work on. You can [share your idea](https://github.com/codeforsanjose/Project-Ideas/issues) or <a href="mailto:codeforsanjose@gmail.com">email us</a>.
+                </p>
+              </div>
+              </section>
+            </div>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div class="container headline-container">
+        <section id="about">
+          <div class="container">
+              <h2>About</h2>
+              <p>
+                Code for San José is a group of volunteer developers, designers, researchers and community organizers who build civic apps, data visualizations and media projects. 
+              </p>
+              <p>
+                We create a space for San Jose’s civic tech community to meet, experiment and collaborate on all kinds of projects through our twice-monthly Civic Hack Nights. 
+              </p>
+              <p>
+                We typically meet every 2nd and 4th Thursdays 6:30-9:00pm in downtown San José. 
+                Keep tabs on our upcoming events by joining our <a href="https://www.meetup.com/Code-for-San-Jose/">Meetup group</a>.
+              </p>
+              <p>
+                Technical skills are not required to contribute. Project managers, subject matter experts, communications specialists, community organizers, designers, developers, data scientists are all welcome! 
+              </p>
+              <p>
+                We are part of the <a href="https://brigade.codeforamerica.org/brigades" target="_blank">Code for America Brigade Network:</a>
+              </p>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mYzMl_HnEZU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <br/><br/>
+              <p><strong>Let's collaborate!</strong></p>
+              <p>
+                Pitch a design, data or coding project for our volunteers to work on. You can [share your idea](https://github.com/codeforsanjose/Project-Ideas/issues) or <a href="mailto:codeforsanjose@gmail.com">email us</a>. 
+                Learn more about our <a href="#projects">projects</a>.
+              </p>
+              <h3>Our Leadership Team</h3>
+              <p>
+                <strong>Captains</strong>
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="https://linkedin.com/in/yanyinchoy">Yan-Yin Choy</a></li>
+                <li class="list-group-item"><a href="https://www.linkedin.com/in/joseph-richardson-97206953/">Joseph Richardson</a></li>
+                <li class="list-group-item"><a href="https://www.linkedin.com/in/anniesteenson/">Annie Steenson</a></li>
+              </ul>
+            
+              <p><strong>Leadership Team Members</strong></p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Lorin Camargo</li>
+                <li class="list-group-item">Namrata Challa</li>
+                <li class="list-group-item">Jason Gardner</li>
+                <li class="list-group-item">Kyle Falconer</li>
+                <li class="list-group-item">Erika Hudiono</li>
+                <li class="list-group-item">Clarence Leung</li>
+                <li class="list-group-item">Minh Nguyen</li>
+                <li class="list-group-item">Dane Olsen</li>
+                <li class="list-group-item">Emily Ramos</li>
+                <li class="list-group-item">Helen Skinner</li>
+                <li class="list-group-item">Lena Tran</li>
+                <li class="list-group-item">Michelle Thong</li>
+              </ul>
+              
+              <p><em>Former Captains</em></p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Michelle Thong</li>
+                <li class="list-group-item">Kalen Gallagher</li>
+                <li class="list-group-item">Vivek Bansal</li>
+              </ul>
+          </div>
+        </section>
+      </div>
+        
+      <!-- Frequently Asked Questions-->
+      <div class="container headline-container">
+        <section id="faq">
+          <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <p>
+              <strong>Do you need to know how to code to participate?</strong> 
+            </p>
+            <p>
+              No, you do not need to know coding to participate. 
+              There are many ways to contribute non-technical skills, e.g. user research, design, blogging, social media, onboarding volunteers, event organizing, fundraising, etc.
+            </p>
+            <p>
+              Check out a creative video project made by our members [Lorin Camargo](https://www.linkedin.com/in/lorincamargo) and [Clarence Leung](https://github.com/clarle) to showcase the construction of a protected bikeway pop-up on 4th Street, between St. John and San Salvador in San Jose, California:
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/y1rJJxqDo7Y" frameborder="0" allowfullscreen></iframe>
+          <p><strong>Does Code for San Jose teach you how to code?</strong></p>
+          <p>
+            No, Code for San Jose is not a place that teaches members how to code. 
+          </p>
+          <p>
+            Check out San Jose Public Library [online resources](https://www.sjpl.org/blog/learn-how-code), such as [Team Treehouse](https://www.sjpl.org/treehouseaccount) or [Lynda](https://www.sjpl.org/eresource/lyndacom) to learn new skills. 
+          </p>
+          <p><strong>How did Code for San Jose begin?</strong></p>
+          <p>
+            In March 2014, [Kalen Gallagher](https://www.linkedin.com/in/kalengallagher) and [Michelle Thong](https://www.linkedin.com/in/mthong) co-founded Code for San Jose, a local Code for America brigade. We are a group of volunteers who are passionate about using our skills to advance civic innovation in San Jose. Our members represent a range of skill sets and interests, spanning the high tech, local government and non-profit sectors. 
+          </p>
+          
+          <p><strong>What is a Code for America Brigade?</strong></p>
+          <p>
+            A Code for America Brigade is a group of volunteers who meet regularly to collaborate on technology, data, policy and design projects that strengthen their communities. There are over 30 Brigades in the United States. Brigades build participatory power in their cities by holding regular civic hack nights, advocating for open data, and deploying apps.
+          </p>
+          <p>
+            Local brigades determine their own activities and projects, and the overall Brigade program is administered by Code for America, a San Francisco-based non-profit organization. Code for America has a range of other programs that help governments, entrepreneurs and residents harness technology to solve community problems, including a one-year Fellowship, a civic start-up Accelerator and Incubator and the Peer Network for government workers.
+          </p>
+          <p><strong>What is Civic Hacking?</strong></p>
+          <p>
+            Civic hacking is when citizens see something in the public realm that they can make better, and they take it upon themselves to create a solution.
+          </p>
+          <p>
+            A civic hacker can be anyone – technologist, public servant, designer, entrepreneur, engineer – who is willing to collaborate with others to address local challenges and make their cities better for everyone.
+          </p>
+          <p>
+            A hacker is someone who uses a minimum of resources and a maximum of brainpower and ingenuity to create, enhance or fix something. Although in some circumstances the term is used in a negative sense, the term is not inherently negative, nor does it even have to be related to technology.
+          </p>
+          <p><strong>What is Open Data?</strong></p> 
+          <p>
+            Open data is data that can be freely used, reused and redistributed by anyone. The U.S. government defines open data as publicly available data structured in a way that enables the data to be fully discoverable and usable by end users.
+          </p>
+          <p>
+            Governments around the US are opening their data, allowing civic hackers to build tools, apps and other solutions that benefit their communities.
+          </p>
+          
+          <p><strong>What is Open Government?</strong></p>
+          <p>
+            Open government promotes greater citizen participation, collaboration, and transparency in government. This includes promoting government accountability via improved citizen access to public government information, decision-making, and representatives.
+          </p>
+          <p>
+            Many public agencies already abide by open government laws that were developed in the 1970s prior to the Internet. These laws tend to be focused on making sure meetings are held in public and that agencies respond to requests for information.
+          </p>
+          <p>Today, open government increasingly overlaps with the idea that governments should provide citizens with open data on its actions, performance and decisions.</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Data -->
+      <div class="container headline-container">
+        <section id="data">
+          <div class="container">
+            <h3>Open Data Sources</h3>
+            <div class="row">
+                <div class="col-sm-12">
+                  <h3 class="text-center">Local Data Sources</h3>
+                  <ul>
+                    <li><a href="https://github.com/vta/GIS-Resources-Santa-Clara-County" target="_blank">GIS Resources in Santa Clara County</a></li>
+                    <li>City of San Jose’s existing <a href="http://data.sanjoseca.gov/home/" target="_blank">data catalog</a></li>
+                    <li>Code for San Jose’s <a href="https://docs.google.com/spreadsheets/d/1XQcEmeoR3JDb0xyg4iOnufAoE3X9VToupfXguZRyl9w/edit#gid=0" target="_blank">San Jose Data Inventory</a> (this is a work-in-progress, please add to it!)</li>
+                    <li>VTA <a href="https://data.vta.org/" target="_blank">Open Data Portal</a></li>
+                    <li>Vehicle Miles Traveled <a href="http://capvmt.us-west-2.elasticbeanstalk.com/data" target="_blank">Data Portal</a></li>
+                    <li>MTC <a href="http://mtc.ca.gov/tools-resources/data-tools/open-data-library" target="_blank">Open Data Library</a></li>
+                  </ul>
+                  <p>Looking for local government data but cannot find it? Post a data request as a <a href="https://github.com/codeforsanjose/data-requests">Github issue</a> and Code for San Jose's municipal liaison, Michelle Thong, will help you track it down, if it exists.</p>
+                  
+                  <h3 class="text-center">Other sources in the region</h3>
+                  <ul>
+                    <li>Palo Alto <a href="http://data.cityofpaloalto.org/home" target="_blank">Open Data Portal</a></li>
+                    <li>Mountain View <a href="http://data-mountainview.opendata.arcgis.com/" target="_blank">Open GIS Data Portal</a></li>
+                    <li>San Mateo County <a href="https://data.smcgov.org/" target="_blank">Open Data Portal</a></li>
+                    <li>San Fransico <a href="https://datasf.org/opendata/" target="_blank">Open Data Portal</a></li>
+                    <li>Oakland <a href="https://data.oaklandnet.com/" target="_blank">Open Data Portal</a></li>
+                    <li>Fremont <a href="http://egis-cofgis.opendata.arcgis.com/" target="_blank">Open GIS Data Portal</a></li>
+                    <li>Alameda County <a href="https://data.acgov.org/" target="_blank">Open Data Portal</a></li>
+                  </ul>
+              
+                  <h3 class="text-center">Federal Data Sources</h3>
+                  <ul>
+                    <li>U.S. Government <a href="https://www.data.gov/" target="_blank">open data portal</a></li>
+                    <li>U.S. Census Data on <a href="https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml" target="_blank">American Factfinder</a> or via the <a href="https://www.census.gov/developers/" target="_blank">Census API</a></li>
+                    <li>Third-party sources of U.S Census Data such as <a href="https://censusreporter.org/" target="_blank">Census Reporter</a> and <a href="http://www.socialexplorer.com/" target="_blank">Social Explorer</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <!-- Code of Conduct -->
+      <div class="container headline-container">
+        <section id="codeOfConduct">
+          <div class="container">
+            <h1>Code of Conduct</h1>
+            
+            <p>This document is adapted from Code for America’s Code of Conduct and Anti-Harrassment Policy.</p>
+              
+            <hr>
+            
+            <h3>Code for San Jose's Code of Conduct</h3>
+            
+            <p>The Code for San Jose community expects that Code for San Jose network activities, events, and digital forums:</p>
+            
+            <ol>
+              <li>Are a safe and respectful environment for all participants.</li>
+              <li>Are a place where people are free to fully express their identities.</li>
+              <li>Presume the value of others. Everyone’s ideas, skills, and contributions have value.</li>
+              <li>Don’t assume everyone has the same context, and encourage questions.</li>
+              <li>Find a way for people to be productive with their skills (technical and not) and energy. Use language such as “yes/and”, not “no/but.”</li>
+              <li>Encourage members and participants to listen as much as they speak.</li>
+              <li>Strive to build tools that are open and free technology for public use. Activities that aim to foster public use, not private gain, are prioritized.</li>
+              <li>Prioritize access for and input from those who are traditionally excluded from the civic process.</li>
+              <li>Work to ensure that the community is well-represented in the planning, design, and implementation of civic tech. This includes encouraging participation from women, minorities, and traditionally marginalized groups.</li>
+              <li>Actively involve community groups and those with subject matter expertise in the decision-making process.</li>
+              <li>Ensure that the relationships and conversations between community members, the local government staff and community partners remain respectful, participatory, and productive.</li>
+              <li>Provide an environment where people are free from discrimination or harassment.</li>
+            </ol>
+            <p>Code for San Jose reserves the right to ask anyone in violation of these policies not to participate in Code for America network activities, events, and digital forums.</p>
+          
+            <h3>Code for San Jose's Anti-Harassment Policy</h3>
+          
+            <p>This anti-harassment policy is based on the example <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">policy</a> from the Geek Feminism wiki, created by the Ada Initiative and other volunteers.</p>
+            
+            <p>This policy is based on several other policies, including the Ohio LinuxFest anti-harassment policy, written by Esther Filderman and Beth Lynn Eicher, and the Con Anti-Harassment Project. Mary Gardiner, Valerie Aurora, Sarah Smith, and Donna Benjamin generalized the policies and added supporting material. Many members of LinuxChix, Geek Feminism and other groups contributed to this work.</p>
+            <hr>
+            <p>All Code for San Jose network activities, events, and digital forums and their staff, presenters, and participants are held to an anti-harassment policy, included below.</p>
+          
+            <p>In addition to governing our own events by this policy, Code for San Jose will only lend our brand and fund groups that offer an anti-harassment policy to their attendees. For information on how to offer an anti-harassment policy to your group, see this <a href="https://docs.google.com/document/d/1Zg2FDt7awgfCmdcbzMwKHMb1A7KDOhs_z7ibCb3TLLQ/edit">guide from Code for America.</a></p>
+          
+            <p>Code for San Jose is dedicated to providing a harassment-free experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, or religion. We do not tolerate harassment of staff, presenters, and participants in any form. Sexual language and imagery is not appropriate for any Code for America event or network activity, including talks. Anyone in violation of these policies may expelled from Code for America network activities, events, and digital forums, at the discretion of the event organizer or forum administrator.</p>
 
-      <!-- <div class="container">
+            <p>Harassment includes but is not limited to: offensive verbal or written comments related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, religion; sexual images in public spaces; deliberate intimidation; stalking; following; harassing photography or recording; sustained disruption of talks or other events; inappropriate physical contact; unwelcome sexual attention; unwarranted exclusion; and patronizing language or action.</p>
+          
+            <p>If a participant engages in harassing behavior, the organizers may take any action they deem appropriate, including warning the offender or expulsion from Code for San Jose network activities, events, and digital forums.</p>
+            
+            <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact Code for San Jose Captains <a href="mailto:codeforsanjose@gmail.com">Annie Steenson, Joseph Richardson and Yan-Yin Choy</a>.</p> 
+          
+            <p>Event staff or forum administrators will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the event.</p>
+          
+            <p>If you cannot reach an event organizer or forum administrator and/or it is an emergency, please call 911 and/or remove yourself from the situation.</p>
+          
+            <p>You can also contact Code for America about harassment at safespace@codeforamerica.org and feel free to use the email template below. Code for America staff acknowledge that we are not always in a position to evaluate a given situation due to the number of events and the fact that our team is not always present. However, we are hopeful that by providing these guidelines we are establishing a community that jointly adheres to these values and can provide an environment that is welcoming to all.</p>
+            
+            <p>We value your attendance and hope that by communicating these expectations widely we can all enjoy a harassment-free environment.</p>
+          
+            <hr>
+          
+            <h3>Email Template for Anti-Harassment Reporting</h3>
+          
+            <p>SUBJECT: Safe Space alert at [EVENT NAME]</p>
+          
+            <p>I am writing because of harassment at a Code for San Jose Communities event, (NAME, PLACE, DATE OF EVENT).</p>
+          
+            <p>You can reach me at (CONTACT INFO). Thank you.</p>
+          
+            <hr>
+            <em>Source: <a href="https://github.com/codeforsanjose/codeofconduct">Github</a></em>
+          </div>
+        </section>
+      </div>
+
+      <!-- Donate -->
+
+      <div class="container headline-container">
+        <section id="donate">
+          <div class="container">
+            <h2>Make a Donation</h2>
+  
+            <p>  At Code for San José, civic tech means so much more than helping communities understand and navigate local government. </p>
+  
+            <p>  It also means working harder than ever to reach more people and communities.</p>
+  
+            <p><a class="btn btn-primary btn-lg" href="https://secure.codeforamerica.org/page/contribute/default?brigade=CodeforSanJose" role="button">Donate Now!</a></p> 
+  
+            <p>Your generous gift will support our renewed efforts to connect to all of San José through hosting biweekly community meetings, as well as events like the National Day of Civic Hacking.  Your donation funds:</p>
+  
+            <ul>
+              <li>Food we offer our volunteers at our weekly community meetings</li>
+              <li>Name tags, paper pads and other basic materials used at our meetings</li>
+              <li>Hosting for our projects’ Web sites</li>
+              <li>Business cards and Stickers</li>
+              <li>Basic resources used for annual events like National Day of Civic Hacking and other outreach activities</li>
+            </uL>
+  
+            <p>  The Donate button will take you to Code for America’s Donate page where Code for San José will be pre-populated to make sure the funds are earmarked for us. </p>
+  
+            <h3>Thank you!</h3>
+          </div>
+        </section>
+      </div>
+
+      <!-- Thank You Sponsors -->
+      <div class="container">
         <h3>Thanks to Our Sponsors</h3>
         <p> Code for San Jose enjoys the support of the following organizations: organizational support 
           from <a href="https://codeforamerica.org">Code for America</a>, financial support from 
@@ -122,74 +404,11 @@
           <a href="mailto:olga@myactionspot.com">Olga Buchonina</a>.  
         </p>  
       </div>
-      
-      <div class="row">
-          <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="assets/img/cfsj_civichacknight_at_actionspot.jpeg">
-                <img src="assets/img/cfsj_civichacknight_at_actionspot.jpeg" alt="Civic Hack night at ActionSpot" style="width:100%">
-                <div class="caption">
-                  <p>The permit team collaborating at Code for San Jose Civic Hack Night at ActionSpot</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="assets/img/cfsj_oct2017_rrg.jpg">
-                <img src="assets/img/cfsj_oct2017_rrg.jpg" alt="Civic Hack Night - Renter's Rights Guide" style="width:100%">
-                <div class="caption">
-                  <p>Renter's Rights Guide team meets at Civic Hack Night at the Bowers Institute</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="assets/img/cfsj_civichackandmapnight_at_actionspot.jpg">
-                <img src="assets/img/cfsj_civichackandmapnight_at_actionspot.jpg" alt="Map night at ActionSpot" style="width:100%">
-                <div class="caption">
-                  <p>Open Street Map South Bay team meets at Civic Hack & Map night at ActionSpot</p>
-                </div>
-              </a>
-            </div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="assets/img/cfsjcivichacknight_at_actionspot.jpeg">
-                <img src="assets/img/cfsjcivichacknight_at_actionspot.jpeg" alt="OpenDSJ meeting at ActionSpot" style="width:100%">
-                <div class="caption">
-                  <p>Open Disclosure San Jose team meets during Civic Hack Night at ActionSpot</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="assets/img/cfsj_withcfa_at_bowersinstitute.jpeg">
-                <img src="assets/img/cfsj_withcfa_at_bowersinstitute.jpeg" alt="Civic Hack Night with CFA" style="width:100%">
-                <div class="caption">
-                  <p>CFA visits Code for San Jose Civic Hack Night at Bowers Institute</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="assets/img/cfsj_ndoch_vbansal.jpg">
-                <img src="assets/img/cfsj_ndoch_vbansal.jpg" alt="National Day of Civic Hacking 2017" style="width:100%">
-                <div class="caption">
-                  <p>National Day of Civic Hacking 2017 on Open Street Maps at the Bowers Institute</p>
-                </div>
-              </a>
-            </div>
-          </div>
-      </div>
+
+      <!-- footer-->
       <footer>
         &copy; Made by Code for San José
-      </footer> -->
+      </footer> 
     </div>
   </body>
 </html>

@@ -150,3 +150,4 @@ $( document ).ready(function() {
 
   $(".projects #projects").append(project);
 });
+

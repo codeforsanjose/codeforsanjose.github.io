@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
-  padding-top: 25px;
+  padding-top: 100px;
   font-family: 'Roboto', sans-serif;
   color: rgba(28, 28, 28, 0.54)!important
 }
@@ -25,6 +25,11 @@ p {
   font-size: 120%;
 }
 
-.container {
-  padding-top: 25px;
+/* Prevent fixed navbar hiding initial content when jumping to an anchor */
+*[id]:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
 }
