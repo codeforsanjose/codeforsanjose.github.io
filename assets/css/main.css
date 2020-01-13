@@ -1,0 +1,30 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  padding-top: 25px;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(28, 28, 28, 0.54)!important
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  color:  rgba(0,0,0)!important
+}
+
+.nav-container {
+  background-color: white;
+}
+
+.headline-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+p {
+  font-size: 120%;
+}
+
+.container {
+  padding-top: 25px;
+}

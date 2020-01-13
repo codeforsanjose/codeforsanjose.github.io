@@ -1,143 +1,195 @@
----
-layout: default
----
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <h2>Code for San José</h2>
-      <blockquote>
-        <p>Where makers, designers, developers, and subject matter experts come together to use technology to solve civic problems.</p>
-        <p><a class="btn btn-primary btn-lg" href="{{ "/docs/home/" | prepend: site.baseurl }}" role="button">Learn more</a></p>
-      </blockquote>
-    </div>
-    <div class="col-md-6">
-      <img src="img/bg.jpg" alt="Team Photo at National Day of Civic Hacking 2017" class="img-responsive">
-    </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-          <h1 class="text-center"><i class="fa fa-comments" aria-hidden="true"></i></h1>
-          <h3 class="text-center">Discuss</h3>
-          <p>
-          Share your ideas to identify needs and problems.
-          Join ongoing discussions to create solutions.
-          </p>
-          <p style="display:flex;justify-content:center;"><a class="btn btn-primary btn-lg" href="https://slackin-c4sj.herokuapp.com/" role="button">Join us on Slack</a></p>
-      </div>
-      <div class="col-sm-4">
-          <h1 class="text-center"><i class="fa fa-users" aria-hidden="true"></i></h1>
-          <h3 class="text-center">Connect</h3>
-          <p>
-          Discuss needs with civil servants and civil society organizations. Connect with project teams.
-          </p>
-          <p style="display:flex;justify-content:center;"><a class="btn btn-primary btn-lg" href="https://www.meetup.com/Code-for-San-Jose/" role="button">Join us at a Meetup</a></p>
-      </div>
-      <div class="col-sm-4">
-          <h1 class="text-center"><i class="fa fa-code-fork" aria-hidden="true"></i></h1>
-          <h3 class="text-center">Create</h3>
-          <p>
-          Start a new project as a project coordinator, join an existing multidisciplinary team.</p>
-          <p style="display:flex;justify-content:center;"><a class="btn btn-primary btn-lg" href="https://github.com/codeforsanjose" role="button">Join us on Github</a></p>
-      </div>
-    </div>
-    <div class="row">
-      <div class='col-sm-9'>
-        <h3 class="text-center">Thanks to Our Sponsors</h3>
-        <p> Code for San Jose enjoys the support of the following organizations: </p>
-        <ul>
-          <li>
-            organizational support from <a href="https://codeforamerica.org">Code for America</a>
-          </li>
-          <li>
-            financial support from <a href="https://www.microsoft.com">Microsoft</a>
-          </li>
-          <li>financial support from the <a href="http://www.awesomefoundation.org/">Awesome Foundation</a>
-          </li>
-          <li> financial support from the <a href="http://www.sanjoseca.gov/mayor">Office of Mayor Sam Liccardo</a>
-          </li>
-          <li> venue support from The Tech Museum’s <a href="https://www.thetech.org/education/forteachers/bowersinstitute">Bowers Institute</a>
-            <li> venue support from <a href="http://www.myactionspot.com/" target="_blank">ActionSpot</a> Start Up Studio
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Code for San José Website</title>
+    <!-- meta -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Code for San Jose is a Code for America brigade of volunteers dedicated to making San Jose and South Bay a better place through civic technology.">
+    <meta name="author" content="Code for San José">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <!-- mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Application scripts: jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="application/javascript" src="assets/js/app.js"></script>
+    <script src="https://use.fontawesome.com/75b06c0083.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-light navbar-expand-lg container nav-container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Code for San José</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ml-auto p-2 bd-highlight">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#codeofconduct">Code of Conduct</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.meetup.com/Code-for-San-Jose/" download>Meetup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://medium.com/code-for-san-jose">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/codeforsanjose/">GitHub</a>
             </li>
           </ul>
-          <p>
-            Organizations interested in membership at the co-working studio and startup incubator space, ActionSpot, should contact <a href="mailto:olga@myactionspot.com">Olga Buchonina</a>. To learn more about membership, visit <a href='https://www.myactionspot.com/membership.html' target='_blank'>ActionSpot's website</a>.
-          </p>
-          <p>
-            Organizations interested in renting out the beautiful Bowers Institute space should contact <a href="mailto:abault@thetech.org">Alison Wilhelm</a>.
-          </p>
-      </div>
-      <div class="col-sm-3" style="padding-top:20px;">
-        <a class="twitter-timeline"
-        href="https://twitter.com/codeforsanjose?ref_src=twsrc%5Etfw"
-        data-width="auto"
-        data-height="370">
-        Tweets by codeforsanjose</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
-        </script>
-      </div>
-    </div>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="img/cfsj_civichacknight_at_actionspot.jpeg">
-          <img src="img/cfsj_civichacknight_at_actionspot.jpeg" alt="Civic Hack night at ActionSpot" style="width:100%">
-          <div class="caption">
-            <p>The permit team collaborating at Code for San Jose Civic Hack Night at ActionSpot</p>
+        </div>
+      </nav>
+    </header>
+    <div class="container headline-container">
+      <div class="headline-container">
+        <div class="row">
+          <div class="col-md-2 col-4">
+            <img src="assets/img/logo.jpg" width="100" height="100" class="img-fluid" alt="Code for San Jose logo">
           </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="img/cfsj_oct2017_rrg.jpg">
-          <img src="img/cfsj_oct2017_rrg.jpg" alt="Civic Hack Night - Renter's Rights Guide" style="width:100%">
-          <div class="caption">
-            <p>Renter's Rights Guide team meets at Civic Hack Night at the Bowers Institute</p>
+          <div class="col-md-10 col-8">
+            <h1>Code for San José</h1>
+            <p>
+              Building San Jose’s civic tech community one hack night at a time
+            </p>
           </div>
-        </a>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="img/cfsj_civichackandmapnight_at_actionspot.jpg">
-          <img src="img/cfsj_civichackandmapnight_at_actionspot.jpg" alt="Map night at ActionSpot" style="width:100%">
-          <div class="caption">
-            <p>Open Street Map South Bay team meets at Civic Hack & Map night at ActionSpot</p>
+      <div class="row">
+        <div class="col-sm-4">
+            <h1 class="text-center"><i class="fa fa-comments" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Discuss</h3>
+            <p>
+            Join ongoing discussions to create solutions.
+            </p>
+            <p style="display:flex;justify-content:center;"><a class="btn btn-primary" href="https://slackin-c4sj.herokuapp.com/" role="button">Join us on Slack</a></p>
+        </div>
+        <div class="col-sm-4">
+            <h1 class="text-center"><i class="fa fa-users" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Connect</h3>
+            <p>
+            Connect with project teams.
+            </p>
+            <p style="display:flex;justify-content:center;"><a class="btn btn-primary" href="https://www.meetup.com/Code-for-San-Jose/" role="button">Join us at a Meetup</a></p>
+        </div>
+        <div class="col-sm-4">
+            <h1 class="text-center"><i class="fa fa-code-fork" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Create</h3>
+            <p>
+            Start a new project or join an existing multidisciplinary team.</p>
+            <p style="display:flex;justify-content:center;"><a class="btn btn-primary" href="https://github.com/codeforsanjose" role="button">Join us on Github</a></p>
+        </div>
+      </div>
+ 
+      <!-- Projects -->
+      <div class="container">
+        <div class="projects">
+          <h2>Projects</h2>
+          <p>Learn more about our projects. For more information about the project, or to get involved, <a href="https://slackin-c4sj.herokuapp.com/" target="_blank">join us on Slack</a>, visit the slack channel listed in the project details, and message the project lead.</p>
+          <div class="container">
+            <div class="card-deck">
+              <section id="projects"></section>
+            </div>
           </div>
-        </a>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="img/cfsjcivichacknight_at_actionspot.jpeg">
-          <img src="img/cfsjcivichacknight_at_actionspot.jpeg" alt="OpenDSJ meeting at ActionSpot" style="width:100%">
-          <div class="caption">
-            <p>Open Disclosure San Jose team meets during Civic Hack Night at ActionSpot</p>
+
+      <!-- New to Code for San Jose? -->
+
+      <!-- Code of Conduct -->
+
+      <!-- <div class="container">
+        <h3>Thanks to Our Sponsors</h3>
+        <p> Code for San Jose enjoys the support of the following organizations: organizational support 
+          from <a href="https://codeforamerica.org">Code for America</a>, financial support from 
+          <a href="https://www.microsoft.com">Microsoft</a>, and financial support from the 
+          <a href="http://www.awesomefoundation.org/">Awesome Foundation</a>. 
+        <p>
+          We host our hack nights at <a href="https://myactionspot.com/">ActionSpot</a>, a local co-working studio and startup incubator.
+          Organizations interested in <a href="https://www.myactionspot.com/membership.html">membership</a> at ActionSpot can contact 
+          <a href="mailto:olga@myactionspot.com">Olga Buchonina</a>.  
+        </p>  
+      </div>
+      
+      <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="assets/img/cfsj_civichacknight_at_actionspot.jpeg">
+                <img src="assets/img/cfsj_civichacknight_at_actionspot.jpeg" alt="Civic Hack night at ActionSpot" style="width:100%">
+                <div class="caption">
+                  <p>The permit team collaborating at Code for San Jose Civic Hack Night at ActionSpot</p>
+                </div>
+              </a>
+            </div>
           </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="img/cfsj_withcfa_at_bowersinstitute.jpeg">
-          <img src="img/cfsj_withcfa_at_bowersinstitute.jpeg" alt="Civic Hack Night with CFA" style="width:100%">
-          <div class="caption">
-            <p>CFA visits Code for San Jose Civic Hack Night at Bowers Institute</p>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="assets/img/cfsj_oct2017_rrg.jpg">
+                <img src="assets/img/cfsj_oct2017_rrg.jpg" alt="Civic Hack Night - Renter's Rights Guide" style="width:100%">
+                <div class="caption">
+                  <p>Renter's Rights Guide team meets at Civic Hack Night at the Bowers Institute</p>
+                </div>
+              </a>
+            </div>
           </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="img/cfsj_ndoch_vbansal.jpg">
-          <img src="img/cfsj_ndoch_vbansal.jpg" alt="National Day of Civic Hacking 2017" style="width:100%">
-          <div class="caption">
-            <p>National Day of Civic Hacking 2017 on Open Street Maps at the Bowers Institute</p>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="assets/img/cfsj_civichackandmapnight_at_actionspot.jpg">
+                <img src="assets/img/cfsj_civichackandmapnight_at_actionspot.jpg" alt="Map night at ActionSpot" style="width:100%">
+                <div class="caption">
+                  <p>Open Street Map South Bay team meets at Civic Hack & Map night at ActionSpot</p>
+                </div>
+              </a>
+            </div>
           </div>
-        </a>
       </div>
+      <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="assets/img/cfsjcivichacknight_at_actionspot.jpeg">
+                <img src="assets/img/cfsjcivichacknight_at_actionspot.jpeg" alt="OpenDSJ meeting at ActionSpot" style="width:100%">
+                <div class="caption">
+                  <p>Open Disclosure San Jose team meets during Civic Hack Night at ActionSpot</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="assets/img/cfsj_withcfa_at_bowersinstitute.jpeg">
+                <img src="assets/img/cfsj_withcfa_at_bowersinstitute.jpeg" alt="Civic Hack Night with CFA" style="width:100%">
+                <div class="caption">
+                  <p>CFA visits Code for San Jose Civic Hack Night at Bowers Institute</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="assets/img/cfsj_ndoch_vbansal.jpg">
+                <img src="assets/img/cfsj_ndoch_vbansal.jpg" alt="National Day of Civic Hacking 2017" style="width:100%">
+                <div class="caption">
+                  <p>National Day of Civic Hacking 2017 on Open Street Maps at the Bowers Institute</p>
+                </div>
+              </a>
+            </div>
+          </div>
+      </div>
+      <footer>
+        &copy; Made by Code for San José
+      </footer> -->
     </div>
-  </div>
-</div>
+  </body>
+</html>
