@@ -1,6 +1,15 @@
 $( document ).ready(function() {
   let projects = [
     {
+      title: "Unlawful Detainer (UD) Talk!",
+      description: "One of the pain points of the legal process in evictions is the answer to the Unlawful Detainer complaint by the tenant. Self represented tenants can answer using a form (the UD-105), but navigating it without a lawyer is very difficult, and they only have 5 days. This is why most of tenants never answer and they get a default judgement. My project is to make tenants use SMS and WhatsApp to fill the UD-105 form. I programmed a chatbot to talk and collect the information needed to fill the answer. The final product would be the actual PDF form filled, so either tenants at home or staff at the Self Help Legal Center (SHLC) can print it. Deployed in the SHLC, this could help to make Self Represented Litigants answer the UD-105 while queuing, helping the staff to serve more people. Besides, this could be useful to triage the client's needs in advance, should the team at the SHLC need to tackle specific issues with someone.     Some tasks that I need help on: how connect with SMS, transform the information given by people over the text in a graphic PDF.",
+      lead: "Juanjo",
+      status: "Active", 
+      skills: ["Developer", "UI/UX", "Web accessibility"],
+      techStack: ["landline.io", "to be determined"],
+      slackChannel: "https://codeforsanjose.slack.com/messages/ud-talk/"  
+    },
+    {
       title: "OSM South Bay Mapping",
       description: "Import building data to Open Street Map, an open source map that anyone can edit. There are many applications, such as emergency disaster response and mapping navigation",
       lead: "Minh Nguyen",
@@ -79,7 +88,7 @@ $( document ).ready(function() {
       skills: ["Front end developer", "Marketing", "Designer", "Content writer", "UX Researcher"],
       techStack: ["HTML", "CSS", "jQuery", "JavaScript", "Bootstrap"],
       githubUrl: "https://github.com/codeforsanjose/codeforsanjose.github.io",
-      slackChannel: "https://codeforsanjose.slack.com/messages/website/",  
+      slackChannel: "https://codeforsanjose.slack.com/messages/cfsj-website/",  
       liveUrl: "https://www.codeforsanjose.com/"  
     },
     {
@@ -97,7 +106,7 @@ $( document ).ready(function() {
       lead: "Lena Tran",
       status: "Complete",
       skills: ["Front end developer", "UI design", "CMS", "User researcher"],
-      techStack: ["Leaflet.js", "Wix", "JavaScript"],
+      techStack: ["Mapbox GL JS", "Wix", "JavaScript"],
       liveUrl: "https://www.catalyzesv.org/map",
       githubUrl: "https://github.com/codeforsanjose/Map-of-Silicon-Valley-development-projects", 
       slackChannel: "https://codeforsanjose.slack.com/messages/catalyze-sv-map"
