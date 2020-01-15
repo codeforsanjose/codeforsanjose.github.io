@@ -5,11 +5,11 @@
 body {
   padding-top: 100px;
   font-family: 'Roboto', sans-serif;
-  color: rgba(28, 28, 28, 0.54)!important
+  color: #464646;
 }
 
 h1, h2, h3, h4, h5, h6 { 
-  color:  rgba(0,0,0)!important
+  color:  #000000;
 }
 
 .nav-container {
