@@ -2,11 +2,11 @@ $( document ).ready(function() {
   let projects = [
     {
       title: "Unlawful Detainer (UD) Talk!",
-      description: "One of the pain points of the legal process in evictions is the answer to the Unlawful Detainer complaint by the tenant. Self represented tenants can answer using a form (the UD-105), but navigating it without a lawyer is very difficult, and they only have 5 days. This is why most of tenants never answer and they get a default judgement. My project is to make tenants use SMS and WhatsApp to fill the UD-105 form. I programmed a chatbot to talk and collect the information needed to fill the answer. The final product would be the actual PDF form filled, so either tenants at home or staff at the Self Help Legal Center (SHLC) can print it. Deployed in the SHLC, this could help to make Self Represented Litigants answer the UD-105 while queuing, helping the staff to serve more people. Besides, this could be useful to triage the client's needs in advance, should the team at the SHLC need to tackle specific issues with someone.     Some tasks that I need help on: how connect with SMS, transform the information given by people over the text in a graphic PDF.",
+      description: "Build a chatbot that helps tenants answer the Unlawful Dentainer form (the UD-105) and generate a PDF. This can help Self Represented Litigants answer the UD-105 while queuing, helping the Self Help Legal Center staff to serve more people. This could be useful to triage the client's needs in advance, should the team at the SHLC need to tackle specific issues with someone.",
       lead: "Juanjo",
       status: "Active", 
       skills: ["Developer", "UI/UX", "Web accessibility"],
-      techStack: ["landline.io", "to be determined"],
+      techStack: ["SMS", "landline.io", "to be determined"],
       slackChannel: "https://codeforsanjose.slack.com/messages/ud-talk/"  
     },
     {
