@@ -1,5 +1,4 @@
-$( document ).ready(function() {
-  let projects = [
+let projects = [
     {
       title: "Unlawful Detainer (UD) Talk!",
       description: "Build a chatbot that helps tenants answer the Unlawful Dentainer form (the UD-105) and generate a PDF. This can help Self Represented Litigants answer the UD-105 while queuing, helping the Self Help Legal Center staff to serve more people. This could be useful to triage the client's needs in advance, should the team at the SHLC need to tackle specific issues with someone.",
@@ -113,50 +112,16 @@ $( document ).ready(function() {
     }
   ]
 
-  let project = '';
+var isMenuOpen = false;
 
-  for (let i = 0; i < projects.length; i++) {
-    const item = projects[i];
-
-    const getSkills = () => {
-      let list = [];
-      for (let j = 0; j < item.skills.length; j++) {
-        list.push(`<span class="badge badge-light">${item.skills[j]}</span>`);
-      }
-      return list.join(" ");
-    }
-    
-    const getTools = () => {
-      let list = [];
-      for (let j = 0; j < item.techStack.length; j++) {
-        list.push(`<span class="badge badge-light">${item.techStack[j]}</span>`);
-      }
-      return list.join(" ");
-    }
-
-    const getProjectStatus = () => {
-      if (item.status === "Active") {
-        return `<span class="badge badge-success">${projects[i].status}</span>`
-      } else if (item.status === "Complete") {
-        return `<span class="badge badge-dark">${projects[i].status}</span>`
-      }
-    }
-
-    project += `
-      <div class="card">
-        <div class="card-body">
-          ${getProjectStatus(projects)}<h3 class="card-title">${projects[i].title}</h3>
-          <p class="card-text">${projects[i].description}</p> 
-          ${(projects[i].skills) ? `<p class="card-text">Skills: ${getSkills(projects)}</p>`: ``}
-          ${(projects[i].techStack) ? `<p class="card-text">Tech Stack: ${getTools(projects)}</p>`: ``}
-          ${(projects[i].githubUrl) ? `<a href="${projects[i].githubUrl}" class="btn btn-sm btn-primary" target="_blank">GitHub</a>`: ``}
-          ${(projects[i].liveUrl) ? `<a href="${projects[i].liveUrl}" class="btn btn-sm btn-secondary" target="_blank">Live URL</a>`: ``}
-          ${(projects[i].slackChannel) ? `<a href="${projects[i].slackChannel}" class="btn btn-sm btn-info" target="_blank">Slack Channel</a>`: ``}
-        </div>
-      </div>
-    `
+function menu_toggle() {
+  let navigation = document.getElementById("navlinks")
+  if (isMenuOpen == false) {
+    isMenuOpen = true
+    navigation.style.left = '50%'
+  }else {
+    isMenuOpen = false
+    navigation.style.left = '100%'
   }
-
-  $(".projects #projects").append(project);
-});
+}
 

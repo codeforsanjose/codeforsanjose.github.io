@@ -1,0 +1,139 @@
+$accent-color: #399FD3;
+
+.tooltip {
+    position: relative;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: #111111;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+/* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid $accent-color;
+}
+
+#links > a {
+    text-decoration: none;
+    color:white;
+    font-size:25px;
+    margin-right: 25px;
+    font-weight: 500;
+    border-bottom: solid 0px $accent-color;
+    transition: border-bottom 0.1s linear;
+
+    &:hover {
+        border-bottom-width: 4px;
+
+    }
+}
+
+#sociallinks {
+    padding-right: 5px;;
+}
+
+#sociallinks > a {
+    text-decoration: none;
+}
+
+.socialnav {
+    width:3.5%;
+    margin:15px 20px;
+}
+
+#links {
+    margin-bottom: 15px;
+}
+
+#navlinks > * {
+    text-align: right;
+}
+
+header > a {
+    width:35%
+}
+
+#navlogo {
+    width:100%;
+}
+
+#menu-btn {
+    display:none;
+}
+
+@media only screen and (max-width: 850px) {
+
+    #navlogo {
+        width:30%;
+    }
+
+    #navlinks {
+        display:flex;
+        flex-direction: column;
+        width: 50vw;
+        position:absolute;
+        top:0;
+        left:100%;
+        background-color: rgba($color: #000000, $alpha: 0.75);
+        transition: left 0.5s ease-in-out;
+    }
+
+    #links > * {
+        text-align: center;
+    }
+
+    #links > a {
+        font-size: 20px;
+        margin: 10px 0px;
+        display:block;
+        border:none;
+    }
+
+    #sociallinks > * {
+        width: 25vw;
+    }
+
+    .socialnav {
+        width:10%;
+        margin:15px 20px;
+    }
+
+    #menu-btn {
+        position: absolute;
+        top:10px;
+        left:-10%;
+        display: block;
+    }
+
+}

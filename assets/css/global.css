@@ -1,1 +1,103 @@
-/* No CSS *//*# sourceMappingURL=global.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #222222;
+  color: white;
+  font-family: Helvetica;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  background-color: #222222;
+  padding: 0px 20px;
+  font-size: 60px;
+  margin-left: 7%;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.h2bar {
+  height: 20px;
+  width: 100%;
+  background-color: #399FD3;
+  margin-bottom: -3.5%;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+  font-style: italic;
+  position: relative;
+  padding-left: 13px;
+}
+
+h3::before {
+  content: '';
+  height: 35px;
+  width: 9px;
+  background-color: #399FD3;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+
+p {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 3px 0px 5px black, -3px 0px 5px black;
+          box-shadow: 3px 0px 5px black, -3px 0px 5px black;
+}
+
+.text-content {
+  width: 65%;
+  margin: 5% auto;
+}
+
+.text-content * {
+  margin: 7% 0%;
+}
+
+@media only screen and (max-width: 850px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .container {
+    width: 1200px;
+  }
+}
+/*# sourceMappingURL=global.css.map */

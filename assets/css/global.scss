@@ -1,0 +1,113 @@
+// CSS RESET
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // outline: 1px solid white; //uncomment this line to diagnose position issues
+}
+
+$accent-color: #399FD3;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #222222;
+    color: white;
+    font-family:Helvetica;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+h2 {
+    background-color: #222222;
+    padding:0px 20px;
+    font-size: 60px;
+    margin-left: 7%;
+    max-width: fit-content;
+}
+
+.h2bar {
+    height:20px;
+    width:100%;
+    background-color: $accent-color;
+    margin-bottom:-3.5%;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+    font-style: italic;
+    position: relative;
+    padding-left:13px;
+
+    &::before {
+        content:'';
+        height: 35px;
+        width: 9px;
+        background-color: $accent-color;
+        position: absolute;
+        left:0;
+        top:0px;
+    }
+
+
+}
+
+
+
+
+p {
+    font-size:25px;
+    line-height: 40px;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    box-shadow: 
+        3px 0px 5px black,
+        -3px 0px 5px black
+        ;
+}
+
+.text-content {
+    width:65%;
+    margin:5% auto;
+
+    * {
+        margin: 7% 0%;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 850px) {
+
+    .container {
+        width:100%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px ) {
+    .container {
+        width:100%;
+    }
+
+}
+
+@media only screen and (min-width: 1800px) {
+    .container {
+        width: 1200px;
+    }
+
+}

@@ -1,0 +1,226 @@
+
+$accent-color: #399FD3;
+
+#home-hero {
+    width:100%;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/cfsj_withcfa_at_bowersinstitute.jpeg);
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    padding:5% 10%;
+    
+
+    h1 {
+        font-size:70px;
+        font-weight: 300;
+        text-align: left;
+    }
+
+    p {
+        font-size:35px;
+        font-weight: 300;
+    }
+
+    button {
+        width: 50%;
+        height: 15%;
+        background-color: #FF5131;
+        color:white;
+        font-size: 40px;
+        border: none;
+        border-radius: 5px;
+        cursor:pointer;
+    }
+}
+
+#home-hero-content {
+    width:80%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#cta {
+    background: linear-gradient(rgba(97, 97, 97, 0.1), rgba(97, 97, 97, 1)), url(../img/cfsj_withcfa_at_bowersinstitute.jpeg);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    padding-top:10%;
+    margin-bottom:10%;
+
+    .cta-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        width:25%;
+        height:450px;
+        border: 5px solid $accent-color;
+        border-radius: 7px;
+        background-color: rgba(0, 0, 0, .6);
+        transition: margin-top 0.5s;
+
+        &:hover {
+            margin-top: -20px;
+        }
+
+        a {
+            text-decoration: none;
+            color:white;
+            font-size: 35px;
+            border: 3px solid white;
+            border-radius: 50px;
+            padding:13px;
+            width:80%;
+            background-color: rgba(64, 139, 171, 0);
+            transition: background-color 0.25s; 
+
+            &:hover {
+                background-color:rgba(64, 139, 171, .5);
+            }
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 25px;
+            width: 66%;
+            height: 20%;
+        }
+    }
+
+
+}
+
+#our-work {
+    margin: 15% 0px;
+
+    .sectn-subh {
+        margin-left:8%;
+        margin-top:2%;
+    }
+
+    #see-more {
+        background-color: #222222;
+        border: 5px solid $accent-color;
+        border-radius: 50px;
+        font-size:20px;
+        color:white;
+        padding:7px 20px;
+        display:block;
+        margin:0 auto;
+        cursor:pointer;
+    }
+}
+
+.projects {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.project-card {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:27%;
+    margin: 30px;
+    height: 450px;
+    border: 5px solid $accent-color;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 30px;
+
+    .badge {
+        font-size:20px;
+        border: 5px solid #2AC940;
+        border-radius: 5px;
+        width: fit-content;
+        background-color: #222222;
+        position: absolute;
+        top:-23px;
+        left:20px;
+        padding:5px;
+    }
+
+    .project-img {
+        width:100%;
+        height: 40%;
+    }
+
+    h4 {
+        width:80%;
+        font-size: 30px;
+        font-weight:700;
+    }
+
+    p {
+        width:80%;
+        font-size:20px;
+        line-height: 20px;
+    }
+
+    .project-gh-logo {
+        width:10%;
+    }
+
+    .tech {
+        width:80%;
+        font-size:16px;
+    }
+
+    button {
+        border: 5px solid $accent-color;
+        border-radius: 50px;
+        color:white;
+        background-color: #222222;
+        padding:5px 20px;
+        font-size:16px;
+        position: absolute;
+        bottom:-22px;
+    }
+}
+
+#sponsors {
+    margin: 50px 0px;
+
+    .sectn-subh {
+        margin-left:8%;
+        margin-top:2%;
+    }
+
+    img {
+        width:33%;
+        margin: 20px;
+    }
+
+    p {
+        width: 80%;
+    }
+}
+
+#find-us {
+    margin: 50px 0px;
+
+    .sectn-subh {
+        width:80%;
+        margin-left:8%;
+        margin-top:2%;
+    }
+
+    iframe {
+        margin-left:8%;
+        margin-top:2%;
+    }
+}
