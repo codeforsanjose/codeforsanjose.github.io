@@ -1,39 +1,3 @@
-.tooltip {
-  position: relative;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 100px;
-  background-color: #111111;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  margin-left: -50px;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
-.tooltip .tooltiptext::after {
-  content: " ";
-  position: absolute;
-  bottom: 100%;
-  /* At the top of the tooltip */
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent black transparent;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,7 +8,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 2px solid #399FD3;
+  border-bottom: 2px solid #399fd3;
 }
 
 #links > a {
@@ -53,13 +17,6 @@ header {
   font-size: 25px;
   margin-right: 25px;
   font-weight: 500;
-  border-bottom: solid 0px #399FD3;
-  -webkit-transition: border-bottom 0.1s linear;
-  transition: border-bottom 0.1s linear;
-}
-
-#links > a:hover {
-  border-bottom-width: 4px;
 }
 
 #sociallinks {
@@ -96,8 +53,11 @@ header > a {
 }
 
 @media only screen and (max-width: 850px) {
+  .tooltiptext {
+    display: none;
+  }
   #navlogo {
-    width: 30%;
+    width: 70%;
   }
   #navlinks {
     display: -webkit-box;
@@ -107,35 +67,121 @@ header > a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 50vw;
+    width: 100vw;
     position: absolute;
+    z-index: 5;
     top: 0;
-    left: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-    -webkit-transition: left 0.5s ease-in-out;
-    transition: left 0.5s ease-in-out;
+    left: -100%;
+    padding-top: 15px;
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-transition: left 0.4s ease-in-out;
+    transition: left 0.4s ease-in-out;
   }
   #links > * {
-    text-align: center;
+    text-align: left;
+    padding-left: 700px;
   }
   #links > a {
-    font-size: 20px;
-    margin: 10px 0px;
+    font-size: 30px;
+    width: 100%;
     display: block;
-    border: none;
+    padding: 11px 11px 11px 40px;
+    border-bottom: 2px solid #399fd3;
+  }
+  #sociallinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #sociallinks > * {
-    width: 25vw;
+    width: 30vw;
+    text-align: center;
   }
   .socialnav {
-    width: 10%;
-    margin: 15px 20px;
+    width: 70%;
+    padding: 9px;
+    border: 2px solid white;
+    border-radius: 50%;
   }
   #menu-btn {
     position: absolute;
-    top: 10px;
-    left: -10%;
+    top: 0;
+    right: 0;
     display: block;
+    z-index: 10;
+  }
+  #menu-btn i {
+    width: 20%;
+    padding: 30px;
+  }
+}
+
+@media only screen and (min-width: 851px) {
+  #menu-btn {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .tooltip {
+    position: relative;
+  }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: #111111;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -50px;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+  #menu-btn {
+    display: none;
+  }
+  #links > a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-right: 25px;
+    font-weight: 500;
+    border-bottom: solid 0px #399fd3;
+    -webkit-transition: border-bottom 0.1s linear;
+    transition: border-bottom 0.1s linear;
+  }
+  #links > a:hover {
+    border-bottom-width: 4px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  #menu-btn {
+    display: none;
   }
 }
 /*# sourceMappingURL=header.css.map */

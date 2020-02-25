@@ -116,12 +116,41 @@ var isMenuOpen = false;
 
 function menu_toggle() {
   let navigation = document.getElementById("navlinks")
+  let faBtn = document.getElementById("fa-btn")
   if (isMenuOpen == false) {
     isMenuOpen = true
-    navigation.style.left = '50%'
+    navigation.style.left = '0%'
+    faBtn.classList.add("fa-times")
+    faBtn.classList.remove("fa-bars")
+
+
   }else {
     isMenuOpen = false
-    navigation.style.left = '100%'
+    navigation.style.left = '-100%'
+    faBtn.classList.add("fa-bars")
+    faBtn.classList.remove("fa-times")
+
   }
 }
+
+function menuTouch(e) {
+  console.log(e.path[0].id)
+  let sender = document.getElementById(e.path[0].id)
+  sender.style.background = '#444444'
+
+}
+
+function checkMenuOnScroll() {
+  
+  if (window.scrollY >= 1000 && isMenuOpen == true) {
+    menu_toggle()
+  }
+}
+
+
+window.addEventListener('scroll', function(e) {
+  if (window.scrollY >= 600 && isMenuOpen == true) {
+    menu_toggle()
+  }
+})
 

@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./assets/css/footer.css">
   <link rel="stylesheet" href="./assets/css/index.css">
   <script src="https://kit.fontawesome.com/a5c8bf6536.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
   <script src="./assets/js/app.js"></script>
 </head>
 
@@ -26,17 +27,17 @@
       <a href="index.html">
         <img src="./assets/img/logonav.png" id="navlogo" alt="Code for San José logo">
       </a>
+      <div id="menu-btn">
+        <i onclick="menu_toggle()" id="fa-btn" class="fas fa-2x fa-bars"></i>
+      </div>
       <div id="navlinks">
-        <div id="menu-btn">
-          <i onclick="menu_toggle()" class="fas fa-bars"></i>
-        </div>
         <div id="links">
-          <a href="#">Volunteer</a>
-          <a href="#">About Us</a>
-          <a href="#">Projects</a>
-          <a href="#">Events</a>
-          <a href="#">Donate</a>
-          <a href="#">FAQ</a>
+          <a ontouchstart="menuTouch(event)" id="volLnk" href="./assets/html/projects.html">Volunteer</a>
+          <a ontouchstart="menuTouch(event)" id="abtLnk" href="./assets/html/about.html">About Us</a>
+          <a ontouchstart="menuTouch(event)" id="projLnk" href="./assets/html/projects.html">Projects</a>
+          <a ontouchstart="menuTouch(event)" id="evLnk" href="#find-us">Events</a>
+          <a ontouchstart="menuTouch(event)" id="donLnk" href="https://www.codeforamerica.org/donate-to-a-brigade" target="_blank">Donate</a>
+          <a ontouchstart="menuTouch(event)" id="faqLnk" href="./assets/html/faq.html">FAQ</a>
         </div>
         <div id="sociallinks">
           <a class="tooltip" href="#">
@@ -44,7 +45,7 @@
             <span class="tooltiptext">Slack</span>
           </a>
           <a class="tooltip" href="#">
-            <img src="./assets/img/social_logos/meetup-logo-m-swarm.svg" alt="Meetup logo" class="socialnav">
+            <img src="./assets/img/social_logos/meetup-logo-m-swarm.png" alt="Meetup logo" class="socialnav">
             <span class="tooltiptext">Meetup</span>
           </a>
           <a class="tooltip" href="#">
@@ -181,9 +182,9 @@
       <div class="h2bar"></div>
       <h2>Thanks to our Sponsors</h2>
       <p class="sectn-subh">Code for San José enjoys the generous support of:</p>
-      <img src="./assets/img/sponsor_logos/cfa-logo-color.png" alt="">
-      <img src="./assets/img/sponsor_logos/microsoft logo.png" alt="">
-      <img src="./assets/img/sponsor_logos/awesome foundation.png" alt="">
+      <img src="./assets/img/sponsor_logos/cfa-logo-color.png" alt="Code for America Logo">
+      <img src="./assets/img/sponsor_logos/microsoft logo.png" alt="Microsoft Logo">
+      <img src="./assets/img/sponsor_logos/awesome foundation.png" alt="Awesome Foundation Logo">
       <p class="sectn-subh">We host our hack nights at ActionSpot, a local co-working studio and startup incubator. Organizations interested in membership at ActionSpot can contact Olga Buchonina</p>
     </div>
     <div id="find-us">
@@ -191,7 +192,7 @@
       <h2>Find Us</h2>
       <p class="sectn-subh">Code for San José typically meets two Thursdays a month at 6:30pm at ActionSpot (453 W. San Carlos St). For our next event, see our Meetup page.</p>
       <p class="sectn-subh">Anyone can join! Technical skills are not required to contribute. We onboard new members at every meeting.</p>
-      <iframe width="600" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-121.89871505135672%2C37.32590196226134%2C-121.89517453545706%2C37.327802344223706&amp;layer=mapnik" style="border: 1px solid black"></iframe>
+      <iframe id="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-121.89871505135672%2C37.32590196226134%2C-121.89517453545706%2C37.327802344223706&amp;layer=mapnik" style="border: 1px solid black"></iframe>
     </div>
     <footer>
       <div id="foot-links">
@@ -220,7 +221,7 @@
         <p>&copy Code for San José 2014 - 2020</p>
       </div>
     </footer>
-
+  </div>
 
 </body>
 

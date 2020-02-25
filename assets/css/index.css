@@ -2,7 +2,7 @@
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/cfsj_withcfa_at_bowersinstitute.jpeg);
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/cfsj_withcfa_at_bowersinstitute.jpeg);
-  height: 80vh;
+  height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,7 +25,6 @@
   width: 50%;
   height: 15%;
   background-color: #FF5131;
-  color: white;
   font-size: 40px;
   border: none;
   border-radius: 5px;
@@ -83,13 +82,7 @@
   height: 450px;
   border: 5px solid #399FD3;
   border-radius: 7px;
-  background-color: rgba(0, 0, 0, 0.6);
-  -webkit-transition: margin-top 0.5s;
-  transition: margin-top 0.5s;
-}
-
-#cta .cta-card:hover {
-  margin-top: -20px;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 #cta .cta-card a {
@@ -135,6 +128,12 @@
   display: block;
   margin: 0 auto;
   cursor: pointer;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+#our-work #see-more:hover {
+  background-color: rgba(64, 139, 171, 0.5);
 }
 
 .projects {
@@ -150,7 +149,6 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 50px;
 }
 
 .project-card {
@@ -226,6 +224,12 @@
   font-size: 16px;
   position: absolute;
   bottom: -22px;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.project-card button:hover {
+  background-color: rgba(64, 139, 171, 0.5);
 }
 
 #sponsors {
@@ -259,5 +263,203 @@
 #find-us iframe {
   margin-left: 8%;
   margin-top: 2%;
+}
+
+@media only screen and (max-width: 899px) {
+  #home-hero {
+    text-align: left;
+    height: calc(100vh - 87px);
+  }
+  #home-hero h1 {
+    font-size: 35px;
+    font-weight: 300;
+    text-align: left;
+  }
+  #home-hero p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  #home-hero button {
+    width: 75%;
+    height: 50px;
+    font-size: 20px;
+  }
+  #home-hero-content {
+    width: 95%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  iframe {
+    width: 90vw;
+  }
+  #cta {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0px;
+  }
+  #cta .cta-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 85%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 10px;
+  }
+  #cta .cta-card * {
+    margin: 3px;
+  }
+  #cta .cta-card a {
+    font-size: 25px;
+    padding: 6px;
+    width: 75%;
+  }
+  #cta .cta-card p {
+    font-size: 16px;
+    line-height: 25px;
+    width: 66%;
+    height: 20%;
+  }
+  #cta .cta-card i {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px;
+  }
+  .projects .project-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85%;
+    height: 450px;
+    border: 5px solid #399FD3;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 50px 0px;
+  }
+  .projects .project-card .badge {
+    width: 30%;
+    font-size: 20px;
+    top: -23px;
+    left: 20px;
+    padding: 5px;
+  }
+  .projects .project-card .project-img {
+    width: 100%;
+    height: 40%;
+  }
+  .projects .project-card h4 {
+    width: 80%;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 115%;
+  }
+  .projects .project-card p {
+    width: 80%;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .projects .project-card .project-gh-logo {
+    width: 10%;
+  }
+  .projects .project-card .tech {
+    width: 80%;
+    font-size: 16px;
+  }
+  .projects .project-card button {
+    border: 5px solid #399FD3;
+    border-radius: 50px;
+    color: white;
+    background-color: #222222;
+    padding: 5px 20px;
+    font-size: 16px;
+    position: absolute;
+    bottom: -22px;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+  }
+  #find-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 50px 0px;
+  }
+  #find-us .sectn-subh {
+    width: 80%;
+    margin: 2% 0% 5% 8%;
+  }
+  #find-us iframe {
+    margin: 15px auto;
+  }
+  #sponsors img {
+    display: block;
+    width: 75%;
+    margin: 35px auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .cta-card {
+    -webkit-transition: margin-top 0.5s;
+    transition: margin-top 0.5s;
+  }
+  .cta-card:hover {
+    margin-top: -20px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

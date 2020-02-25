@@ -3,6 +3,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color:white;
     // outline: 1px solid white; //uncomment this line to diagnose position issues
 }
 
@@ -37,7 +39,7 @@ h2 {
     height:20px;
     width:100%;
     background-color: $accent-color;
-    margin-bottom:-3.5%;
+    margin-bottom:-4.1%;
 }
 
 h3 {
@@ -45,7 +47,6 @@ h3 {
     font-weight: 500;
     font-style: italic;
     position: relative;
-    padding-left:13px;
 
     &::before {
         content:'';
@@ -54,7 +55,7 @@ h3 {
         background-color: $accent-color;
         position: absolute;
         left:0;
-        top:0px;
+        top:3px;
     }
 
 
@@ -72,10 +73,7 @@ p {
     display: flex;
     margin: 0 auto;
     flex-direction: column;
-    box-shadow: 
-        3px 0px 5px black,
-        -3px 0px 5px black
-        ;
+    
 }
 
 .text-content {
@@ -90,13 +88,84 @@ p {
 
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 899px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+    }
 
     .container {
+        width:100vw;
+    }
+
+    p {
+        font-size:16px;
+        line-height: 160%;
+    }
+
+    .text-content {
+        width:80%;
+        margin:5% auto;
+    
+        * {
+            margin: 7% 0%;
+        }
+    }
+
+    h2 {
+        background-color: #222222;
+        padding:0px 10px;
+        font-size: 27px;
+        margin-left: 4%;
+        max-width: fit-content;
+        margin-bottom: 20px;
+    }
+    
+    .h2bar {
+        height:15px;
         width:100%;
+        background-color: $accent-color;
+        margin-bottom:-7.5%;
+    }
+
+    h3 {
+        font-size: 25px;
+        font-weight: 500;
+        font-style: italic;
+        position: relative;
+        margin-left:-40px;
+    
+        &::before {
+            content:'';
+            height: 30px;
+            width: 9px;
+            background-color: $accent-color;
+            position: absolute;
+            left:-15px;
+            top:3px;
+        }
+    
+    
+    }
+
+    #map {
+        width: 85%;
     }
 
 }
+
+// TABLET LAYOUT
+
+@media only screen and (min-width: 900px) {
+
+
+
+}
+
 
 @media only screen and (min-width: 1200px ) {
     .container {
@@ -108,6 +177,10 @@ p {
 @media only screen and (min-width: 1800px) {
     .container {
         width: 1200px;
+        box-shadow: 
+        3px 0px 5px black,
+        -3px 0px 5px black
+        ;
     }
 
 }

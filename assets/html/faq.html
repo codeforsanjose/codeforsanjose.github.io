@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,93 @@
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/faq.css">
+    <script src="https://kit.fontawesome.com/a5c8bf6536.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap"
+        rel="stylesheet">
+    <script src="../js/app.js"></script>
 </head>
+
 <body>
-    
+    <div class="container">
+        <header>
+            <a href="../../index.html">
+                <img src="../img/logonav.png" id="navlogo" alt="Code for San José logo">
+            </a>
+            <div id="menu-btn">
+                <i onclick="menu_toggle()" id="fa-btn" class="fas fa-2x fa-bars"></i>
+            </div>
+            <div id="navlinks">
+                <div id="links">
+                    <a ontouchstart="menuTouch(event)" id="volLnk" href="./volunteer.html">Volunteer</a>
+                    <a ontouchstart="menuTouch(event)" id="abtLnk" href="./about.html">About Us</a>
+                    <a ontouchstart="menuTouch(event)" id="projLnk" href="./projects.html">Projects</a>
+                    <a ontouchstart="menuTouch(event)" id="evLnk" href="../../index.html#find-us">Events</a>
+                    <a ontouchstart="menuTouch(event)" id="donLnk"
+                        href="https://www.codeforamerica.org/donate-to-a-brigade" target="_blank">Donate</a>
+                    <a ontouchstart="menuTouch(event)" id="faqLnk" href="./faq.html">FAQ</a>
+                </div>
+                <div id="sociallinks">
+                    <a class="tooltip" href="#">
+                        <img src="../img/social_logos/Slack_Mark.svg" alt="Slack logo" class="socialnav">
+                        <span class="tooltiptext">Slack</span>
+                    </a>
+                    <a class="tooltip" href="#">
+                        <img src="../img/social_logos/meetup-logo-m-swarm.png" alt="Meetup logo" class="socialnav">
+                        <span class="tooltiptext">Meetup</span>
+                    </a>
+                    <a class="tooltip" href="#">
+                        <img src="../img/social_logos/f_logo_RGB-Blue_512.png" alt="Facebook logo" class="socialnav">
+                        <span class="tooltiptext">Facebook</span>
+                    </a>
+                    <a class="tooltip" href="#">
+                        <img src="../img/social_logos/Twitter_Social_Icon_Circle_Color.svg" alt="Twitter logo"
+                            class="socialnav">
+                        <span class="tooltiptext">Twitter</span>
+                    </a>
+                    <a class="tooltip" href="#">
+                        <img src="../img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="Github logo"
+                            class="socialnav">
+                        <span class="tooltiptext">Github</span>
+                    </a>
+                    <a class="tooltip" href="#">
+                        <img src="../img/social_logos/Monogram.svg" alt="Medium logo" class="socialnav">
+                        <span class="tooltiptext">Medium</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- BODY CODE GOES HERE -->
+
+        <footer>
+            <div id="foot-links">
+                <div id="site-map">
+                    <h5>Site Map</h5>
+                    <a href="#">About Us</a>
+                    <a href="#">Donate</a>
+                    <a href="#">Projects</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Events</a>
+                    <a href="#">Volunteer</a>
+                </div>
+                <div id="social-footer">
+                    <h5>Social Media</h5>
+                    <a href="#">Slack</a>
+                    <a href="#">Meetup</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Medium</a>
+                    <a href="#">Github</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+            <div id="legal">
+                <img src="../img/logonav.png" alt="Code for San José Logo">
+                <p>Got feedback? <a href="#">Let us know!</a></p>
+                <p>&copy Code for San José 2014 - 2020</p>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>

@@ -50,3 +50,234 @@ footer {
         }
     }
 }
+
+
+
+// MOBILE LAYOUT
+
+@media only screen and (max-width: 850px) {
+
+    footer {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-top: 5px solid $accent-color;
+        padding-bottom:0px;
+
+        #foot-links {
+            height: 175px;
+            display:flex;
+            width:60vw;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 20px 10px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+                h5 {
+                    font-size: 12px;
+                    border-bottom:2px solid $accent-color; 
+                }
+    
+                a {
+                    color:white;
+                    text-decoration: none;
+                    font-size:10px;
+                }
+            }
+        }
+    
+        #legal {
+            display:flex;
+            width: 40vw;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            height: 175px;
+
+            img {
+                width:70%;
+            }
+            p {
+                font-size: 8px;
+                margin-right:10px;
+            }
+        }
+    }
+
+
+}
+
+// TABLET LAYOUT
+
+@media only screen and (min-width: 851px) {
+
+    footer {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-top: 5px solid $accent-color;
+        padding-bottom:25px;
+    
+        #foot-links {
+            height: 350px;
+            display:flex;
+            width:35%;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding:50px;
+        
+            div {
+                display: flex;
+                flex-direction: column;
+                height: 90%;
+                justify-content: space-between;
+    
+                h5 {
+                    font-size: 18px;
+                    border-bottom:3px solid $accent-color; 
+                }
+    
+                a {
+                    color:white;
+                    text-decoration: none;
+                    font-size:16px;
+                }
+            }
+        }
+    
+        #legal {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            height: 350px;
+            padding-right:20px;
+            img {
+                width:60%;
+            }
+            p {
+                font-size: 12px;
+                margin-right:20px;
+            }
+        }
+    }
+
+}
+
+// DESKTOP LAYOUT
+
+@media only screen and (min-width: 1200px) {
+
+    footer {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-top: 5px solid $accent-color;
+        padding-bottom:25px;
+    
+        #foot-links {
+            height: 350px;
+            display:flex;
+            width:35%;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding:50px;
+        
+            div {
+                display: flex;
+                flex-direction: column;
+                height: 90%;
+                justify-content: space-between;
+    
+                h5 {
+                    font-size: 18px;
+                    border-bottom:3px solid $accent-color; 
+                }
+    
+                a {
+                    color:white;
+                    text-decoration: none;
+                    font-size:16px;
+                }
+            }
+        }
+    
+        #legal {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            height: 350px;
+            padding-right:20px;
+            img {
+                width:60%;
+            }
+            p {
+                font-size: 12px;
+                margin-right:20px;
+            }
+        }
+    }
+
+}
+
+// XL LAYOUT
+
+@media only screen and (min-width: 1800px) {
+
+    footer {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-top: 5px solid $accent-color;
+        padding-bottom:25px;
+    
+        #foot-links {
+            height: 350px;
+            display:flex;
+            width:35%;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding:50px;
+        
+            div {
+                display: flex;
+                flex-direction: column;
+                height: 90%;
+                justify-content: space-between;
+    
+                h5 {
+                    font-size: 18px;
+                    border-bottom:3px solid $accent-color; 
+                }
+    
+                a {
+                    color:white;
+                    text-decoration: none;
+                    font-size:16px;
+                }
+            }
+        }
+    
+        #legal {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            height: 350px;
+            padding-right:20px;
+            img {
+                width:60%;
+            }
+            p {
+                font-size: 12px;
+                margin-right:20px;
+            }
+        }
+    }
+
+}
