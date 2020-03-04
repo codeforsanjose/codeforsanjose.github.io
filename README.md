@@ -14,6 +14,9 @@ For set up, open the command line and run the following code.
 2. **Enter the directory** moves your command line into the project folder so you can make changes.
 ```cd codeforsanjose.github.io```
 
+3. **Change Branch** moves to the redesign branch so your work is committed to the right place.
+```git checkout 2020_redesign```
+
 4. Open your browser and enter the path to this file: 
 ```codeforsanjose.github.io/index.html```
 
@@ -24,8 +27,6 @@ For set up, open the command line and run the following code.
 
 ## How to Contribute
 Join the discussion on our Slack channel. If you don't already have an account, sign up for our [Slack channel](https://slackin-c4sj.herokuapp.com/), and then go to this [channel](https://codeforsanjose.slack.com/messages/cfsj-website/). The project lead can assign you tasks to work on. 
-
-
 
 
 # Original website readme below

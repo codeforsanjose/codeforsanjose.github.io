@@ -1,0 +1,112 @@
+// GLOBAL VARIABLES
+$body-color: #222222;
+$accent-color: #399fd3;
+
+a {
+  text-decoration: none;
+}
+
+#about-title {
+  height: 100px;
+  background-image: linear-gradient(
+    rgba(53, 53, 53, 0.7),
+    rgba(17, 17, 17, 0.7)
+  );
+
+  h1 {
+    font-size: 50px;
+    position: relative;
+    top: 10%;
+  }
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.container-leader {
+  display: flex;
+}
+
+.leader {
+  border: 4px solid $accent-color;
+  border-radius: 50px;
+  margin: 1% auto;
+  width: 48%;
+
+  p {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 0 10px;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    bottom: 25px;
+  }
+
+  img {
+    margin: 0;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+  }
+}
+
+// PHONE LANDSCAPE LAYOUT
+
+@media (orientation: landscape) {
+}
+
+// TABLET LANDSCAPE LAYOUT
+
+@media (max-width: 600px) and (orientation: landscape) {
+}
+
+@media (max-width: 600px) {
+  .leader p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container-leader {
+    width: 160%;
+  }
+
+  .leader p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 948px) {
+  .container-leader {
+    display: block;
+    width: 120%;
+  }
+}
+
+@media (max-width: 987px) {
+  .leader {
+    width: 50%;
+  }
+}
+
+// DESKTOP LAYOUT
+
+@media (max-width: 1200px) {
+  .leader p {
+    font-size: 22px;
+  }
+}
