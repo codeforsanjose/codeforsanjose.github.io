@@ -53,7 +53,7 @@ header > a {
 
 // MOBILE LAYOUT
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 767px) {
   .tooltiptext {
     display: none;
   }
@@ -123,10 +123,52 @@ header > a {
 
 // TABLET LAYOUT
 
-@media only screen and (min-width: 851px) {
+@media only screen and (min-width: 768px) {
   #menu-btn {
     display: none;
   }
+
+  .tooltiptext {
+    display: none;
+  }
+
+
+
+  #navlogo {
+    width: 60%;
+  }
+
+  #navlinks {
+    display: flex;
+    flex-direction: column;
+    width: %;
+  }
+
+  #links > * {
+
+  }
+
+  #links > a {
+    font-size: 17px;
+  }
+
+  #sociallinks {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  
+  }
+
+  #sociallinks > * {
+    width:30px;
+  }
+
+  .socialnav {
+    width: 100%;
+  }
+
+
+
 }
 
 // DESKTOP LAYOUT

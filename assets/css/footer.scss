@@ -22,14 +22,14 @@ footer {
             justify-content: space-between;
 
             h5 {
-                font-size: 18px;
+                font-size: 20px;
                 border-bottom:3px solid $accent-color; 
             }
 
             a {
                 color:white;
                 text-decoration: none;
-                font-size:16px;
+                font-size:18px;
             }
         }
     }
@@ -55,7 +55,7 @@ footer {
 
 // MOBILE LAYOUT
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 767px) {
 
     footer {
         display:flex;
@@ -113,55 +113,55 @@ footer {
 
 // TABLET LAYOUT
 
-@media only screen and (min-width: 851px) {
-
+@media only screen and (min-width: 768px) {
+   
     footer {
         display:flex;
         flex-direction: row;
         justify-content: space-between;
         border-top: 5px solid $accent-color;
-        padding-bottom:25px;
-    
+        padding-bottom:0px;
+
         #foot-links {
-            height: 350px;
+            height: 225px;
             display:flex;
-            width:35%;
+            width:60vw;
             flex-direction: row;
             justify-content: space-evenly;
-            padding:50px;
-        
+            padding: 20px 10px;
+
             div {
                 display: flex;
                 flex-direction: column;
-                height: 90%;
                 justify-content: space-between;
     
                 h5 {
-                    font-size: 18px;
-                    border-bottom:3px solid $accent-color; 
+                    font-size: 15px;
+                    border-bottom:2px solid $accent-color; 
                 }
     
                 a {
                     color:white;
                     text-decoration: none;
-                    font-size:16px;
+                    font-size:13px;
                 }
             }
         }
     
         #legal {
             display:flex;
+            width: 40vw;
             flex-direction: column;
             justify-content: center;
             align-items: flex-end;
-            height: 350px;
-            padding-right:20px;
+            height: 175px;
+
             img {
-                width:60%;
+                width:40%;
             }
             p {
                 font-size: 12px;
-                margin-right:20px;
+                margin-right:15px;
             }
         }
     }

@@ -52,7 +52,7 @@ header > a {
   display: none;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 767px) {
   .tooltiptext {
     display: none;
   }
@@ -124,9 +124,44 @@ header > a {
   }
 }
 
-@media only screen and (min-width: 851px) {
+@media only screen and (min-width: 768px) {
   #menu-btn {
     display: none;
+  }
+  .tooltiptext {
+    display: none;
+  }
+  #navlogo {
+    width: 60%;
+  }
+  #navlinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: %;
+  }
+  #links > a {
+    font-size: 17px;
+  }
+  #sociallinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #sociallinks > * {
+    width: 30px;
+  }
+  .socialnav {
+    width: 100%;
   }
 }
 

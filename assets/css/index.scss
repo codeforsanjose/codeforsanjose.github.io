@@ -238,7 +238,7 @@ $accent-color: #399FD3;
         
     
         h1 {
-            font-size:35px;
+            font-size:42px;
             font-weight: 300;
             text-align: left;
         }
@@ -260,7 +260,7 @@ $accent-color: #399FD3;
         height:100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
     iframe {
         width: 90vw;
@@ -410,7 +410,177 @@ $accent-color: #399FD3;
 
 // TABLET LAYOUT
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 768px) {
+    #home-hero {
+        
+    
+        h1 {
+            font-size:60px;
+            font-weight: 300;
+        }
+    
+        p {
+            font-size:30px;
+            font-weight: 300;
+        }
+    
+        button {
+            width: 50%;
+            height: 75px;
+            font-size: 30px;
+        }
+    }
+    
+
+    iframe {
+        width: 90vw;
+        height:30vh;
+    }
+
+    #cta {
+        flex-direction: row;
+        height: 500px;
+        justify-content: space-between;
+        align-items:flex-end;
+        padding:20px 0px;
+        
+    
+        .cta-card {
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            width:85%;
+            height:350px;
+            margin: 10px;
+
+            * {
+                margin:3px;
+            }
+    
+            a {
+                font-size: 25px;
+                padding:6px;
+                width:75%;
+            }
+    
+            p {
+                font-size: 16px;
+                line-height: 25px;
+                width: 66%;
+                height: 20%;
+            }
+
+            i {
+                transform: scale(0.7);
+            }
+        }
+    
+    
+    }
+
+    .projects {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items:center;
+
+        .project-card {
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width:45%;
+            height: 450px;
+            border: 5px solid $accent-color;
+            border-radius: 10px;
+            position: relative;
+            text-align: center;
+            padding-bottom: 30px;
+            margin: 50px 0px;
+        
+            .badge {
+                width:30%;
+                font-size:20px;
+                top:-23px;
+                left:20px;
+                padding:5px;
+            }
+        
+            .project-img {
+                width:100%;
+                height: 40%;
+            }
+        
+            h4 {
+                width:80%;
+                font-size: 30px;
+                font-weight:700;
+                line-height: 115%;
+            }
+        
+            p {
+                width:80%;
+                font-size:20px;
+                line-height: 20px;
+            }
+        
+            .project-gh-logo {
+                width:10%;
+            }
+        
+            .tech {
+                width:80%;
+                font-size:16px;
+            }
+        
+            button {
+                border: 5px solid $accent-color;
+                border-radius: 50px;
+                color:white;
+                background-color: #222222;
+                padding:5px 20px;
+                font-size:16px;
+                position: absolute;
+                bottom:-22px;
+                transition: background-color 0.5s;
+            }
+        }
+
+    
+
+
+    }
+
+    #find-us {
+        display:flex;
+        flex-direction: column;
+        margin: 50px 0px;
+    
+        .sectn-subh {
+            width:80%;
+            margin: 2% 0% 5% 8%;
+        }
+    
+        iframe {
+           margin: 15px auto;
+        }
+    }
+
+    #sponsors {
+
+        #sponsorLogo {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            img {
+                width: 35%;
+            }
+        }
+        
+
+    }
+
 
 }
 

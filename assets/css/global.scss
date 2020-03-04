@@ -1,186 +1,185 @@
 // CSS RESET
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    color:white;
-    // outline: 1px solid white; //uncomment this line to diagnose position issues
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  //   outline: 1px solid white; //uncomment this line to diagnose position issues
 }
 
-$accent-color: #399FD3;
+$accent-color: #399fd3;
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #222222;
-    color: white;
-    font-family:Helvetica;
+  background-color: #222222;
+  color: white;
+  font-family: Helvetica;
 }
 
 h1 {
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
 }
 
 h2 {
-    background-color: #222222;
-    padding:0px 20px;
-    font-size: 60px;
-    margin-left: 7%;
-    max-width: fit-content;
+  background-color: #222222;
+  padding: 0px 20px;
+  font-size: 60px;
+  margin-left: 7%;
+  max-width: fit-content;
 }
 
 .h2bar {
-    height:20px;
-    width:100%;
-    background-color: $accent-color;
-    margin-bottom:-4.1%;
+  height: 20px;
+  width: 100%;
+  background-color: $accent-color;
+  margin-bottom: -4.1%;
 }
 
 h3 {
-    font-size: 30px;
-    font-weight: 500;
-    font-style: italic;
-    position: relative;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: italic;
+  position: relative;
 
-    &::before {
-        content:'';
-        height: 35px;
-        width: 9px;
-        background-color: $accent-color;
-        position: absolute;
-        left:0;
-        top:3px;
-    }
-
-
+  &::before {
+    content: "";
+    height: 35px;
+    width: 9px;
+    background-color: $accent-color;
+    position: absolute;
+    left: 0;
+    top: 3px;
+  }
 }
 
-
-
-
 p {
-    font-size:25px;
-    line-height: 40px;
+  font-size: 25px;
+  line-height: 40px;
 }
 
 .container {
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 .text-content {
-    width:65%;
-    margin:5% auto;
+  width: 65%;
+  margin: 5% auto;
 
-    * {
-        margin: 7% 0%;
-    }
+  * {
+    margin: 7% 0%;
+  }
 }
 
-
-
-
 @media only screen and (max-width: 899px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
 
-    html, body {
-        overflow-x: hidden;
-    }
+  body {
+    position: relative;
+  }
 
-    body {
-        position: relative;
-    }
+  .container {
+    width: 100vw;
+  }
 
-    .container {
-        width:100vw;
-    }
+  p {
+    font-size: 16px;
+    line-height: 160%;
+  }
 
-    p {
-        font-size:16px;
-        line-height: 160%;
-    }
+  .text-content {
+    width: 80%;
+    margin: 5% auto;
 
-    .text-content {
-        width:80%;
-        margin:5% auto;
-    
-        * {
-            margin: 7% 0%;
-        }
+    * {
+      margin: 7% 0%;
     }
+  }
 
-    h2 {
-        background-color: #222222;
-        padding:0px 10px;
-        font-size: 27px;
-        margin-left: 4%;
-        max-width: fit-content;
-        margin-bottom: 20px;
-    }
-    
-    .h2bar {
-        height:15px;
-        width:100%;
-        background-color: $accent-color;
-        margin-bottom:-7.5%;
-    }
+  h2 {
+    background-color: #222222;
+    padding: 0px 10px;
+    font-size: 27px;
+    margin-left: 4%;
+    max-width: fit-content;
+    margin-bottom: 20px;
+  }
 
-    h3 {
-        font-size: 25px;
-        font-weight: 500;
-        font-style: italic;
-        position: relative;
-        margin-left:-40px;
-    
-        &::before {
-            content:'';
-            height: 30px;
-            width: 9px;
-            background-color: $accent-color;
-            position: absolute;
-            left:-15px;
-            top:3px;
-        }
-    
-    
-    }
+  .h2bar {
+    height: 15px;
+    width: 100%;
+    background-color: $accent-color;
+    margin-bottom: -28px;
+  }
 
-    #map {
-        width: 85%;
-    }
+  h3 {
+    font-size: 25px;
+    font-weight: 500;
+    font-style: italic;
+    position: relative;
+    margin-left: -40px;
 
+    &::before {
+      content: "";
+      height: 30px;
+      width: 9px;
+      background-color: $accent-color;
+      position: absolute;
+      left: -15px;
+      top: 3px;
+    }
+  }
+
+  #map {
+    width: 85%;
+  }
 }
 
 // TABLET LAYOUT
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 768px) {
+  .text-content {
+    width: 66%;
+  }
 
+  h3 {
+    font-size: 25px;
+    font-weight: 500;
+    font-style: italic;
+    position: relative;
+    margin-left: -40px;
 
-
+    &::before {
+      content: "";
+      height: 30px;
+      width: 9px;
+      background-color: $accent-color;
+      position: absolute;
+      left: -15px;
+      top: 3px;
+    }
+  }
 }
 
-
-@media only screen and (min-width: 1200px ) {
-    .container {
-        width:100%;
-    }
-
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 1800px) {
-    .container {
-        width: 1200px;
-        box-shadow: 
-        3px 0px 5px black,
-        -3px 0px 5px black
-        ;
-    }
-
+  .container {
+    width: 1200px;
+    box-shadow: 3px 0px 5px black, -3px 0px 5px black;
+  }
 }
