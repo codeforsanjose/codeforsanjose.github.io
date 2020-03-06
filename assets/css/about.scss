@@ -64,36 +64,44 @@ a {
   }
 }
 
-// PHONE LANDSCAPE LAYOUT
+@media (max-width: 462px) {
+  .leader p,
+  .leader img {
+    position: initial;
+    display: block;
+  }
 
-@media (orientation: landscape) {
+  .leader img {
+    margin: 1vh auto;
+  }
+
+  .leader p {
+    text-align: center;
+    padding: 1vh 5vw;
+  }
 }
 
-// TABLET LANDSCAPE LAYOUT
-
-@media (max-width: 600px) and (orientation: landscape) {
+@media (max-width: 560px) {
+  .leader p {
+    font-size: 16px !important;
+  }
 }
 
 @media (max-width: 600px) {
-  .leader p {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 650px) {
   .container-leader {
-    width: 160%;
-  }
-
-  .leader p {
-    font-size: 16px;
+    width: 110vw !important;
   }
 }
 
 @media (max-width: 948px) {
   .container-leader {
     display: block;
-    width: 120%;
+    width: 130%;
+  }
+
+  .leader {
+    width: 100%;
+    margin: 1% 15vw;
   }
 }
 
