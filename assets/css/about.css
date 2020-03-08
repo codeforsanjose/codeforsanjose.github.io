@@ -4,8 +4,10 @@ a {
 
 #about-title {
   height: 100px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 53, 53, 0.7)), to(rgba(17, 17, 17, 0.7)));
   background-image: linear-gradient(rgba(53, 53, 53, 0.7), rgba(17, 17, 17, 0.7));
 }
+
 #about-title h1 {
   font-size: 50px;
   position: relative;
@@ -18,6 +20,7 @@ a {
   padding-bottom: 56.25%;
   height: 0;
 }
+
 .iframe-container iframe {
   position: absolute;
   top: 0;
@@ -27,6 +30,8 @@ a {
 }
 
 .container-leader {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -36,6 +41,7 @@ a {
   margin: 1% auto;
   width: 48%;
 }
+
 .leader p {
   font-size: 28px;
   font-weight: 600;
@@ -45,6 +51,7 @@ a {
   position: relative;
   bottom: 25px;
 }
+
 .leader img {
   margin: 0;
   border-radius: 50px;
@@ -58,30 +65,32 @@ a {
     font-size: 12px;
   }
 }
+
 @media (max-width: 650px) {
   .container-leader {
     width: 160%;
   }
-
   .leader p {
     font-size: 16px;
   }
 }
+
 @media (max-width: 948px) {
   .container-leader {
     display: block;
     width: 120%;
   }
 }
+
 @media (max-width: 987px) {
   .leader {
     width: 50%;
   }
 }
+
 @media (max-width: 1200px) {
   .leader p {
     font-size: 22px;
   }
 }
-
 /*# sourceMappingURL=about.css.map */
