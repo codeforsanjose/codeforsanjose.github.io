@@ -60,25 +60,41 @@ a {
   top: 5px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 462px) {
+  .leader p,
+  .leader img {
+    position: initial;
+    display: block;
+  }
+  .leader img {
+    margin: 1vh auto;
+  }
   .leader p {
-    font-size: 12px;
+    text-align: center;
+    padding: 1vh 5vw;
   }
 }
 
-@media (max-width: 650px) {
-  .container-leader {
-    width: 160%;
-  }
+@media (max-width: 560px) {
   .leader p {
-    font-size: 16px;
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-leader {
+    width: 110vw !important;
   }
 }
 
 @media (max-width: 948px) {
   .container-leader {
     display: block;
-    width: 120%;
+    width: 130%;
+  }
+  .leader {
+    width: 100%;
+    margin: 1% 15vw;
   }
 }
 
