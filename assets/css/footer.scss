@@ -1,283 +1,172 @@
-$accent-color: #399FD3;
+// GLOBAL SETTING & PHONE LAYOUT
+
+$body-color: #222222;
+$accent-color: #399fd3;
 
 footer {
-    display:flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 4px solid $accent-color;
+  padding-bottom: 0px;
+
+  #foot-links {
+    height: 175px;
+    display: flex;
+    width: 60vw;
     flex-direction: row;
-    justify-content: space-between;
-    border-top: 5px solid $accent-color;
-    padding-bottom:25px;
+    justify-content: space-evenly;
+    padding: 20px 10px;
 
-    #foot-links {
-        height: 350px;
-        display:flex;
-        width:35%;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding:50px;
-    
-        div {
-            display: flex;
-            flex-direction: column;
-            height: 90%;
-            justify-content: space-between;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
-            h5 {
-                font-size: 20px;
-                border-bottom:3px solid $accent-color; 
-            }
+      h5 {
+        font-size: 12px;
+        border-bottom: 2px solid $accent-color;
+        margin-bottom: 4px;
+      }
 
-            a {
-                color:white;
-                text-decoration: none;
-                font-size:18px;
-            }
-        }
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+      }
     }
+  }
 
+  #legal {
+    display: flex;
+    width: 40vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 175px;
+
+    img {
+      width: 70%;
+    }
+    p {
+      font-size: 8px;
+      margin-right: 10px;
+    }
+  }
+}
+
+// PHONE LANDSCAPE LAYOUT
+
+@media (orientation: landscape) {
+  footer {
     #legal {
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        height: 350px;
-        padding-right:20px;
-        img {
-            width:60%;
-        }
-        p {
-            font-size: 12px;
-            margin-right:20px;
-        }
+      padding-right: 30px;
+      img {
+        width: 40%;
+      }
+      p {
+        margin-right: 15px;
+      }
     }
+  }
 }
 
+// TABLET PORTRAIT LAYOUT
 
-
-// MOBILE LAYOUT
-
-@media only screen and (max-width: 767px) {
-
-    footer {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-top: 5px solid $accent-color;
-        padding-bottom:0px;
-
-        #foot-links {
-            height: 175px;
-            display:flex;
-            width:60vw;
-            flex-direction: row;
-            justify-content: space-evenly;
-            padding: 20px 10px;
-
-            div {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-    
-                h5 {
-                    font-size: 12px;
-                    border-bottom:2px solid $accent-color; 
-                }
-    
-                a {
-                    color:white;
-                    text-decoration: none;
-                    font-size:10px;
-                }
-            }
-        }
-    
-        #legal {
-            display:flex;
-            width: 40vw;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
-            height: 175px;
-
-            img {
-                width:70%;
-            }
-            p {
-                font-size: 8px;
-                margin-right:10px;
-            }
-        }
+@media (min-width: 600px) and (orientation: portrait) {
+  footer {
+    #foot-links {
+      width: 45%;
     }
-
-
+    #legal {
+      padding-right: 30px;
+      img {
+        width: 40%;
+      }
+      p {
+        font-size: 8px;
+        margin-right: 15px;
+      }
+    }
+  }
 }
 
-// TABLET LAYOUT
+// TABLET LANDSCAPE LAYOUT
 
-@media only screen and (min-width: 768px) {
-   
-    footer {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-top: 5px solid $accent-color;
-        padding-bottom:0px;
-
-        #foot-links {
-            height: 225px;
-            display:flex;
-            width:60vw;
-            flex-direction: row;
-            justify-content: space-evenly;
-            padding: 20px 10px;
-
-            div {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-    
-                h5 {
-                    font-size: 15px;
-                    border-bottom:2px solid $accent-color; 
-                }
-    
-                a {
-                    color:white;
-                    text-decoration: none;
-                    font-size:13px;
-                }
-            }
+@media (min-width: 600px) and (orientation: landscape) {
+  footer {
+    padding: 25px 0px;
+    #foot-links {
+      width: 35%;
+      height: 200px;
+      div {
+        h5 {
+          font-size: 14px;
         }
-    
-        #legal {
-            display:flex;
-            width: 40vw;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
-            height: 175px;
-
-            img {
-                width:40%;
-            }
-            p {
-                font-size: 12px;
-                margin-right:15px;
-            }
+        a {
+          font-size: 12px;
         }
+      }
     }
-
+    #legal {
+      height: 200px;
+      padding-right: 30px;
+      img {
+        width: 35%;
+      }
+      p {
+        font-size: 8px;
+        margin-right: 15px;
+        line-height: 2;
+      }
+    }
+  }
 }
 
 // DESKTOP LAYOUT
 
-@media only screen and (min-width: 1200px) {
-
-    footer {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-top: 5px solid $accent-color;
-        padding-bottom:25px;
-    
-        #foot-links {
-            height: 350px;
-            display:flex;
-            width:35%;
-            flex-direction: row;
-            justify-content: space-evenly;
-            padding:50px;
-        
-            div {
-                display: flex;
-                flex-direction: column;
-                height: 90%;
-                justify-content: space-between;
-    
-                h5 {
-                    font-size: 18px;
-                    border-bottom:3px solid $accent-color; 
-                }
-    
-                a {
-                    color:white;
-                    text-decoration: none;
-                    font-size:16px;
-                }
-            }
+@media (min-width: 1200px) {
+  footer {
+    padding-top: 25px;
+    #foot-links {
+      div {
+        h5 {
+          margin-bottom: 7px;
         }
-    
-        #legal {
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
-            height: 350px;
-            padding-right:20px;
-            img {
-                width:60%;
-            }
-            p {
-                font-size: 12px;
-                margin-right:20px;
-            }
-        }
+      }
     }
-
+    #legal {
+      img {
+        width: 35%;
+      }
+      p {
+        font-size: 14px;
+        margin-right: 20px;
+        line-height: 2;
+      }
+    }
+  }
 }
 
-// XL LAYOUT
+// XL DESKTOP LAYOUT
 
-@media only screen and (min-width: 1800px) {
-
-    footer {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-top: 5px solid $accent-color;
-        padding-bottom:25px;
-    
-        #foot-links {
-            height: 350px;
-            display:flex;
-            width:35%;
-            flex-direction: row;
-            justify-content: space-evenly;
-            padding:50px;
-        
-            div {
-                display: flex;
-                flex-direction: column;
-                height: 90%;
-                justify-content: space-between;
-    
-                h5 {
-                    font-size: 18px;
-                    border-bottom:3px solid $accent-color; 
-                }
-    
-                a {
-                    color:white;
-                    text-decoration: none;
-                    font-size:16px;
-                }
-            }
+@media (min-width: 1800px) {
+  footer {
+    #foot-links {
+      width: 45%;
+      div {
+        h5 {
+          font-size: 16px;
         }
-    
-        #legal {
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
-            height: 350px;
-            padding-right:20px;
-            img {
-                width:60%;
-            }
-            p {
-                font-size: 12px;
-                margin-right:20px;
-            }
+        a {
+          font-size: 14px;
         }
+      }
     }
-
+    #legal {
+      img {
+        width: 25%;
+      }
+    }
+  }
 }
