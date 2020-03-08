@@ -1,605 +1,743 @@
+// GLOBAL SETTING & PHONE LAYOUT
 
-// GLOBAL VARIABLES
 $body-color: #222222;
-$accent-color: #399FD3;
+$accent-color: #399fd3;
 
 #home-hero {
-    width:100%;
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/cfsj_withcfa_at_bowersinstitute.jpeg);
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/cfsj_withcfa_at_bowersinstitute.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  height: calc(100vh - 87px);
+  padding: 5% 10%;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 300;
     text-align: left;
-    padding:5% 10%;
-    
+  }
 
-    h1 {
-        font-size:70px;
-        font-weight: 300;
-        text-align: left;
-    }
+  p {
+    font-size: 20px;
+    font-weight: 300;
+  }
 
-    p {
-        font-size:35px;
-        font-weight: 300;
-    }
-
-    button {
-        width: 50%;
-        height: 15%;
-        background-color: #FF5131;
-        font-size: 40px;
-        border: none;
-        border-radius: 5px;
-        cursor:pointer;
-    }
+  button {
+    height: 50px;
+    width: 75%;
+    background-color: #ff5131;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 }
 
 #home-hero-content {
-    width:80%;
-    height:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+iframe {
+  width: 90vw;
 }
 
 #cta {
-    background: linear-gradient(rgba(97, 97, 97, 0.1), rgba(97, 97, 97, 1)), url(../img/cfsj_withcfa_at_bowersinstitute.jpeg);
-    height: 50vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width:100%;
-    display:flex;
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
+  background: linear-gradient(rgba(97, 97, 97, 0.1), rgba(97, 97, 97, 1)),
+    url(../img/cfsj_withcfa_at_bowersinstitute.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px 0px;
+  margin-bottom: 50px;
+
+  .cta-card {
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    padding-top:10%;
-    margin-bottom:10%;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    height: fit-content;
+    margin: 10px;
+    border: 5px solid $accent-color;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.7);
 
-    .cta-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center;
-        width:25%;
-        height:450px;
-        border: 5px solid $accent-color;
-        border-radius: 7px;
-        background-color: rgba(0, 0, 0, .7);
-
-        a {
-            text-decoration: none;
-            color:white;
-            font-size: 35px;
-            border: 3px solid white;
-            border-radius: 50px;
-            padding:13px;
-            width:80%;
-            background-color: rgba(64, 139, 171, 0);
-            transition: background-color 0.25s; 
-
-            &:hover {
-                background-color:rgba(64, 139, 171, .5);
-            }
-        }
-
-        p {
-            font-size: 20px;
-            line-height: 25px;
-            width: 66%;
-            height: 20%;
-        }
+    * {
+      margin: 3px;
     }
 
-
-}
-
-#our-work {
-    margin: 15% 0px;
-
-    .sectn-subh {
-        margin-left:8%;
-        margin-top:2%;
+    a {
+      font-size: 25px;
+      padding: 6px;
+      width: 75%;
+      text-decoration: none;
+      color: white;
+      border: 3px solid white;
+      border-radius: 50px;
+      padding: 13px;
+      width: 80%;
+      background-color: rgba(64, 139, 171, 0);
     }
 
-    #see-more {
-        background-color: #222222;
-        border: 5px solid $accent-color;
-        border-radius: 50px;
-        font-size:20px;
-        color:white;
-        padding:7px 20px;
-        display:block;
-        margin:0 auto;
-        cursor:pointer;
-        transition: background-color 0.5s ;
-
-        &:hover {
-            background-color:rgba(64, 139, 171, .5);
-        }
+    p {
+      font-size: 16px;
+      line-height: 25px;
+      width: 66%;
+      height: 20%;
+      margin: 15px 0px;
     }
+
+    i {
+      transform: scale(0.7);
+    }
+  }
 }
 
 .projects {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
 
-.project-card {
-    display:flex;
+  .project-card {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width:27%;
-    margin: 30px;
+    width: 85%;
     height: 450px;
     border: 5px solid $accent-color;
     border-radius: 10px;
     position: relative;
     text-align: center;
     padding-bottom: 30px;
+    margin: 50px 0px;
 
     .badge {
-        font-size:20px;
-        border: 5px solid #2AC940;
-        border-radius: 5px;
-        width: fit-content;
-        background-color: #222222;
-        position: absolute;
-        top:-23px;
-        left:20px;
-        padding:5px;
+      width: 30%;
+      font-size: 20px;
+      top: -23px;
+      left: 20px;
+      padding: 5px;
     }
 
     .project-img {
-        width:100%;
-        height: 40%;
+      width: 100%;
+      height: 40%;
     }
 
     h4 {
-        width:80%;
-        font-size: 30px;
-        font-weight:700;
+      width: 80%;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 115%;
     }
 
     p {
-        width:80%;
-        font-size:20px;
-        line-height: 20px;
+      width: 80%;
+      font-size: 20px;
+      line-height: 20px;
     }
 
     .project-gh-logo {
-        width:10%;
+      width: 10%;
     }
 
     .tech {
-        width:80%;
-        font-size:16px;
+      width: 80%;
+      font-size: 16px;
     }
 
     button {
-        border: 5px solid $accent-color;
-        border-radius: 50px;
-        color:white;
-        background-color: #222222;
-        padding:5px 20px;
-        font-size:16px;
-        position: absolute;
-        bottom:-22px;
-        transition: background-color 0.5s;
-
-        &:hover {
-            background-color:rgba(64, 139, 171, .5);
-        }
+      border: 5px solid $accent-color;
+      border-radius: 50px;
+      color: white;
+      background-color: #222222;
+      padding: 5px 20px;
+      font-size: 16px;
+      position: absolute;
+      bottom: -22px;
+      transition: background-color 0.5s;
     }
-}
-
-#sponsors {
-    margin: 50px 0px;
-
-    .sectn-subh {
-        margin-left:8%;
-        margin-top:2%;
-    }
-
-    img {
-        width:33%;
-        margin: 20px;
-    }
-
-    p {
-        width: 80%;
-    }
+  }
 }
 
 #find-us {
-    margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px;
 
-    .sectn-subh {
-        width:80%;
-        margin-left:8%;
-        margin-top:2%;
-    }
+  .sectn-subh {
+    width: 80%;
+    margin: 2% 0% 5% 8%;
+  }
 
-    iframe {
-        margin-left:8%;
-        margin-top:2%;
-    }
+  iframe {
+    margin: 15px auto;
+  }
 }
 
-@media only screen and (max-width: 899px) {
-    
-    #home-hero {
-        text-align: left;
-        height: calc(100vh - 87px);
-        
-    
-        h1 {
-            font-size:42px;
-            font-weight: 300;
-            text-align: left;
-        }
-    
-        p {
-            font-size:20px;
-            font-weight: 300;
-        }
-    
-        button {
-            width: 75%;
-            height: 50px;
-            font-size: 20px;
-        }
-    }
-    
-    #home-hero-content {
-        width:95%;
-        height:100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    iframe {
-        width: 90vw;
-    }
-
-    #cta {
-        flex-direction: column;
-        height: fit-content;
-        justify-content: space-between;
-        align-items:center;
-        padding:20px 0px;
-        
-    
-        .cta-card {
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            text-align: center;
-            width:85%;
-            height:fit-content;
-            margin: 10px;
-
-            * {
-                margin:3px;
-            }
-    
-            a {
-                font-size: 25px;
-                padding:6px;
-                width:75%;
-            }
-    
-            p {
-                font-size: 16px;
-                line-height: 25px;
-                width: 66%;
-                height: 20%;
-            }
-
-            i {
-                transform: scale(0.7);
-            }
-        }
-    
-    
-    }
-
-    .projects {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items:center;
-        padding:0px;
-
-        .project-card {
-            display:flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            width:85%;
-            height: 450px;
-            border: 5px solid $accent-color;
-            border-radius: 10px;
-            position: relative;
-            text-align: center;
-            padding-bottom: 30px;
-            margin: 50px 0px;
-        
-            .badge {
-                width:30%;
-                font-size:20px;
-                top:-23px;
-                left:20px;
-                padding:5px;
-            }
-        
-            .project-img {
-                width:100%;
-                height: 40%;
-            }
-        
-            h4 {
-                width:80%;
-                font-size: 30px;
-                font-weight:700;
-                line-height: 115%;
-            }
-        
-            p {
-                width:80%;
-                font-size:20px;
-                line-height: 20px;
-            }
-        
-            .project-gh-logo {
-                width:10%;
-            }
-        
-            .tech {
-                width:80%;
-                font-size:16px;
-            }
-        
-            button {
-                border: 5px solid $accent-color;
-                border-radius: 50px;
-                color:white;
-                background-color: #222222;
-                padding:5px 20px;
-                font-size:16px;
-                position: absolute;
-                bottom:-22px;
-                transition: background-color 0.5s;
-            }
-        }
-
-    
-
-
-    }
-
-    #find-us {
-        display:flex;
-        flex-direction: column;
-        margin: 50px 0px;
-    
-        .sectn-subh {
-            width:80%;
-            margin: 2% 0% 5% 8%;
-        }
-    
-        iframe {
-           margin: 15px auto;
-        }
-    }
-
-    #sponsors {
-
-        img {
-            display: block;
-            width: 75%;
-            margin: 35px auto;
-        }
-
-    }
-
+#sponsors {
+  img {
+    display: block;
+    width: 75%;
+    margin: 35px auto;
+  }
 }
 
-// TABLET LAYOUT
+// PHONE LANDSCAPE LAYOUT
 
-@media only screen and (min-width: 768px) {
-    #home-hero {
-        
-    
-        h1 {
-            font-size:60px;
-            font-weight: 300;
-        }
-    
-        p {
-            font-size:30px;
-            font-weight: 300;
-        }
-    
-        button {
-            width: 50%;
-            height: 75px;
-            font-size: 30px;
-        }
+@media (orientation: landscape) {
+  #home-hero {
+    height: 100vh;
+    button {
+      width: 50%;
     }
-    
-
-    iframe {
-        width: 90vw;
-        height:30vh;
+  }
+  #cta {
+    flex-direction: row;
+    .cta-card {
+      width: 200px;
+      padding: 10px 0px;
+      a {
+        font-size: 20px;
+      }
+      p {
+        width: 80%;
+      }
     }
+  }
+}
 
-    #cta {
-        flex-direction: row;
-        height: 500px;
-        justify-content: space-between;
-        align-items:flex-end;
-        padding:20px 0px;
-        
-    
-        .cta-card {
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            text-align: center;
-            width:85%;
-            height:350px;
-            margin: 10px;
+// TABLET PORTRAIT LAYOUT
 
-            * {
-                margin:3px;
-            }
-    
-            a {
-                font-size: 25px;
-                padding:6px;
-                width:75%;
-            }
-    
-            p {
-                font-size: 16px;
-                line-height: 25px;
-                width: 66%;
-                height: 20%;
-            }
+@media (min-width: 600px) and (orientation: portrait) {
+}
 
-            i {
-                transform: scale(0.7);
-            }
-        }
-    
-    
-    }
+// TABLET LANDSCAPE LAYOUT
 
-    .projects {
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items:center;
-
-        .project-card {
-            display:flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            width:45%;
-            height: 450px;
-            border: 5px solid $accent-color;
-            border-radius: 10px;
-            position: relative;
-            text-align: center;
-            padding-bottom: 30px;
-            margin: 50px 0px;
-        
-            .badge {
-                width:30%;
-                font-size:20px;
-                top:-23px;
-                left:20px;
-                padding:5px;
-            }
-        
-            .project-img {
-                width:100%;
-                height: 40%;
-            }
-        
-            h4 {
-                width:80%;
-                font-size: 30px;
-                font-weight:700;
-                line-height: 115%;
-            }
-        
-            p {
-                width:80%;
-                font-size:20px;
-                line-height: 20px;
-            }
-        
-            .project-gh-logo {
-                width:10%;
-            }
-        
-            .tech {
-                width:80%;
-                font-size:16px;
-            }
-        
-            button {
-                border: 5px solid $accent-color;
-                border-radius: 50px;
-                color:white;
-                background-color: #222222;
-                padding:5px 20px;
-                font-size:16px;
-                position: absolute;
-                bottom:-22px;
-                transition: background-color 0.5s;
-            }
-        }
-
-    
-
-
-    }
-
-    #find-us {
-        display:flex;
-        flex-direction: column;
-        margin: 50px 0px;
-    
-        .sectn-subh {
-            width:80%;
-            margin: 2% 0% 5% 8%;
-        }
-    
-        iframe {
-           margin: 15px auto;
-        }
-    }
-
-    #sponsors {
-
-        #sponsorLogo {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-
-            img {
-                width: 35%;
-            }
-        }
-        
-
-    }
-
-
+@media (min-width: 600px) and (orientation: landscape) {
 }
 
 // DESKTOP LAYOUT
 
-@media only screen and (min-width: 1200px ) {
-    .cta-card {
-        transition: margin-top 0.5s;
-
-        &:hover {
-            margin-top: -20px;
-        }
-
-    }
+@media (min-width: 1200px) {
 }
 
-// XL LAYOUT
+// XL DESKTOP LAYOUT
 
-@media only screen and (min-width: 1800px) {
-
-
+@media (min-width: 1800px) {
 }
+
+// #cta {
+//
+
+//   .cta-card {
+//
+
+//     a {
+//
+//       transition: background-color 0.25s;
+
+//       &:hover {
+//         background-color: rgba(64, 139, 171, 0.5);
+//       }
+//     }
+
+//     p {
+//       font-size: 20px;
+//       line-height: 25px;
+//       width: 66%;
+//       height: 20%;
+//     }
+//   }
+// }
+
+// #our-work {
+//   margin: 15% 0px;
+
+//   .sectn-subh {
+//     margin-left: 8%;
+//     margin-top: 2%;
+//   }
+
+//   #see-more {
+//     background-color: #222222;
+//     border: 5px solid $accent-color;
+//     border-radius: 50px;
+//     font-size: 20px;
+//     color: white;
+//     padding: 7px 20px;
+//     display: block;
+//     margin: 0 auto;
+//     cursor: pointer;
+//     transition: background-color 0.5s;
+
+//     &:hover {
+//       background-color: rgba(64, 139, 171, 0.5);
+//     }
+//   }
+// }
+
+// .projects {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: space-evenly;
+// }
+
+// .project-card {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 27%;
+//   margin: 30px;
+//   height: 450px;
+//   border: 5px solid $accent-color;
+//   border-radius: 10px;
+//   position: relative;
+//   text-align: center;
+//   padding-bottom: 30px;
+
+//   .badge {
+//     font-size: 20px;
+//     border: 5px solid #2ac940;
+//     border-radius: 5px;
+//     width: fit-content;
+//     background-color: #222222;
+//     position: absolute;
+//     top: -23px;
+//     left: 20px;
+//     padding: 5px;
+//   }
+
+//   .project-img {
+//     width: 100%;
+//     height: 40%;
+//   }
+
+//   h4 {
+//     width: 80%;
+//     font-size: 30px;
+//     font-weight: 700;
+//   }
+
+//   p {
+//     width: 80%;
+//     font-size: 20px;
+//     line-height: 20px;
+//   }
+
+//   .project-gh-logo {
+//     width: 10%;
+//   }
+
+//   .tech {
+//     width: 80%;
+//     font-size: 16px;
+//   }
+
+//   button {
+//     border: 5px solid $accent-color;
+//     border-radius: 50px;
+//     color: white;
+//     background-color: #222222;
+//     padding: 5px 20px;
+//     font-size: 16px;
+//     position: absolute;
+//     bottom: -22px;
+//     transition: background-color 0.5s;
+
+//     &:hover {
+//       background-color: rgba(64, 139, 171, 0.5);
+//     }
+//   }
+// }
+
+// #sponsors {
+//   margin: 50px 0px;
+
+//   .sectn-subh {
+//     margin-left: 8%;
+//     margin-top: 2%;
+//   }
+
+//   img {
+//     width: 33%;
+//     margin: 20px;
+//   }
+
+//   p {
+//     width: 80%;
+//   }
+// }
+
+// #find-us {
+//   margin: 50px 0px;
+
+//   .sectn-subh {
+//     width: 80%;
+//     margin-left: 8%;
+//     margin-top: 2%;
+//   }
+
+//   iframe {
+//     margin-left: 8%;
+//     margin-top: 2%;
+//   }
+// }
+
+// @media only screen and (max-width: 899px) {
+//   #home-hero {
+//     text-align: left;
+//     height: calc(100vh - 87px);
+
+//     h1 {
+//       font-size: 42px;
+//       font-weight: 300;
+//       text-align: left;
+//     }
+
+//     p {
+//       font-size: 20px;
+//       font-weight: 300;
+//     }
+
+//     button {
+//       width: 75%;
+//       height: 50px;
+//       font-size: 20px;
+//     }
+//   }
+
+//   #home-hero-content {
+//     width: 95%;
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-evenly;
+//   }
+//   iframe {
+//     width: 90vw;
+//   }
+
+//   #cta {
+//     flex-direction: column;
+//     height: fit-content;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 20px 0px;
+
+//     .cta-card {
+//       flex-direction: column;
+//       justify-content: space-evenly;
+//       align-items: center;
+//       text-align: center;
+//       width: 85%;
+//       height: fit-content;
+//       margin: 10px;
+
+//       * {
+//         margin: 3px;
+//       }
+
+//       a {
+//         font-size: 25px;
+//         padding: 6px;
+//         width: 75%;
+//       }
+
+//       p {
+//         font-size: 16px;
+//         line-height: 25px;
+//         width: 66%;
+//         height: 20%;
+//         margin: 15px 0px;
+//       }
+
+//       i {
+//         transform: scale(0.7);
+//       }
+//     }
+//   }
+
+//   .projects {
+//     flex-direction: column;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 0px;
+
+//     .project-card {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-between;
+//       align-items: center;
+//       width: 85%;
+//       height: 450px;
+//       border: 5px solid $accent-color;
+//       border-radius: 10px;
+//       position: relative;
+//       text-align: center;
+//       padding-bottom: 30px;
+//       margin: 50px 0px;
+
+//       .badge {
+//         width: 30%;
+//         font-size: 20px;
+//         top: -23px;
+//         left: 20px;
+//         padding: 5px;
+//       }
+
+//       .project-img {
+//         width: 100%;
+//         height: 40%;
+//       }
+
+//       h4 {
+//         width: 80%;
+//         font-size: 30px;
+//         font-weight: 700;
+//         line-height: 115%;
+//       }
+
+//       p {
+//         width: 80%;
+//         font-size: 20px;
+//         line-height: 20px;
+//       }
+
+//       .project-gh-logo {
+//         width: 10%;
+//       }
+
+//       .tech {
+//         width: 80%;
+//         font-size: 16px;
+//       }
+
+//       button {
+//         border: 5px solid $accent-color;
+//         border-radius: 50px;
+//         color: white;
+//         background-color: #222222;
+//         padding: 5px 20px;
+//         font-size: 16px;
+//         position: absolute;
+//         bottom: -22px;
+//         transition: background-color 0.5s;
+//       }
+//     }
+//   }
+
+//   #find-us {
+//     display: flex;
+//     flex-direction: column;
+//     margin: 50px 0px;
+
+//     .sectn-subh {
+//       width: 80%;
+//       margin: 2% 0% 5% 8%;
+//     }
+
+//     iframe {
+//       margin: 15px auto;
+//     }
+//   }
+
+//   #sponsors {
+//     img {
+//       display: block;
+//       width: 75%;
+//       margin: 35px auto;
+//     }
+//   }
+// }
+
+// // TABLET LAYOUT
+
+// @media only screen and (min-width: 768px) {
+//   #home-hero {
+//     h1 {
+//       font-size: 60px;
+//       font-weight: 300;
+//     }
+
+//     p {
+//       font-size: 30px;
+//       font-weight: 300;
+//     }
+
+//     button {
+//       width: 50%;
+//       height: 75px;
+//       font-size: 30px;
+//     }
+//   }
+
+//   iframe {
+//     width: 90vw;
+//     height: 30vh;
+//   }
+
+//   #cta {
+//     flex-direction: row;
+//     height: 500px;
+//     justify-content: space-between;
+//     align-items: flex-end;
+//     padding: 20px 0px;
+
+//     .cta-card {
+//       flex-direction: column;
+//       justify-content: space-evenly;
+//       align-items: center;
+//       text-align: center;
+//       width: 85%;
+//       height: 350px;
+//       margin: 10px;
+
+//       * {
+//         margin: 3px;
+//       }
+
+//       a {
+//         font-size: 25px;
+//         padding: 6px;
+//         width: 75%;
+//       }
+
+//       p {
+//         font-size: 16px;
+//         line-height: 25px;
+//         width: 66%;
+//         height: 20%;
+//       }
+
+//       i {
+//         transform: scale(0.7);
+//       }
+//     }
+//   }
+
+//   .projects {
+//     flex-direction: row;
+//     justify-content: space-evenly;
+//     align-items: center;
+
+//     .project-card {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-between;
+//       align-items: center;
+//       width: 45%;
+//       height: 450px;
+//       border: 5px solid $accent-color;
+//       border-radius: 10px;
+//       position: relative;
+//       text-align: center;
+//       padding-bottom: 30px;
+//       margin: 50px 0px;
+
+//       .badge {
+//         width: 30%;
+//         font-size: 20px;
+//         top: -23px;
+//         left: 20px;
+//         padding: 5px;
+//       }
+
+//       .project-img {
+//         width: 100%;
+//         height: 40%;
+//       }
+
+//       h4 {
+//         width: 80%;
+//         font-size: 30px;
+//         font-weight: 700;
+//         line-height: 115%;
+//       }
+
+//       p {
+//         width: 80%;
+//         font-size: 20px;
+//         line-height: 20px;
+//       }
+
+//       .project-gh-logo {
+//         width: 10%;
+//       }
+
+//       .tech {
+//         width: 80%;
+//         font-size: 16px;
+//       }
+
+//       button {
+//         border: 5px solid $accent-color;
+//         border-radius: 50px;
+//         color: white;
+//         background-color: #222222;
+//         padding: 5px 20px;
+//         font-size: 16px;
+//         position: absolute;
+//         bottom: -22px;
+//         transition: background-color 0.5s;
+//       }
+//     }
+//   }
+
+//   #find-us {
+//     display: flex;
+//     flex-direction: column;
+//     margin: 50px 0px;
+
+//     .sectn-subh {
+//       width: 80%;
+//       margin: 2% 0% 5% 8%;
+//     }
+
+//     iframe {
+//       margin: 15px auto;
+//     }
+//   }
+
+//   #sponsors {
+//     #sponsorLogo {
+//       display: flex;
+//       flex-direction: row;
+//       flex-wrap: wrap;
+
+//       img {
+//         width: 35%;
+//       }
+//     }
+//   }
+// }
+
+// // DESKTOP LAYOUT
+
+// @media only screen and (min-width: 1200px) {
+//   .cta-card {
+//     transition: margin-top 0.5s;
+
+//     &:hover {
+//       margin-top: -20px;
+//     }
+//   }
+// }

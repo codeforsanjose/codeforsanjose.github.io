@@ -2,37 +2,37 @@
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/cfsj_withcfa_at_bowersinstitute.jpeg);
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/cfsj_withcfa_at_bowersinstitute.jpeg);
-  height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: left;
+  height: calc(100vh - 87px);
   padding: 5% 10%;
 }
 
 #home-hero h1 {
-  font-size: 70px;
+  font-size: 40px;
   font-weight: 300;
   text-align: left;
 }
 
 #home-hero p {
-  font-size: 35px;
+  font-size: 20px;
   font-weight: 300;
 }
 
 #home-hero button {
-  width: 50%;
-  height: 15%;
-  background-color: #FF5131;
-  font-size: 40px;
+  height: 50px;
+  width: 75%;
+  background-color: #ff5131;
+  font-size: 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 #home-hero-content {
-  width: 80%;
+  width: 95%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,14 +41,28 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+iframe {
+  width: 90vw;
 }
 
 #cta {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(97, 97, 97, 0.1)), to(#616161)), url(../img/cfsj_withcfa_at_bowersinstitute.jpeg);
   background: linear-gradient(rgba(97, 97, 97, 0.1), #616161), url(../img/cfsj_withcfa_at_bowersinstitute.jpeg);
-  height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,8 +73,8 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding-top: 10%;
-  margin-bottom: 10%;
+  padding: 25px 0px;
+  margin-bottom: 50px;
 }
 
 #cta .cta-card {
@@ -78,80 +92,61 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  width: 25%;
-  height: 450px;
-  border: 5px solid #399FD3;
+  width: 85%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 10px;
+  border: 5px solid #399fd3;
   border-radius: 7px;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+#cta .cta-card * {
+  margin: 3px;
+}
+
 #cta .cta-card a {
+  font-size: 25px;
+  padding: 6px;
+  width: 75%;
   text-decoration: none;
   color: white;
-  font-size: 35px;
   border: 3px solid white;
   border-radius: 50px;
   padding: 13px;
   width: 80%;
   background-color: rgba(64, 139, 171, 0);
-  -webkit-transition: background-color 0.25s;
-  transition: background-color 0.25s;
-}
-
-#cta .cta-card a:hover {
-  background-color: rgba(64, 139, 171, 0.5);
 }
 
 #cta .cta-card p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 25px;
   width: 66%;
   height: 20%;
+  margin: 15px 0px;
 }
 
-#our-work {
-  margin: 15% 0px;
-}
-
-#our-work .sectn-subh {
-  margin-left: 8%;
-  margin-top: 2%;
-}
-
-#our-work #see-more {
-  background-color: #222222;
-  border: 5px solid #399FD3;
-  border-radius: 50px;
-  font-size: 20px;
-  color: white;
-  padding: 7px 20px;
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
-}
-
-#our-work #see-more:hover {
-  background-color: rgba(64, 139, 171, 0.5);
+#cta .cta-card i {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 .projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
 }
 
-.project-card {
+.projects .project-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,58 +160,53 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 27%;
-  margin: 30px;
+  width: 85%;
   height: 450px;
-  border: 5px solid #399FD3;
+  border: 5px solid #399fd3;
   border-radius: 10px;
   position: relative;
   text-align: center;
   padding-bottom: 30px;
+  margin: 50px 0px;
 }
 
-.project-card .badge {
+.projects .project-card .badge {
+  width: 30%;
   font-size: 20px;
-  border: 5px solid #2AC940;
-  border-radius: 5px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: #222222;
-  position: absolute;
   top: -23px;
   left: 20px;
   padding: 5px;
 }
 
-.project-card .project-img {
+.projects .project-card .project-img {
   width: 100%;
   height: 40%;
 }
 
-.project-card h4 {
+.projects .project-card h4 {
   width: 80%;
   font-size: 30px;
   font-weight: 700;
+  line-height: 115%;
 }
 
-.project-card p {
+.projects .project-card p {
   width: 80%;
   font-size: 20px;
   line-height: 20px;
 }
 
-.project-card .project-gh-logo {
+.projects .project-card .project-gh-logo {
   width: 10%;
 }
 
-.project-card .tech {
+.projects .project-card .tech {
   width: 80%;
   font-size: 16px;
 }
 
-.project-card button {
-  border: 5px solid #399FD3;
+.projects .project-card button {
+  border: 5px solid #399fd3;
   border-radius: 50px;
   color: white;
   background-color: #222222;
@@ -228,414 +218,54 @@
   transition: background-color 0.5s;
 }
 
-.project-card button:hover {
-  background-color: rgba(64, 139, 171, 0.5);
-}
-
-#sponsors {
-  margin: 50px 0px;
-}
-
-#sponsors .sectn-subh {
-  margin-left: 8%;
-  margin-top: 2%;
-}
-
-#sponsors img {
-  width: 33%;
-  margin: 20px;
-}
-
-#sponsors p {
-  width: 80%;
-}
-
 #find-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 50px 0px;
 }
 
 #find-us .sectn-subh {
   width: 80%;
-  margin-left: 8%;
-  margin-top: 2%;
+  margin: 2% 0% 5% 8%;
 }
 
 #find-us iframe {
-  margin-left: 8%;
-  margin-top: 2%;
+  margin: 15px auto;
 }
 
-@media only screen and (max-width: 899px) {
+#sponsors img {
+  display: block;
+  width: 75%;
+  margin: 35px auto;
+}
+
+@media (orientation: landscape) {
   #home-hero {
-    text-align: left;
-    height: calc(100vh - 87px);
-  }
-  #home-hero h1 {
-    font-size: 42px;
-    font-weight: 300;
-    text-align: left;
-  }
-  #home-hero p {
-    font-size: 20px;
-    font-weight: 300;
-  }
-  #home-hero button {
-    width: 75%;
-    height: 50px;
-    font-size: 20px;
-  }
-  #home-hero-content {
-    width: 95%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  iframe {
-    width: 90vw;
-  }
-  #cta {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 20px 0px;
-  }
-  #cta .cta-card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    width: 85%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    margin: 10px;
-  }
-  #cta .cta-card * {
-    margin: 3px;
-  }
-  #cta .cta-card a {
-    font-size: 25px;
-    padding: 6px;
-    width: 75%;
-  }
-  #cta .cta-card p {
-    font-size: 16px;
-    line-height: 25px;
-    width: 66%;
-    height: 20%;
-  }
-  #cta .cta-card i {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-  .projects {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0px;
-  }
-  .projects .project-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 85%;
-    height: 450px;
-    border: 5px solid #399FD3;
-    border-radius: 10px;
-    position: relative;
-    text-align: center;
-    padding-bottom: 30px;
-    margin: 50px 0px;
-  }
-  .projects .project-card .badge {
-    width: 30%;
-    font-size: 20px;
-    top: -23px;
-    left: 20px;
-    padding: 5px;
-  }
-  .projects .project-card .project-img {
-    width: 100%;
-    height: 40%;
-  }
-  .projects .project-card h4 {
-    width: 80%;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 115%;
-  }
-  .projects .project-card p {
-    width: 80%;
-    font-size: 20px;
-    line-height: 20px;
-  }
-  .projects .project-card .project-gh-logo {
-    width: 10%;
-  }
-  .projects .project-card .tech {
-    width: 80%;
-    font-size: 16px;
-  }
-  .projects .project-card button {
-    border: 5px solid #399FD3;
-    border-radius: 50px;
-    color: white;
-    background-color: #222222;
-    padding: 5px 20px;
-    font-size: 16px;
-    position: absolute;
-    bottom: -22px;
-    -webkit-transition: background-color 0.5s;
-    transition: background-color 0.5s;
-  }
-  #find-us {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 50px 0px;
-  }
-  #find-us .sectn-subh {
-    width: 80%;
-    margin: 2% 0% 5% 8%;
-  }
-  #find-us iframe {
-    margin: 15px auto;
-  }
-  #sponsors img {
-    display: block;
-    width: 75%;
-    margin: 35px auto;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #home-hero h1 {
-    font-size: 60px;
-    font-weight: 300;
-  }
-  #home-hero p {
-    font-size: 30px;
-    font-weight: 300;
+    height: 100vh;
   }
   #home-hero button {
     width: 50%;
-    height: 75px;
-    font-size: 30px;
-  }
-  iframe {
-    width: 90vw;
-    height: 30vh;
   }
   #cta {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 500px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    padding: 20px 0px;
   }
   #cta .cta-card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    width: 85%;
-    height: 350px;
-    margin: 10px;
-  }
-  #cta .cta-card * {
-    margin: 3px;
+    width: 200px;
+    padding: 10px 0px;
   }
   #cta .cta-card a {
-    font-size: 25px;
-    padding: 6px;
-    width: 75%;
+    font-size: 20px;
   }
   #cta .cta-card p {
-    font-size: 16px;
-    line-height: 25px;
-    width: 66%;
-    height: 20%;
-  }
-  #cta .cta-card i {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-  .projects {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .projects .project-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 45%;
-    height: 450px;
-    border: 5px solid #399FD3;
-    border-radius: 10px;
-    position: relative;
-    text-align: center;
-    padding-bottom: 30px;
-    margin: 50px 0px;
-  }
-  .projects .project-card .badge {
-    width: 30%;
-    font-size: 20px;
-    top: -23px;
-    left: 20px;
-    padding: 5px;
-  }
-  .projects .project-card .project-img {
-    width: 100%;
-    height: 40%;
-  }
-  .projects .project-card h4 {
     width: 80%;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 115%;
-  }
-  .projects .project-card p {
-    width: 80%;
-    font-size: 20px;
-    line-height: 20px;
-  }
-  .projects .project-card .project-gh-logo {
-    width: 10%;
-  }
-  .projects .project-card .tech {
-    width: 80%;
-    font-size: 16px;
-  }
-  .projects .project-card button {
-    border: 5px solid #399FD3;
-    border-radius: 50px;
-    color: white;
-    background-color: #222222;
-    padding: 5px 20px;
-    font-size: 16px;
-    position: absolute;
-    bottom: -22px;
-    -webkit-transition: background-color 0.5s;
-    transition: background-color 0.5s;
-  }
-  #find-us {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 50px 0px;
-  }
-  #find-us .sectn-subh {
-    width: 80%;
-    margin: 2% 0% 5% 8%;
-  }
-  #find-us iframe {
-    margin: 15px auto;
-  }
-  #sponsors #sponsorLogo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #sponsors #sponsorLogo img {
-    width: 35%;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .cta-card {
-    -webkit-transition: margin-top 0.5s;
-    transition: margin-top 0.5s;
-  }
-  .cta-card:hover {
-    margin-top: -20px;
   }
 }
 /*# sourceMappingURL=index.css.map */
