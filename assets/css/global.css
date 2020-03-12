@@ -1,8 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   color: white;
 }
@@ -28,8 +27,6 @@ h2 {
   padding: 0px 20px;
   font-size: 60px;
   margin-left: 7%;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
 }
 
@@ -46,7 +43,6 @@ h3 {
   font-style: italic;
   position: relative;
 }
-
 h3::before {
   content: "";
   height: 35px;
@@ -63,40 +59,38 @@ p {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .text-content {
   width: 65%;
   margin: 5% auto;
 }
-
 .text-content * {
   margin: 7% 0%;
 }
 
 @media only screen and (max-width: 899px) {
   html,
-  body {
+body {
     overflow-x: hidden;
   }
+
   body {
     position: relative;
   }
+
   .container {
     width: 100vw;
   }
+
   p {
     font-size: 16px;
     line-height: 160%;
   }
+
   .text-content {
     width: 80%;
     margin: 5% auto;
@@ -104,22 +98,23 @@ p {
   .text-content * {
     margin: 7% 0%;
   }
+
   h2 {
     background-color: #222222;
     padding: 0px 10px;
     font-size: 27px;
     margin-left: 4%;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-bottom: 20px;
   }
+
   .h2bar {
     height: 15px;
     width: 100%;
     background-color: #399fd3;
     margin-bottom: -28px;
   }
+
   h3 {
     font-size: 25px;
     font-weight: 500;
@@ -136,15 +131,16 @@ p {
     left: -15px;
     top: 3px;
   }
+
   #map {
     width: 85%;
   }
 }
-
 @media only screen and (min-width: 768px) {
   .text-content {
     width: 66%;
   }
+
   h3 {
     font-size: 25px;
     font-weight: 500;
@@ -162,18 +158,16 @@ p {
     top: 3px;
   }
 }
-
 @media only screen and (min-width: 1200px) {
   .container {
     width: 100%;
   }
 }
-
 @media only screen and (min-width: 1800px) {
   .container {
     width: 1200px;
-    -webkit-box-shadow: 3px 0px 5px black, -3px 0px 5px black;
-            box-shadow: 3px 0px 5px black, -3px 0px 5px black;
+    box-shadow: 3px 0px 5px black, -3px 0px 5px black;
   }
 }
+
 /*# sourceMappingURL=global.css.map */
