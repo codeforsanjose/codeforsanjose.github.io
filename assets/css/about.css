@@ -2,16 +2,28 @@ a {
   text-decoration: none;
 }
 
-#about-title {
-  height: 100px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 53, 53, 0.7)), to(rgba(17, 17, 17, 0.7)));
-  background-image: linear-gradient(rgba(53, 53, 53, 0.7), rgba(17, 17, 17, 0.7));
+#about-us {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: url("../img/about/about_banner.jpeg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+#about-title {
+  height: 100px;
+  width: 100%;
+  background-image: linear-gradient(rgba(53, 53, 53, 0.7), rgba(17, 17, 17, 0.7));
+  margin-bottom: auto;
+}
 #about-title h1 {
-  font-size: 50px;
+  font-size: 45px;
   position: relative;
-  top: 10%;
+  top: 10px;
+  margin: auto 0;
 }
 
 .iframe-container {
@@ -20,7 +32,6 @@ a {
   padding-bottom: 56.25%;
   height: 0;
 }
-
 .iframe-container iframe {
   position: absolute;
   top: 0;
@@ -30,8 +41,6 @@ a {
 }
 
 .container-leader {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -41,7 +50,6 @@ a {
   margin: 1% auto;
   width: 48%;
 }
-
 .leader p {
   font-size: 28px;
   font-weight: 600;
@@ -51,7 +59,6 @@ a {
   position: relative;
   bottom: 25px;
 }
-
 .leader img {
   margin: 0;
   border-radius: 50px;
@@ -62,51 +69,57 @@ a {
 
 @media (max-width: 462px) {
   .leader p,
-  .leader img {
+.leader img {
     position: initial;
     display: block;
   }
+
   .leader img {
     margin: 1vh auto;
   }
+
   .leader p {
     text-align: center;
     padding: 1vh 5vw;
   }
 }
-
 @media (max-width: 560px) {
   .leader p {
     font-size: 16px !important;
   }
 }
-
 @media (max-width: 600px) {
   .container-leader {
     width: 110vw !important;
   }
 }
-
+@media (max-width: 860px) {
+  #about-title {
+    position: relative;
+    top: 20vh;
+    margin-bottom: 20vh;
+  }
+}
 @media (max-width: 948px) {
   .container-leader {
     display: block;
     width: 130%;
   }
+
   .leader {
     width: 100%;
     margin: 1% 15vw;
   }
 }
-
 @media (max-width: 987px) {
   .leader {
     width: 50%;
   }
 }
-
 @media (max-width: 1200px) {
   .leader p {
     font-size: 22px;
   }
 }
+
 /*# sourceMappingURL=about.css.map */
