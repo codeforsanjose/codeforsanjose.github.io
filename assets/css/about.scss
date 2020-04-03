@@ -6,17 +6,31 @@ a {
   text-decoration: none;
 }
 
+#about-us {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: url('../img/about/about_banner.jpeg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 #about-title {
   height: 100px;
+  width: 100%;
   background-image: linear-gradient(
     rgba(53, 53, 53, 0.7),
     rgba(17, 17, 17, 0.7)
   );
+  margin-bottom: auto;
 
   h1 {
-    font-size: 50px;
+    font-size: 45px;
     position: relative;
-    top: 10%;
+    top: 10px;
+    margin: auto 0;
   }
 }
 
@@ -93,6 +107,15 @@ a {
   }
 }
 
+@media (max-width: 860px) {
+  #about-title {
+    position: relative;
+    top: 20vh;
+    margin-bottom: 20vh;
+    // margin-top: -1vh;
+  }
+}
+
 @media (max-width: 948px) {
   .container-leader {
     display: block;
@@ -110,8 +133,6 @@ a {
     width: 50%;
   }
 }
-
-// DESKTOP LAYOUT
 
 @media (max-width: 1200px) {
   .leader p {
