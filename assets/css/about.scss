@@ -7,16 +7,22 @@ a {
 }
 
 #about-title {
-  height: 100px;
-  background-image: linear-gradient(
-    rgba(53, 53, 53, 0.7),
-    rgba(17, 17, 17, 0.7)
-  );
+  height: 200px;
+  width: 100%;
+  background: url(../img/hero_img/abstractbaseball.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+  position: relative;
 
   h1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
     font-size: 50px;
-    position: relative;
-    top: 10%;
+    width: 85%;
+    position: absolute;
+    left: 0px;
+    bottom: -25px;
   }
 }
 
@@ -24,7 +30,6 @@ a {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
-  height: 0;
 
   iframe {
     position: absolute;
@@ -35,86 +40,137 @@ a {
   }
 }
 
-.container-leader {
-  display: flex;
+#leadership-team {
+  h3 {
+    margin-left: 35px;
+  }
+  .leader {
+    position: relative;
+    border: 3px solid $accent-color;
+    border-radius: 30px;
+    margin: 25px auto;
+    width: 300px;
+    height: 60px;
+
+    p {
+      font-size: 135%;
+      font-weight: 600;
+      position: absolute;
+      top: 5px;
+      left: 75px;
+      white-space: nowrap;
+    }
+
+    img {
+      border-radius: 50%;
+      height: 60px;
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      border: 3px solid $accent-color;
+    }
+  }
+
+  .captain {
+    border: none;
+    border-bottom: 3px solid $accent-color;
+    border-radius: 0px;
+    width: 250px;
+
+    img {
+      border: 3px solid $accent-color;
+      top: 0px;
+      left: -28px;
+    }
+
+    p {
+      left: 50px;
+      top: 10px;
+    }
+  }
 }
 
-.leader {
-  border: 4px solid $accent-color;
-  border-radius: 50px;
-  margin: 1% auto;
-  width: 48%;
+// PHONE LANDSCAPE LAYOUT ******************************************************
 
-  p {
-    font-size: 28px;
-    font-weight: 600;
-    padding: 0 10px;
-    margin: 0;
-    display: inline-block;
-    position: relative;
-    bottom: 25px;
-  }
-
-  img {
-    margin: 0;
-    border-radius: 50px;
-    display: inline-block;
-    position: relative;
-    top: 5px;
-  }
-}
-
-@media (max-width: 462px) {
-  .leader p,
-  .leader img {
-    position: initial;
-    display: block;
-  }
-
-  .leader img {
-    margin: 1vh auto;
-  }
-
-  .leader p {
+@media (orientation: landscape) {
+  #leadership-team {
+    flex-direction: row;
     text-align: center;
-    padding: 1vh 5vw;
   }
-}
-
-@media (max-width: 560px) {
-  .leader p {
-    font-size: 16px !important;
-  }
-}
-
-@media (max-width: 600px) {
-  .container-leader {
-    width: 110vw !important;
-  }
-}
-
-@media (max-width: 948px) {
-  .container-leader {
-    display: block;
-    width: 130%;
-  }
-
   .leader {
-    width: 100%;
-    margin: 1% 15vw;
+    display: inline-block;
+    width: 250px;
+    margin: 20px 20px;
+    p {
+      top: 5px;
+    }
+  }
+  .captain {
+    width: 250px;
   }
 }
 
-@media (max-width: 987px) {
-  .leader {
-    width: 50%;
+// TABLET PORTRAIT LAYOUT ********************************************************
+
+@media (min-width: 600px) and (orientation: portrait) {
+  #leadership-team {
+    flex-direction: row;
+    text-align: center;
+
+    h3 {
+      margin-left: 60px;
+    }
+
+    .leader {
+      display: inline-block;
+      width: 275px;
+      margin: 15px 20px;
+      p {
+        top: 10px;
+      }
+    }
+    .captain {
+      width: 250px;
+    }
   }
 }
 
-// DESKTOP LAYOUT
+// TABLET LANDSCAPE LAYOUT **********************************************************
 
-@media (max-width: 1200px) {
-  .leader p {
-    font-size: 22px;
+@media (min-width: 600px) and (orientation: landscape) {
+  #about-title {
+    height: 300px;
   }
+  #leadership-team {
+    flex-direction: row;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+
+    .leader {
+      display: inline-block;
+      width: 275px;
+      margin: 15px 30px;
+      p {
+        top: 10px;
+      }
+    }
+    .captain {
+      width: 250px;
+    }
+  }
+}
+
+// DESKTOP LAYOUT ***************************************************************
+
+@media (min-width: 1200px) {
+  .iframe-container {
+    width: 75%;
+    margin: 10px auto;
+  }
+}
+
+// XL DESKTOP *******************************************************************
+
+@media (min-width: 1800px) {
 }

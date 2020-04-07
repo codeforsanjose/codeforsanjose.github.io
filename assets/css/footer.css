@@ -73,11 +73,11 @@ footer #legal {
 }
 
 footer #legal img {
-  width: 70%;
+  width: 60%;
 }
 
 footer #legal p {
-  font-size: 8px;
+  font-size: 55%;
   margin-right: 10px;
 }
 
@@ -104,7 +104,7 @@ footer #legal p {
     width: 40%;
   }
   footer #legal p {
-    font-size: 8px;
+    font-size: 65%;
     margin-right: 15px;
   }
 }
@@ -128,10 +128,10 @@ footer #legal p {
     padding-right: 30px;
   }
   footer #legal img {
-    width: 45%;
+    width: 38%;
   }
   footer #legal p {
-    font-size: 8px;
+    font-size: 65%;
     margin-right: 15px;
     line-height: 2;
   }
@@ -145,7 +145,7 @@ footer #legal p {
     margin-bottom: 7px;
   }
   footer #legal img {
-    width: 35%;
+    width: 30%;
   }
   footer #legal p {
     font-size: 14px;

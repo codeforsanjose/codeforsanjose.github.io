@@ -2,6 +2,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -21,8 +22,10 @@ header a #navlogo {
 
 #menu-btn {
   position: absolute;
-  top: 30px;
-  right: 25px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 85%;
   width: 50px;
   height: 50px;
   display: block;
@@ -107,6 +110,7 @@ header a #navlogo {
 
 @media (orientation: landscape) {
   #navlinks {
+    width: 50vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -130,6 +134,9 @@ header a #navlogo {
   }
   #menu-btn {
     display: none;
+  }
+  #navlinks {
+    width: 33vw;
   }
   #navlinks {
     -webkit-box-orient: vertical;
@@ -190,6 +197,9 @@ header a #navlogo {
   }
   header a {
     width: 15%;
+  }
+  #navlinks {
+    width: 33vw;
   }
   #navlinks {
     background-color: #222222;
@@ -256,7 +266,7 @@ header a #navlogo {
     margin-bottom: 15px;
   }
   #navlinks #links a {
-    font-size: 2.2vw;
+    font-size: 175%;
     padding-bottom: 3px;
     border-bottom: solid 0px #399fd3;
     -webkit-transition: border-bottom 0.1s linear;

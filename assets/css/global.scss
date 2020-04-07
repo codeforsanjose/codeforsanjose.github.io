@@ -18,49 +18,53 @@ body {
   background-color: #222222;
   color: white;
   font-family: Helvetica;
+  font-size: 100%;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 500%;
   font-weight: 700;
   text-align: center;
 }
 
 h2 {
   background-color: #222222;
-  padding: 0px 20px;
-  font-size: 60px;
-  margin-left: 7%;
+  padding: 0px 10px;
+  font-size: 150%;
+  margin-left: 4%;
   max-width: fit-content;
 }
 
 .h2bar {
-  height: 20px;
+  height: 15px;
   width: 100%;
   background-color: $accent-color;
-  margin-bottom: -4.1%;
+  margin-bottom: -26px;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 160%;
   font-weight: 500;
   font-style: italic;
   position: relative;
+  margin: 25px 0px;
+  margin-left: -10px;
+  text-align: left;
 
   &::before {
     content: "";
-    height: 35px;
-    width: 9px;
+    height: 80%;
+    width: 7px;
     background-color: $accent-color;
     position: absolute;
-    left: 0;
-    top: 3px;
+    left: -12px;
+    top: 4px;
   }
 }
 
 p {
-  font-size: 25px;
-  line-height: 40px;
+  font-size: 100%;
+  line-height: 2;
 }
 
 .container {
@@ -70,15 +74,17 @@ p {
 }
 
 .text-content {
-  width: 65%;
-  margin: 5% auto;
+  width: 80%;
+  margin: 20px auto;
 
-  * {
-    margin: 7% 0%;
+  p {
+    margin: 20px 0px;
   }
 }
 
-@media only screen and (max-width: 899px) {
+// PHONE LANDSCAPE LAYOUT ******************************************************
+
+@media (orientation: landscape) {
   html,
   body {
     overflow-x: hidden;
@@ -99,11 +105,7 @@ p {
 
   .text-content {
     width: 80%;
-    margin: 5% auto;
-
-    * {
-      margin: 7% 0%;
-    }
+    margin: 20px auto;
   }
 
   h2 {
@@ -127,7 +129,7 @@ p {
     font-weight: 500;
     font-style: italic;
     position: relative;
-    margin-left: -40px;
+    margin-left: 0px;
 
     &::before {
       content: "";
@@ -145,23 +147,37 @@ p {
   }
 }
 
-// TABLET LAYOUT
+// TABLET PORTRAIT LAYOUT ********************************************************
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 600px) and (orientation: portrait) {
   .text-content {
-    width: 66%;
+    width: 85%;
+  }
+
+  p {
+    font-size: 115%;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 250%;
+  }
+
+  .h2bar {
+    height: 18px;
+    margin-bottom: -40px;
   }
 
   h3 {
-    font-size: 25px;
+    font-size: 175%;
     font-weight: 500;
     font-style: italic;
     position: relative;
-    margin-left: -40px;
+    margin-left: 0px;
 
     &::before {
       content: "";
-      height: 30px;
+      height: 90%;
       width: 9px;
       background-color: $accent-color;
       position: absolute;
@@ -171,15 +187,34 @@ p {
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .container {
-    width: 100%;
+// TABLET LANDSCAPE LAYOUT **********************************************************
+
+@media (min-width: 600px) and (orientation: landscape) {
+  .text-content {
+    width: 75%;
+    margin: 20px auto;
+  }
+  h2 {
+    font-size: 250%;
+  }
+  .h2bar {
+    height: 20px;
+    margin-bottom: -40px;
   }
 }
 
-@media only screen and (min-width: 1800px) {
+// DESKTOP LAYOUT ***************************************************************
+
+@media (min-width: 1200px) {
   .container {
     width: 1200px;
     box-shadow: 3px 0px 5px black, -3px 0px 5px black;
+  }
+}
+
+// XL DESKTOP *******************************************************************
+
+@media (min-width: 1800px) {
+  .container {
   }
 }

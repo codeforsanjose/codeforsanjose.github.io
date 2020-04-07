@@ -3,22 +3,30 @@ a {
 }
 
 #about-title {
-  height: 100px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 53, 53, 0.7)), to(rgba(17, 17, 17, 0.7)));
-  background-image: linear-gradient(rgba(53, 53, 53, 0.7), rgba(17, 17, 17, 0.7));
+  height: 200px;
+  width: 100%;
+  background: url(../img/hero_img/abstractbaseball.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 #about-title h1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
   font-size: 50px;
-  position: relative;
-  top: 10%;
+  width: 85%;
+  position: absolute;
+  left: 0px;
+  bottom: -25px;
 }
 
 .iframe-container {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
-  height: 0;
 }
 
 .iframe-container iframe {
@@ -29,84 +37,130 @@ a {
   height: 100%;
 }
 
-.container-leader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#leadership-team h3 {
+  margin-left: 35px;
 }
 
-.leader {
-  border: 4px solid #399fd3;
-  border-radius: 50px;
-  margin: 1% auto;
-  width: 48%;
+#leadership-team .leader {
+  position: relative;
+  border: 3px solid #399fd3;
+  border-radius: 30px;
+  margin: 25px auto;
+  width: 300px;
+  height: 60px;
 }
 
-.leader p {
-  font-size: 28px;
+#leadership-team .leader p {
+  font-size: 135%;
   font-weight: 600;
-  padding: 0 10px;
-  margin: 0;
-  display: inline-block;
-  position: relative;
-  bottom: 25px;
-}
-
-.leader img {
-  margin: 0;
-  border-radius: 50px;
-  display: inline-block;
-  position: relative;
+  position: absolute;
   top: 5px;
+  left: 75px;
+  white-space: nowrap;
 }
 
-@media (max-width: 462px) {
-  .leader p,
-  .leader img {
-    position: initial;
-    display: block;
-  }
-  .leader img {
-    margin: 1vh auto;
-  }
-  .leader p {
+#leadership-team .leader img {
+  border-radius: 50%;
+  height: 60px;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  border: 3px solid #399fd3;
+}
+
+#leadership-team .captain {
+  border: none;
+  border-bottom: 3px solid #399fd3;
+  border-radius: 0px;
+  width: 250px;
+}
+
+#leadership-team .captain img {
+  border: 3px solid #399fd3;
+  top: 0px;
+  left: -28px;
+}
+
+#leadership-team .captain p {
+  left: 50px;
+  top: 10px;
+}
+
+@media (orientation: landscape) {
+  #leadership-team {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     text-align: center;
-    padding: 1vh 5vw;
-  }
-}
-
-@media (max-width: 560px) {
-  .leader p {
-    font-size: 16px !important;
-  }
-}
-
-@media (max-width: 600px) {
-  .container-leader {
-    width: 110vw !important;
-  }
-}
-
-@media (max-width: 948px) {
-  .container-leader {
-    display: block;
-    width: 130%;
   }
   .leader {
-    width: 100%;
-    margin: 1% 15vw;
+    display: inline-block;
+    width: 250px;
+    margin: 20px 20px;
   }
-}
-
-@media (max-width: 987px) {
-  .leader {
-    width: 50%;
-  }
-}
-
-@media (max-width: 1200px) {
   .leader p {
-    font-size: 22px;
+    top: 5px;
+  }
+  .captain {
+    width: 250px;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  #leadership-team {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+  }
+  #leadership-team h3 {
+    margin-left: 60px;
+  }
+  #leadership-team .leader {
+    display: inline-block;
+    width: 275px;
+    margin: 15px 20px;
+  }
+  #leadership-team .leader p {
+    top: 10px;
+  }
+  #leadership-team .captain {
+    width: 250px;
+  }
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+  #about-title {
+    height: 300px;
+  }
+  #leadership-team {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+  }
+  #leadership-team .leader {
+    display: inline-block;
+    width: 275px;
+    margin: 15px 30px;
+  }
+  #leadership-team .leader p {
+    top: 10px;
+  }
+  #leadership-team .captain {
+    width: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .iframe-container {
+    width: 75%;
+    margin: 10px auto;
   }
 }
 /*# sourceMappingURL=about.css.map */

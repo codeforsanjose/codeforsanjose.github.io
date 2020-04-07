@@ -1,326 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Code for San José - About</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/about.css" />
-    <script
-      src="https://kit.fontawesome.com/a5c8bf6536.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap"
-      rel="stylesheet"
-    />
-    <script src="../js/app.js"></script>
-  </head>
 
-  <body>
-    <div class="container">
-      <header>
-        <a href="../../index.html">
-          <img
-            src="../img/logonav.png"
-            id="navlogo"
-            alt="Code for San José logo"
-          />
-        </a>
-        <div id="menu-btn">
-          <i onclick="menu_toggle()" id="fa-btn" class="fas fa-2x fa-bars"></i>
-        </div>
-        <div id="navlinks">
-          <div id="links">
-            <a
-              ontouchstart="menuTouch(event)"
-              id="volLnk"
-              href="./volunteer.html"
-              >Volunteer</a
-            >
-            <a ontouchstart="menuTouch(event)" id="abtLnk" href="./about.html"
-              >About Us</a
-            >
-            <a
-              ontouchstart="menuTouch(event)"
-              id="projLnk"
-              href="./projects.html"
-              >Projects</a
-            >
-            <a
-              ontouchstart="menuTouch(event)"
-              id="evLnk"
-              href="../../index.html#find-us"
-              >Events</a
-            >
-            <a
-              ontouchstart="menuTouch(event)"
-              id="donLnk"
-              href="https://www.codeforamerica.org/donate-to-a-brigade"
-              target="_blank"
-              >Donate</a
-            >
-            <a ontouchstart="menuTouch(event)" id="faqLnk" href="./faq.html"
-              >FAQ</a
-            >
-          </div>
-          <div id="sociallinks">
-            <a class="tooltip" href="#">
-              <img
-                src="../img/social_logos/Slack_Mark.svg"
-                alt="Slack logo"
-                class="socialnav"
-              />
-              <span class="tooltiptext">Slack</span>
-            </a>
-            <a class="tooltip" href="#">
-              <img
-                src="../img/social_logos/meetup-logo-m-swarm.png"
-                alt="Meetup logo"
-                class="socialnav"
-              />
-              <span class="tooltiptext">Meetup</span>
-            </a>
-            <a class="tooltip" href="#">
-              <img
-                src="../img/social_logos/f_logo_RGB-Blue_512.png"
-                alt="Facebook logo"
-                class="socialnav"
-              />
-              <span class="tooltiptext">Facebook</span>
-            </a>
-            <a class="tooltip" href="#">
-              <img
-                src="../img/social_logos/Twitter_Social_Icon_Circle_Color.svg"
-                alt="Twitter logo"
-                class="socialnav"
-              />
-              <span class="tooltiptext">Twitter</span>
-            </a>
-            <a class="tooltip" href="#">
-              <img
-                src="../img/social_logos/GitHub-Mark-Light-120px-plus.png"
-                alt="Github logo"
-                class="socialnav"
-              />
-              <span class="tooltiptext">Github</span>
-            </a>
-            <a class="tooltip" href="#">
-              <img
-                src="../img/social_logos/Monogram.svg"
-                alt="Medium logo"
-                class="socialnav"
-              />
-              <span class="tooltiptext">Medium</span>
-            </a>
-          </div>
-        </div>
-      </header>
+<head>
+  <title>Code for San José - About</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/about.css" />
+  <script src="https://kit.fontawesome.com/a5c8bf6536.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap"
+    rel="stylesheet" />
+  <script src="../js/app.js"></script>
+</head>
 
-      <div class="text-content" id="about-us">
-        <div id="about-title">
-          <h1>About Us</h1>
-        </div>
-        <h3>What is Code for San Jose?</h3>
-        <p>
-          We are a group of volunteer developers, designers, researchers,
-          community organizers, and more who collaborate on technical projects
-          that better our community, including websites, civic apps, data
-          visualizations, and media projects.
-        </p>
-        <p>
-          We create a space for San Jose’s civic tech community to meet,
-          experiment and collaborate on all kinds of projects through our twice-
-          monthly Civic Hack Nights.
-        </p>
-        <p>
-          We typically meet twice a month on Thursdays 6:30-9:00pm in downtown
-          San José. Find our next events by joining our
-          <a href="https://www.meetup.com/Code-for-San-Jose/">Meetup group</a>.
-        </p>
-        <p>
-          Technical skills are not required to contribute. Project managers,
-          subject matter experts, communications specialists, writers,
-          researchers, community organizers, creatives, designers, developers,
-          data scientists are all welcome!
-        </p>
-        <p>
-          We are part of the
-          <a
-            href="https://brigade.codeforamerica.org/brigades"
-            rel="noopener"
-            target="_blank"
-            >Code for America Brigade Network:</a
-          >
-        </p>
-        <div class="iframe-container">
-          <iframe
-            src="https://www.youtube.com/embed/mYzMl_HnEZU"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-
-        <p>
-          Have more questions about our history and how we operate?
-          <a href="./faq.html"
-            >See our FAQ (Frequently Asked Questions) page.</a
-          >
-        </p>
-        <h3>Let's collaborate!</h3>
-        <p>
-          Pitch a design, data or coding project for our volunteers to work on.
-          You can
-          <a
-            href="https://github.com/codeforsanjose/Project-Ideas/issues"
-            rel="noopener"
-            target="_blank"
-            >share your idea</a
-          >
-          or <a href="mailto:codeforsanjose@gmail.com">email us</a>.
-        </p>
+<body>
+  <div class="container">
+    <header>
+      <a href="../../index.html">
+        <img src="../img/logonav.png" id="navlogo" alt="Code for San José logo" />
+      </a>
+      <div id="menu-btn">
+        <i onclick="menu_toggle()" id="fa-btn" class="fas fa-2x fa-bars"></i>
       </div>
-
-      <div id="leadership-team">
-        <div class="h2bar"></div>
-        <h2>Our Leadership Team</h2>
-        <div class="text-content">
-          <h3>Captains</h3>
-          <div class="container-leader">
-            <div class="leader">
-              <a href="https://linkedin.com/in/yanyinchoy">
-                <img src="../img/leadership/yan-yin.png" alt="yan-yin.png" />
-                <p>Yan-Yin Choi</p>
-              </a>
-            </div>
-            <div class="leader">
-              <a href="https://www.linkedin.com/in/joseph-richardson-97206953/">
-                <img src="../img/leadership/joseph.png" alt="joseph.png" />
-                <p>Joseph Richardson</p>
-              </a>
-            </div>
-          </div>
-          <div class="container-leader">
-            <div class="leader">
-              <a href="https://www.linkedin.com/in/anniesteenson/">
-                <img src="../img/leadership/annie.png" alt="annie.png" />
-                <p>Annie Steenson</p>
-              </a>
-            </div>
-          </div>
-
-          <h3>Leadership Team Members</h3>
-          <div class="container-leader">
-            <div class="leader">
-              <img src="../img/leadership/default.png" alt="default.png" />
-              <p>Lorin Carmago</p>
-            </div>
-            <div class="leader">
-              <img src="../img/leadership/default.png" alt="default.png" />
-              <p>Namrata Challa</p>
-            </div>
-          </div>
-          <div class="container-leader">
-            <div class="leader">
-              <img src="../img/leadership/default.png" alt="default.png" />
-              <p>Jason Gardner</p>
-            </div>
-            <div class="leader">
-              <img src="../img/leadership/default.png" alt="default.png" />
-              <p>Kyle Falconer</p>
-            </div>
-          </div>
-          <div class="container-leader">
-            <div class="leader">
-              <img src="../img/leadership/default.png" alt="default.png" />
-              <p>Erika Hudiono</p>
-            </div>
-            <div class="leader">
-              <img src="../img/leadership/default.png" alt="default.png" />
-              <p>Clarence Leung</p>
-            </div>
-          </div>
-          <div class="container-leader">
-            <div class="leader">
-              <img src="../img/leadership/default.png" alt="default.png" />
-              <p>Minh Nguyen</p>
-            </div>
-            <div class="leader">
-              <img src="../img/leadership/default.png" alt="default.png" />
-              <p>Dane Olsen</p>
-            </div>
-          </div>
-          <div class="container-leader">
-            <div class="leader">
-              <img src="../img/leadership/default.png" alt="default.png" />
-              <p>Emily Ramos</p>
-            </div>
-            <div class="leader">
-              <img src="../img/leadership/default.png" alt="default.png" />
-              <p>Helen Skinner</p>
-            </div>
-          </div>
-          <div class="container-leader">
-            <div class="leader">
-              <img src="../img/leadership/default.png" alt="default.png" />
-              <p>Lena Tran</p>
-            </div>
-            <div class="leader">
-              <img src="../img/leadership/default.png" alt="default.png" />
-              <p>Michelle Thong</p>
-            </div>
-          </div>
-
-          <h3>Former Captains</h3>
-          <div class="container-leader">
-            <div class="leader">
-              <img src="../img/leadership/default.png" alt="default.png" />
-              <p>Michelle Thong</p>
-            </div>
-            <div class="leader">
-              <img src="../img/leadership/default.png" alt="default.png" />
-              <p>Kalen Gallagher</p>
-            </div>
-          </div>
-          <div class="container-leader">
-            <div class="leader">
-              <img src="../img/leadership/default.png" alt="default.png" />
-              <p>Vivek Bansal</p>
-            </div>
-          </div>
+      <div id="navlinks">
+        <div id="links">
+          <a ontouchstart="menuTouch(event)" id="volLnk" href="./volunteer.html">Volunteer</a>
+          <a ontouchstart="menuTouch(event)" id="abtLnk" href="./about.html">About Us</a>
+          <a ontouchstart="menuTouch(event)" id="projLnk" href="./projects.html">Projects</a>
+          <a ontouchstart="menuTouch(event)" id="evLnk" href="../../index.html#find-us">Events</a>
+          <a ontouchstart="menuTouch(event)" id="donLnk" href="https://www.codeforamerica.org/donate-to-a-brigade"
+            target="_blank">Donate</a>
+          <a ontouchstart="menuTouch(event)" id="faqLnk" href="./faq.html">FAQ</a>
+        </div>
+        <div id="sociallinks">
+          <a class="tooltip" href="#">
+            <img src="../img/social_logos/Slack_Mark.svg" alt="Slack logo" class="socialnav" />
+            <span class="tooltiptext">Slack</span>
+          </a>
+          <a class="tooltip" href="#">
+            <img src="../img/social_logos/meetup-logo-m-swarm.png" alt="Meetup logo" class="socialnav" />
+            <span class="tooltiptext">Meetup</span>
+          </a>
+          <a class="tooltip" href="#">
+            <img src="../img/social_logos/f_logo_RGB-Blue_512.png" alt="Facebook logo" class="socialnav" />
+            <span class="tooltiptext">Facebook</span>
+          </a>
+          <a class="tooltip" href="#">
+            <img src="../img/social_logos/Twitter_Social_Icon_Circle_Color.svg" alt="Twitter logo" class="socialnav" />
+            <span class="tooltiptext">Twitter</span>
+          </a>
+          <a class="tooltip" href="#">
+            <img src="../img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="Github logo" class="socialnav" />
+            <span class="tooltiptext">Github</span>
+          </a>
+          <a class="tooltip" href="#">
+            <img src="../img/social_logos/Monogram.svg" alt="Medium logo" class="socialnav" />
+            <span class="tooltiptext">Medium</span>
+          </a>
         </div>
       </div>
+    </header>
 
-      <footer>
-        <div id="foot-links">
-          <div id="site-map">
-            <h5>Site Map</h5>
-            <a href="#">About Us</a>
-            <a href="#">Donate</a>
-            <a href="#">Projects</a>
-            <a href="#">FAQ</a>
-            <a href="#">Events</a>
-            <a href="#">Volunteer</a>
-          </div>
-          <div id="social-footer">
-            <h5>Social Media</h5>
-            <a href="#">Slack</a>
-            <a href="#">Meetup</a>
-            <a href="#">Facebook</a>
-            <a href="#">Medium</a>
-            <a href="#">Github</a>
-            <a href="#">Twitter</a>
-          </div>
-        </div>
-        <div id="legal">
-          <img src="../img/logonav.png" alt="Code for San José Logo" />
-          <p>Got feedback? <a href="#">Let us know!</a></p>
-          <p>&copy Code for San José 2014 - 2020</p>
-        </div>
-      </footer>
+    <div id="about-title">
+      <h1>About Us</h1>
     </div>
-  </body>
+    <div class="text-content">
+      <h3>What is Code for San Jose?</h3>
+      <p>
+        We are a group of volunteer developers, designers, researchers,
+        community organizers, and more who collaborate on technical projects
+        that better our community, including websites, civic apps, data
+        visualizations, and media projects.
+      </p>
+      <p>
+        We create a space for San Jose’s civic tech community to meet,
+        experiment and collaborate on all kinds of projects through our twice-
+        monthly Civic Hack Nights.
+      </p>
+      <p>
+        We typically meet twice a month on Thursdays 6:30-9:00pm in downtown
+        San José. Find our next events by joining our
+        <a href="https://www.meetup.com/Code-for-San-Jose/">Meetup group</a>.
+      </p>
+      <p>
+        Technical skills are not required to contribute. Project managers,
+        subject matter experts, communications specialists, writers,
+        researchers, community organizers, creatives, designers, developers,
+        data scientists are all welcome!
+      </p>
+      <p>
+        We are part of the
+        <a href="https://brigade.codeforamerica.org/brigades" rel="noopener" target="_blank">Code for America Brigade
+          Network:</a>
+      </p>
+      <div class="iframe-container">
+        <iframe src="https://www.youtube.com/embed/mYzMl_HnEZU" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p>
+        Have more questions about our history and how we operate?
+        <a href="./faq.html">See our FAQ (Frequently Asked Questions) page.</a>
+      </p>
+      <h3>Let's collaborate!</h3>
+      <p>
+        Pitch a design, data or coding project for our volunteers to work on.
+        You can
+        <a href="https://github.com/codeforsanjose/Project-Ideas/issues" rel="noopener" target="_blank">share your
+          idea</a>
+        or <a href="mailto:codeforsanjose@gmail.com">email us</a>.
+      </p>
+    </div>
+    <div class="h2bar"></div>
+    <h2>Our Leadership Team</h2>
+    <div id="leadership-team">
+      <h3>Captains</h3>
+      <div class="leader captain">
+        <a href="https://linkedin.com/in/yanyinchoy">
+          <img src="../img/leadership/yan-yin.png" alt="yan-yin.png" />
+          <p>Yan-Yin Choi</p>
+        </a>
+      </div>
+      <div class="leader captain">
+        <a href="https://www.linkedin.com/in/joseph-richardson-97206953/">
+          <img src="../img/leadership/joseph.png" alt="joseph.png" />
+          <p>Joseph Richardson</p>
+        </a>
+      </div>
+      <div class="leader captain">
+        <a href="https://www.linkedin.com/in/anniesteenson/">
+          <img src="../img/leadership/annie.png" alt="annie.png" />
+          <p>Annie Steenson</p>
+        </a>
+      </div>
+
+      <h3>Leadership Team Members</h3>
+      <div class="leader">
+        <img src="../img/leadership/default.png" alt="default.png" />
+        <p>Lorin Carmago</p>
+      </div>
+      <div class="leader">
+        <img src="../img/leadership/default.png" alt="default.png" />
+        <p>Namrata Challa</p>
+      </div>
+      <div class="leader">
+        <img src="../img/leadership/default.png" alt="default.png" />
+        <p>Jason Gardner</p>
+      </div>
+      <div class="leader">
+        <img src="../img/leadership/default.png" alt="default.png" />
+        <p>Kyle Falconer</p>
+      </div>
+      <div class="leader">
+        <img src="../img/leadership/default.png" alt="default.png" />
+        <p>Erika Hudiono</p>
+      </div>
+      <div class="leader">
+        <img src="../img/leadership/default.png" alt="default.png" />
+        <p>Clarence Leung</p>
+      </div>
+      <div class="leader">
+        <img src="../img/leadership/default.png" alt="default.png" />
+        <p>Minh Nguyen</p>
+      </div>
+      <div class="leader">
+        <img src="../img/leadership/default.png" alt="default.png" />
+        <p>Dane Olsen</p>
+      </div>
+      <div class="leader">
+        <img src="../img/leadership/default.png" alt="default.png" />
+        <p>Emily Ramos</p>
+      </div>
+      <div class="leader">
+        <img src="../img/leadership/default.png" alt="default.png" />
+        <p>Helen Skinner</p>
+      </div>
+      <div class="leader">
+        <img src="../img/leadership/default.png" alt="default.png" />
+        <p>Lena Tran</p>
+      </div>
+      <div class="leader">
+        <img src="../img/leadership/default.png" alt="default.png" />
+        <p>Michelle Thong</p>
+      </div>
+
+      <h3>Former Captains</h3>
+      <div class="leader">
+        <img src="../img/leadership/default.png" alt="default.png" />
+        <p>Michelle Thong</p>
+      </div>
+      <div class="leader">
+        <img src="../img/leadership/default.png" alt="default.png" />
+        <p>Kalen Gallagher</p>
+      </div>
+      <div class="leader">
+        <img src="../img/leadership/default.png" alt="default.png" />
+        <p>Vivek Bansal</p>
+      </div>
+    </div>
+
+    <footer>
+      <div id="foot-links">
+        <div id="site-map">
+          <h5>Site Map</h5>
+          <a href="#">About Us</a>
+          <a href="#">Donate</a>
+          <a href="#">Projects</a>
+          <a href="#">FAQ</a>
+          <a href="#">Events</a>
+          <a href="#">Volunteer</a>
+        </div>
+        <div id="social-footer">
+          <h5>Social Media</h5>
+          <a href="#">Slack</a>
+          <a href="#">Meetup</a>
+          <a href="#">Facebook</a>
+          <a href="#">Medium</a>
+          <a href="#">Github</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+      <div id="legal">
+        <img src="../img/logonav.png" alt="Code for San José Logo" />
+        <p>Got feedback? <a href="#">Let us know!</a></p>
+        <p>&copy Code for San José 2014 - 2020</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>

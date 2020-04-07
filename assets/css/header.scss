@@ -5,6 +5,7 @@ $accent-color: #399fd3;
 
 header {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid $accent-color;
@@ -20,8 +21,9 @@ header {
 
 #menu-btn {
   position: absolute;
-  top: 30px;
-  right: 25px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 85%;
   width: 50px;
   height: 50px;
   display: block;
@@ -90,6 +92,7 @@ header {
 
 @media (orientation: landscape) {
   #navlinks {
+    width: 50vw;
     flex-direction: column;
   }
   header {
@@ -123,7 +126,9 @@ header {
   #menu-btn {
     display: none;
   }
-
+  #navlinks {
+    width: 33vw;
+  }
   #navlinks {
     flex-direction: column;
     background-color: $body-color;
@@ -175,6 +180,9 @@ header {
     a {
       width: 15%;
     }
+  }
+  #navlinks {
+    width: 33vw;
   }
   #navlinks {
     background-color: $body-color;
@@ -230,7 +238,7 @@ header {
       height: 39px;
       margin-bottom: 15px;
       a {
-        font-size: 2.2vw;
+        font-size: 175%;
         padding-bottom: 3px;
         border-bottom: solid 0px $accent-color;
         transition: border-bottom 0.1s linear;
