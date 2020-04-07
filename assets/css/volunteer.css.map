@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "volunteer.scss"
-    ],
-    "names": [],
-    "file": "volunteer.css"
-}
+{"version":3,"sourceRoot":"","sources":["volunteer.scss"],"names":[],"mappings":"AAIA;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;EACA;EACA;EAEA;;;AAGF;EACE;EACA;EACA;EAIA;EACA;;AAEA;EACE;EACA;;;AAIJ;EACE;EACA;EACA;;AAEA;EACE;EACA;;;AAIJ;EACE;EACA,OArDa;EAsDb,cAtDa;EAuDb;EACA;EACA;EACA;;;AAGF;EACE;IACE;;EACA;IACE;IACA;;;AAKN;EACE;IACE;;;AAIJ;EACE;IACE;;;AAIJ;EACE;IACE;;;AAIJ;EACE;IACE;IACA;IACA;;EAEA;IACE;IACA;;;AAKN;EACE;IACE;;;EAGF;IACE","file":"volunteer.css"}

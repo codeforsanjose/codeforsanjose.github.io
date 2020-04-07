@@ -2,6 +2,24 @@ a {
   text-decoration: none;
 }
 
+#about-us {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: url("../img/about/about_banner.jpeg") no-repeat center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 #about-title {
   height: 200px;
   width: 100%;
