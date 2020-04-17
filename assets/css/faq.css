@@ -1,1 +1,21 @@
 /* No CSS *//*# sourceMappingURL=faq.css.map */
+img {
+    display: block;
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 90%;
+  }
+
+  /* Container holding the image and the text */
+.container {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    padding-left: 90px;
+    padding-right: 20px;
+  }
