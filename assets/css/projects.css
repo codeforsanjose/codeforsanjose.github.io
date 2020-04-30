@@ -1,1 +1,29 @@
-/* No CSS *//*# sourceMappingURL=projects.css.map */
+#projects-title {
+  height: 200px;
+  width: 100%;
+  background: url(../img/hero_img/abstractbaseball.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#projects-title h1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+  font-size: 50px;
+  width: 85%;
+  position: absolute;
+  left: 0px;
+  bottom: -25px;
+}
+
+.projectsIntro {
+  margin-top: 100px;
+}
+
+#our-work {
+  margin-top: 0px;
+}
+/*# sourceMappingURL=projects.css.map */

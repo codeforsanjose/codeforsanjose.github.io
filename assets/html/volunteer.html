@@ -1,450 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code for San José - Volunteer</title>
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/volunteer.css" />
-    <script
-      src="https://kit.fontawesome.com/a5c8bf6536.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap"
-      rel="stylesheet"
-    />
-    <script src="../js/app.js"></script>
-  </head>
 
-  <body>
-    <div class="container">
-      <header>
-        <a href="../../index.html">
-          <img
-            src="../img/logonav.png"
-            id="navlogo"
-            alt="Code for San José logo"
-          />
-        </a>
-        <div id="menu-btn">
-          <i onclick="menu_toggle()" id="fa-btn" class="fas fa-2x fa-bars"></i>
-        </div>
-        <div id="navlinks">
-          <div id="links">
-            <a
-              ontouchstart="menuTouch(event)"
-              id="volLnk"
-              href="./volunteer.html"
-              >Volunteer</a
-            >
-            <a ontouchstart="menuTouch(event)" id="abtLnk" href="./about.html"
-              >About Us</a
-            >
-            <a
-              ontouchstart="menuTouch(event)"
-              id="projLnk"
-              href="./projects.html"
-              >Projects</a
-            >
-            <a
-              ontouchstart="menuTouch(event)"
-              id="evLnk"
-              href="../../index.html#find-us"
-              >Events</a
-            >
-            <a
-              ontouchstart="menuTouch(event)"
-              id="donLnk"
-              href="https://www.codeforamerica.org/donate-to-a-brigade"
-              target="_blank"
-              >Donate</a
-            >
-            <a ontouchstart="menuTouch(event)" id="faqLnk" href="./faq.html"
-              >FAQ</a
-            >
-          </div>
-          <div id="sociallinks">
-            <a class="tooltip" href="https://codeforsanjose.slack.com/">
-              <img
-                src="../img/social_logos/Slack_Mark.svg"
-                alt="Slack logo"
-                class="socialnav"
-              />
-              <span class="tooltiptext">Slack</span>
-            </a>
-            <a class="tooltip" href="https://www.meetup.com/Code-for-San-Jose/">
-              <img
-                src="../img/social_logos/meetup-logo-m-swarm.png"
-                alt="Meetup logo"
-                class="socialnav"
-              />
-              <span class="tooltiptext">Meetup</span>
-            </a>
-            <a class="tooltip" href="#">
-              <img
-                src="../img/social_logos/f_logo_RGB-Blue_512.png"
-                alt="Facebook logo"
-                class="socialnav"
-              />
-              <span class="tooltiptext">Facebook</span>
-            </a>
-            <a class="tooltip" href="#">
-              <img
-                src="../img/social_logos/Twitter_Social_Icon_Circle_Color.svg"
-                alt="Twitter logo"
-                class="socialnav"
-              />
-              <span class="tooltiptext">Twitter</span>
-            </a>
-            <a class="tooltip" href="https://github.com/codeforsanjose/">
-              <img
-                src="../img/social_logos/GitHub-Mark-Light-120px-plus.png"
-                alt="Github logo"
-                class="socialnav"
-              />
-              <span class="tooltiptext">Github</span>
-            </a>
-            <a class="tooltip" href="https://medium.com/code-for-san-jose">
-              <img
-                src="../img/social_logos/Monogram.svg"
-                alt="Medium logo"
-                class="socialnav"
-              />
-              <span class="tooltiptext">Medium</span>
-            </a>
-          </div>
-        </div>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code for San José - Volunteer</title>
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/volunteer.css" />
+  <script src="https://kit.fontawesome.com/a5c8bf6536.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap"
+    rel="stylesheet" />
+  <script src="../js/app.js"></script>
+</head>
 
-      <div class="text-content" id="volunteer">
-        <div id="volunteer-title">
-          <h1>Volunteer With Us!</h1>
+<body>
+  <div class="container">
+    <header>
+      <a href="../../index.html">
+        <img src="../img/logonav.png" id="navlogo" alt="Code for San José logo" />
+      </a>
+      <div id="menu-btn">
+        <i onclick="menu_toggle()" id="fa-btn" class="fas fa-2x fa-bars"></i>
+      </div>
+      <div id="navlinks">
+        <div id="links">
+          <a ontouchstart="menuTouch(event)" id="volLnk" href="./volunteer.html">Volunteer</a>
+          <a ontouchstart="menuTouch(event)" id="abtLnk" href="./about.html">About Us</a>
+          <a ontouchstart="menuTouch(event)" id="projLnk" href="./projects.html">Projects</a>
+          <a ontouchstart="menuTouch(event)" id="evLnk" href="../../index.html#find-us">Events</a>
+          <a ontouchstart="menuTouch(event)" id="donLnk" href="https://www.codeforamerica.org/donate-to-a-brigade"
+            target="_blank">Donate</a>
+          <a ontouchstart="menuTouch(event)" id="faqLnk" href="./faq.html">FAQ</a>
+        </div>
+        <div id="sociallinks">
+          <a class="tooltip" href="https://codeforsanjose.slack.com/">
+            <img src="../img/social_logos/Slack_Mark.svg" alt="Slack logo" class="socialnav" />
+            <span class="tooltiptext">Slack</span>
+          </a>
+          <a class="tooltip" href="https://www.meetup.com/Code-for-San-Jose/">
+            <img src="../img/social_logos/meetup-logo-m-swarm.png" alt="Meetup logo" class="socialnav" />
+            <span class="tooltiptext">Meetup</span>
+          </a>
+          <a class="tooltip" href="#">
+            <img src="../img/social_logos/f_logo_RGB-Blue_512.png" alt="Facebook logo" class="socialnav" />
+            <span class="tooltiptext">Facebook</span>
+          </a>
+          <a class="tooltip" href="#">
+            <img src="../img/social_logos/Twitter_Social_Icon_Circle_Color.svg" alt="Twitter logo" class="socialnav" />
+            <span class="tooltiptext">Twitter</span>
+          </a>
+          <a class="tooltip" href="https://github.com/codeforsanjose/">
+            <img src="../img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="Github logo" class="socialnav" />
+            <span class="tooltiptext">Github</span>
+          </a>
+          <a class="tooltip" href="https://medium.com/code-for-san-jose">
+            <img src="../img/social_logos/Monogram.svg" alt="Medium logo" class="socialnav" />
+            <span class="tooltiptext">Medium</span>
+          </a>
         </div>
       </div>
-      <div class="h2bar"></div>
-      <h2>Getting Started</h2>
-      <div class="text-content">
-        <div class="getting_started">
-          <a
-            href="https://slackin-c4sj.herokuapp.com/"
-            rel="noopener"
-            target="_blank"
-            ><p>1. Join Our Slack</p>
-            <img src="../img/social_logos/Slack_Mark.svg" alt="Slack_Mark.svg"
-          /></a>
-        </div>
-        <div class="getting_started">
-          <a
-            href="https://www.meetup.com/Code-for-San-Jose/"
-            rel="noopener"
-            target="_blank"
-            ><p>2. Attend a Meetup</p>
-            <img
-              src="../img/social_logos/meetup-logo-m-swarm.svg"
-              alt="meetup-logo-m-swarm.svg"
-          /></a>
-        </div>
-        <div class="getting_started">
-          <a
-            href="https://github.com/codeforsanjose/"
-            rel="noopener"
-            target="_blank"
-            ><p>3. Browse Our Github</p>
-            <img
-              src="../img/social_logos/GitHub-Mark-Light-120px-plus.png"
-              alt="GitHub-Mark-Light-120px-plus.png"
-          /></a>
-        </div>
-        <p>
-          Our online Slack chat group and in-person Meetups are great places to
-          get started helping with a project! Anyone can join! Technical skills
-          are not required to contribute.
-        </p>
-        <p>
-          <strong>1. Join Our Slack Chat</strong>
-          <a
-            href="https://slackin-c4sj.herokuapp.com/"
-            rel="noopener"
-            target="_blank"
-            ><button class="volunteer-btns">JOIN SLACK</button></a
-          >
-        </p>
-        <p>
-          We use Slack, an online chat platform, as our primary communication
-          channel to collaborate on projects and stay updated on events.
-        </p>
-        <p>Sign up to our Slack chat group and introduce yourself!</p>
-        <p>
-          <strong>2. Attend a Meetup</strong>
-          <a
-            href="https://www.meetup.com/Code-for-San-Jose/"
-            rel="noopener"
-            target="_blank"
-            ><button class="volunteer-btns">SEE MEETUPS</button></a
-          >
-        </p>
-        <p>
-          Our next in-person event details are available on our Meetup page. We
-          onboard new members at meetings. You can also meet our existing
-          members and team leads. Everyone is welcome.
-        </p>
-        <p>
-          Code for San Jose typically meets two Thursdays a month at 6:30pm at
-          ActionSpot (453 W. San Carlos St).
-        </p>
-        <p>
-          <strong>3. Browse Our Projects on Github</strong>
-          <a
-            href="https://github.com/codeforsanjose/"
-            rel="noopener"
-            target="_blank"
-            ><button class="volunteer-btns">VIEW GITHUB</button></a
-          >
-        </p>
-        <p>
-          We use Github to store, manage, and publish the open source code for
-          our projects. If you don't have an account yet, you will need to sign
-          up.
-        </p>
-        <p>
-          Take a look at our Github repositories to see what we are working on
-          currently and what we could use your help with!
-        </p>
-      </div>
-      <div class="h2bar"></div>
-      <h2>Before you join...</h2>
-      <div class="text-content">
-        <p>
-          Every member is expected to read and abide by both our Code of Conduct
-          and Anti-Harassment policy. <strong>Please</strong> read them both
-          carefully.
-        </p>
-        <p>
-          This document is adapted from Code for America's Code of Conduct and
-          Anti-Harassment Policy.
-        </p>
-        <h3>Code for San Jose's Code of Conduct</h3>
-        <p>
-          The Code for San Jose community expects that Code for San Jose network
-          activities, events, and digital forums:
-        </p>
-        <p>1. Are a safe and respectful environment for all participants.</p>
-        <p>
-          2. Are a place where people are free to fully express their
-          identities.
-        </p>
-        <p>
-          3. Presume the value of others. Everyone's ideas, skills, and
-          contributions have value.
-        </p>
-        <p>
-          4. Don't assume everyone has the same context, and encourage
-          questions.
-        </p>
-        <p>
-          5. Find a way for people to be productive with their skills (technical
-          and not) and energy. Use language such as "yes/and," not "no/but."
-        </p>
-        <p>
-          6. Encourage members and participants to listen as much as they speak.
-        </p>
-        <p>
-          7. Strive to build tools that are open and free technology for public
-          use.
-        </p>
-        <p>
-          8. Prioritize access for and input from those who are traditionally
-          excluded from the civic process.
-        </p>
-        <p>
-          9. Work to ensure that the community is well-represented in the
-          planning, design, and implementation of civic tech. This includes
-          encouraging participation from women, minorities, and traditionally
-          marginalized groups.
-        </p>
-        <p>
-          10. Actively involve community groups and those with subject matter
-          expertise in the decision-making process.
-        </p>
-        <p>
-          11. Ensure that the relationships and conversations between community
-          members, the local government staff and community partners remain
-          respectful, participatory, and productive.
-        </p>
-        <p>
-          12. Provide an environment where people are free from discrimination
-          or harassment.
-        </p>
+    </header>
 
-        <p>
-          Code for San Jose reserves the right to ask anyone in violation of
-          these policies not to participate in Code for America network
-          activities, events, and digital forums.
-        </p>
-
-        <h3>Code for San Jose's Anti-Harassment Policy</h3>
-        <p>
-          This anti-harassment policy is based on the example policy from the
-          Geek Feminism wiki, created by the Ada Initiative and other
-          volunteers.
-        </p>
-        <p>
-          This policy is based on several other policies, including the Ohio
-          LinuxFest anti-harassment policy, written by Esther Filderman and Beth
-          Lynn Eicher, and the Con Anti-Harassment Project. Mary Gardiner,
-          Valerie Aurora, Sarah Smith, and Donna Benjamin generalized the
-          policies and added supporting material. Many members of LinuxChix,
-          Geek Feminism and other groups contributed to this work.
-        </p>
-        <p>
-          All Code for San Jose network activities, events, and digital forums
-          and their staff, presenters, and participants are held to an
-          anti-harassment policy, included below.
-        </p>
-        <p>
-          In addition to governing our own events by this policy, Code for San
-          Jose will only lend our brand and fund groups that offer an
-          anti-harassment policy to their attendees. For information on how to
-          offer an anti-harassment policy to your group, see this guide from
-          Code for America.
-        </p>
-        <p>
-          Code for San Jose is dedicated to providing a harassment-free
-          experience for everyone regardless of gender, gender identity and
-          expression, sexual orientation, disability, physical appearance, body
-          size, race, age, or religion. We do not tolerate harassment of staff,
-          presenters, and participants in any form. Sexual language and imagery
-          is not appropriate for any Code for America event or network activity,
-          including talks. Anyone in violation of these policies may be expelled
-          from Code for America network activities, events, and digital forums,
-          at the discretion of the event organizer or forum administrator.
-        </p>
-        <p>
-          Harassment includes but is not limited to: offensive verbal or written
-          comments related to gender, gender identity and expression, sexual
-          orientation, disability, physical appearance, body size, race,
-          religion, sexual images in public spaces, deliberate intimidation,
-          stalking, following, harassing photography or recording, sustained
-          disruption of talks or other events, inappropriate physical contact,
-          unwelcome sexual attention, unwarranted exclusion, and patronizing
-          language or action.
-        </p>
-        <p>
-          If a participant engages in harassing behavior, the organizers may
-          take any action they deem appropriate, including warning the offender
-          or expulsion from Code for San Jose network activities, events, and
-          digital forums.
-        </p>
-        <p>
-          If you are being harassed, notice that someone else is being harassed,
-          or have any other concerns, please contact Code for San Jose Captains
-          Annie Steenson, Joseph Richardson and Yan-Yin Choy.
-        </p>
-        <p>
-          Event staff or forum administrators will be happy to help participants
-          contact hotel/venue security or local law enforcement, provide
-          escorts, or otherwise assist those experiencing harassment to feel
-          safe for the duration of the event.
-        </p>
-        <p>
-          If you cannot reach an event organizer or forum administrator and/or
-          it is an emergency, please call 911 and/or remove yourself from the
-          situation.
-        </p>
-        <p>
-          You can also contact Code for America about harassment at
-          safespace@codeforamerica.org and feel free to use the email template
-          below. Code for America staff acknowledge that we are not always in a
-          position to evaluate a given situation due to the number of events and
-          the fact that our team is not always present. However, we are hopeful
-          that by providing these guidelines we are establishing a community
-          that jointly adheres to these values and can provide an environment
-          that is welcoming to all.
-        </p>
-        <p>
-          We value your attendance and hope that by communicating these
-          expectations widely we can all enjoy a harassment-free environment.
-        </p>
-        <h3>Email Template for Anti-Harassment Reporting</h3>
-        <p>SUBJECT: Safe Space alert at [EVENT NAME]</p>
-        <p>
-          I am writing because of harassment at a Code for San Jose Communities
-          event, (NAME, PLACE, DATE OF EVENT).
-        </p>
-        <p>You can reach me at (CONTACT INFO). Thank you.</p>
-        <p>
-          <i
-            >Source:
-            <a
-              href="https://github.com/codeforsanjose/codeofconduct"
-              rel="noopener"
-              target="_blank"
-              >Github</a
-            ></i
-          >
-        </p>
-      </div>
-
-      <footer>
-        <div id="foot-links">
-          <div id="site-map">
-            <h5>Site Map</h5>
-            <a href="./about.html">About Us</a>
-            <a
-              href="https://www.codeforamerica.org/donate-to-a-brigade"
-              rel="noopener"
-              target="_blank"
-              >Donate</a
-            >
-            <a href="./projects.html">Projects</a>
-            <a href="./faq.html">FAQ</a>
-            <a
-              href="https://www.meetup.com/Code-for-San-Jose/"
-              rel="noopener"
-              target="_blank"
-              >Events</a
-            >
-            <a href="./volunteer.html">Volunteer</a>
-          </div>
-          <div id="social-footer">
-            <h5>Social Media</h5>
-            <a
-              href="https://slackin-c4sj.herokuapp.com/"
-              rel="noopener"
-              target="_blank"
-              >Slack</a
-            >
-            <a
-              href="https://www.meetup.com/Code-for-San-Jose/"
-              rel="noopener"
-              target="_blank"
-              >Meetup</a
-            >
-            <a href="#">Facebook</a>
-            <a
-              href="https://medium.com/code-for-san-jose"
-              rel="noopener"
-              target="_blank"
-              >Medium</a
-            >
-            <a
-              href="https://github.com/codeforsanjose/"
-              rel="noopener"
-              target="_blank"
-              >Github</a
-            >
-            <a href="#">Twitter</a>
-          </div>
-        </div>
-        <div id="legal">
-          <img src="../img/logonav.png" alt="Code for San José Logo" />
-          <p>Got feedback? <a href="#">Let us know!</a></p>
-          <p>&copy Code for San José 2014 - 2020</p>
-        </div>
-      </footer>
+    <div id="volunteer">
+      <h1>Volunteer</h1>
     </div>
-  </body>
+    <div class="h2bar"></div>
+    <h2>Getting Started</h2>
+    <div class="text-content">
+      <ol id="gettingStartedList">
+        <li>
+          <div class="getting_started">
+            <a href="https://slackin-c4sj.herokuapp.com/" rel="noopener" target="_blank">
+              <p>Join Our Slack</p>
+              <img src="../img/social_logos/Slack_RGB_White.png" alt="Slack_Mark.svg" />
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="getting_started">
+            <a href="https://www.meetup.com/Code-for-San-Jose/" rel="noopener" target="_blank">
+              <p>Attend a Meetup</p>
+              <img src="../img/social_logos/meetup-logo-script.png" alt="meetup-logo-m-swarm.svg" />
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="getting_started">
+            <a href="https://github.com/codeforsanjose/" rel="noopener" target="_blank">
+              <p>Browse Our Github</p>
+              <img src="../img/social_logos/GitHub_Logo_White.png" alt="GitHub-Mark-Light-120px-plus.png" />
+            </a>
+          </div>
+        </li>
+      </ol>
+      <p>
+        Our online Slack chat group and in-person Meetups are great places to
+        get started helping with a project! Anyone can join! Technical skills
+        are not required to contribute.
+      </p>
+      <p>
+        <strong>1. Join Our Slack Chat</strong>
+        <a href="https://slackin-c4sj.herokuapp.com/" rel="noopener" target="_blank"><button class="volunteer-btns">JOIN
+            SLACK</button></a>
+      </p>
+      <p>
+        We use Slack, an online chat platform, as our primary communication
+        channel to collaborate on projects and stay updated on events.
+      </p>
+      <p>Sign up to our Slack chat group and introduce yourself!</p>
+      <p>
+        <strong>2. Attend a Meetup</strong>
+        <a href="https://www.meetup.com/Code-for-San-Jose/" rel="noopener" target="_blank"><button
+            class="volunteer-btns">SEE MEETUPS</button></a>
+      </p>
+      <p>
+        Our next in-person event details are available on our Meetup page. We
+        onboard new members at meetings. You can also meet our existing
+        members and team leads. Everyone is welcome.
+      </p>
+      <p>
+        Code for San Jose typically meets two Thursdays a month at 6:30pm at
+        ActionSpot (453 W. San Carlos St).
+      </p>
+      <p>
+        <strong>3. Browse Our Projects on Github</strong>
+        <a href="https://github.com/codeforsanjose/" rel="noopener" target="_blank"><button class="volunteer-btns">VIEW
+            GITHUB</button></a>
+      </p>
+      <p>
+        We use Github to store, manage, and publish the open source code for
+        our projects. If you don't have an account yet, you will need to sign
+        up.
+      </p>
+      <p>
+        Take a look at our Github repositories to see what we are working on
+        currently and what we could use your help with!
+      </p>
+    </div>
+    <div class="h2bar"></div>
+    <h2>Before you join...</h2>
+    <div class="text-content codeOfConduct">
+      <p>
+        Every member is expected to <span>read and abide by</span> both our Code of Conduct
+        and Anti-Harassment policy. <span>Please read them both
+          carefully.</span>
+      </p>
+      <p>
+        This document is adapted from Code for America's Code of Conduct and
+        Anti-Harassment Policy.
+      </p>
+      <h3>Code of Conduct</h3>
+      <p>
+        The Code for San Jose community expects that Code for San Jose network
+        activities, events, and digital forums:
+      </p>
+      <ol>
+        <li>Are a <span>safe</span> and <span>respectful</span> environment for all participants.</li>
+        <li>Are a place where people are free to <span>
+            fully express their
+            identities
+          </span>.</li>
+        <li><span>Presume the value of others</span>. Everyone's ideas, skills, and
+          contributions have value.</li>
+        <li><span>Don't assume everyone has the same context</span>, and encourage
+          questions.</li>
+        <li>Find a way for people to be <span>productive</span> with their skills <span>
+            (technical
+            and not)
+          </span> and energy. Use language such as <span>"yes/and,"</span> not "no/but."</li>
+        <li><span>Encourage</span> members and participants to <span>listen</span> as much as they speak.</li>
+        <li>Strive to build tools that are <span>
+            open and free technology for public
+            use</span>.</li>
+        <li><span>Prioritize access</span> for and input from those who are <span>
+            traditionally
+            excluded from the civic process</span>.</li>
+        <li>Work to ensure that the community is <span>well-represented</span> in the
+          planning, design, and implementation of civic tech. This includes
+          <span>encouraging participation</span> from <span>
+            women, minorities, and traditionally
+            marginalized groups
+          </span>.</li>
+        <li><span>Actively involve community groups</span> and those with subject matter
+          expertise in the decision-making process.</li>
+        <li>Ensure that the <span>relationships</span> and conversations between <span>
+            community
+            members
+          </span>, the <span>local government</span> staff and <span>community partners</span> remain
+          <span>respectful, participatory, and productive</span>.</li>
+        <li>Provide an environment where people are <span>
+            free from discrimination
+            or harassment
+          </span>.</li>
+      </ol>
+      <p>
+        Code for San Jose reserves the right to ask anyone in violation of
+        these policies not to participate in Code for America network
+        activities, events, and digital forums.
+      </p>
+
+      <h3>Anti-Harassment Policy</h3>
+      <p>
+        This anti-harassment policy is based on the example policy from the
+        Geek Feminism wiki, created by the Ada Initiative and other
+        volunteers.
+      </p>
+      <p>
+        This policy is based on several other policies, including the Ohio
+        LinuxFest anti-harassment policy, written by Esther Filderman and Beth
+        Lynn Eicher, and the Con Anti-Harassment Project. Mary Gardiner,
+        Valerie Aurora, Sarah Smith, and Donna Benjamin generalized the
+        policies and added supporting material. Many members of LinuxChix,
+        Geek Feminism and other groups contributed to this work.
+      </p>
+      <p>
+        All Code for San Jose network activities, events, and digital forums
+        and their staff, presenters, and participants are held to an
+        anti-harassment policy, included below.
+      </p>
+      <p>
+        In addition to governing our own events by this policy, Code for San
+        Jose will only lend our brand and fund groups that offer an
+        anti-harassment policy to their attendees. For information on how to
+        offer an anti-harassment policy to your group, see this guide from
+        Code for America.
+      </p>
+      <p>
+        Code for San Jose is dedicated to providing a <span>
+          harassment-free
+          experience for everyone
+        </span> regardless of <span>
+          gender, gender identity and
+          expression, sexual orientation, disability, physical appearance, body
+          size, race, age, or religion
+        </span>. <span>
+          We do not tolerate harassment of staff,
+          presenters, and participants in any form
+        </span>. <span>
+          Sexual language and imagery
+          is not appropriate
+        </span> for any Code for America event or network activity,
+        including talks. <span>Anyone in violation of these policies may be expelled</span>
+        from Code for America network activities, events, and digital forums,
+        at the discretion of the event organizer or forum administrator.
+      </p>
+      <p>
+        <span>Harassment includes but is not limited to:</span>
+        <ul>
+          <li>Offensive verbal or written
+            comments related to:</li>
+          <ul>
+            <li>Gender</li>
+            <li>Gender identity and expression</li>
+            <li>Sexual orientation</li>
+            <li>Disability</li>
+            <li>Physical appearance</li>
+            <li>Body size</li>
+            <li>Race</li>
+            <li>Religion</li>
+          </ul>
+          <li>Sexual images in public spaces</li>
+          <li>Deliberate intimidation</li>
+          <li>Stalking</li>
+          <li>Following</li>
+          <li>Harassing photography or recording</li>
+          <li>Sustained disruption of talks or other events</li>
+          <li>Inappropriate physical contact</li>
+          <li>Unwelcome sexual attention</li>
+          <li>Unwarranted exclusion</li>
+          <li>Patronizing language or action</li>
+        </ul>
+      </p>
+      <p>
+        If a participant engages in harassing behavior, the organizers may
+        take any action they deem appropriate, including warning the offender
+        or expulsion from Code for San Jose network activities, events, and
+        digital forums.
+      </p>
+      <p>
+        If you are being harassed, notice that someone else is being harassed,
+        or have any other concerns, please contact Code for San Jose Captains
+        Annie Steenson, Joseph Richardson and Yan-Yin Choy.
+      </p>
+      <p>
+        Event staff or forum administrators will be happy to help participants
+        contact hotel/venue security or local law enforcement, provide
+        escorts, or otherwise assist those experiencing harassment to feel
+        safe for the duration of the event.
+      </p>
+      <p>
+        If you cannot reach an event organizer or forum administrator and/or
+        it is an emergency, please call 911 and/or remove yourself from the
+        situation.
+      </p>
+      <p>
+        You can also contact Code for America about harassment at
+        safespace@codeforamerica.org and feel free to use the email template
+        below. Code for America staff acknowledge that we are not always in a
+        position to evaluate a given situation due to the number of events and
+        the fact that our team is not always present. However, we are hopeful
+        that by providing these guidelines we are establishing a community
+        that jointly adheres to these values and can provide an environment
+        that is welcoming to all.
+      </p>
+      <p>
+        We value your attendance and hope that by communicating these
+        expectations widely we can all enjoy a harassment-free environment.
+      </p>
+      <h3 class="h3_wrap">Email Template for Anti-Harassment Reporting</h3>
+      <p>SUBJECT: Safe Space alert at [EVENT NAME]</p>
+      <p>
+        I am writing because of harassment at a Code for San Jose Communities
+        event, (NAME, PLACE, DATE OF EVENT).
+      </p>
+      <p>You can reach me at (CONTACT INFO). Thank you.</p>
+      <p>
+        <i>Source:
+          <a href="https://github.com/codeforsanjose/codeofconduct" rel="noopener" target="_blank">Github</a></i>
+      </p>
+    </div>
+
+    <footer>
+      <div id="foot-links">
+        <div id="site-map">
+          <h5>Site Map</h5>
+          <a href="./about.html">About Us</a>
+          <a href="https://www.codeforamerica.org/donate-to-a-brigade" rel="noopener" target="_blank">Donate</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./faq.html">FAQ</a>
+          <a href="https://www.meetup.com/Code-for-San-Jose/" rel="noopener" target="_blank">Events</a>
+          <a href="./volunteer.html">Volunteer</a>
+        </div>
+        <div id="social-footer">
+          <h5>Social Media</h5>
+          <a href="https://slackin-c4sj.herokuapp.com/" rel="noopener" target="_blank">Slack</a>
+          <a href="https://www.meetup.com/Code-for-San-Jose/" rel="noopener" target="_blank">Meetup</a>
+          <a href="#">Facebook</a>
+          <a href="https://medium.com/code-for-san-jose" rel="noopener" target="_blank">Medium</a>
+          <a href="https://github.com/codeforsanjose/" rel="noopener" target="_blank">Github</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+      <div id="legal">
+        <img src="../img/logonav.png" alt="Code for San José Logo" />
+        <p>Got feedback? <a href="#">Let us know!</a></p>
+        <p>&copy Code for San José 2014 - 2020</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
