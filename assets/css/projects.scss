@@ -1,21 +1,8 @@
 #projects-title {
-  height: 200px;
-  width: 100%;
-  background: url(../img/hero_img/abstractbaseball.jpg);
+  background: url(../img/banners/abstractbaseball.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 20px;
-  position: relative;
-
-  h1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
-    font-size: 50px;
-    width: 85%;
-    position: absolute;
-    left: 0px;
-    bottom: -25px;
-  }
 }
 
 .projectsIntro {
@@ -24,4 +11,16 @@
 
 #our-work {
   margin-top: 0px;
+}
+
+#openModal {
+  position: fixed;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 90%;
+  height: 95%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
 }

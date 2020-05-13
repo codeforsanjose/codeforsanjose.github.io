@@ -8,12 +8,13 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   border-top: 4px solid $accent-color;
+  margin-top: 50px;
   padding-bottom: 0px;
 
   #foot-links {
     height: 175px;
     display: flex;
-    width: 60vw;
+    width: 57%;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 20px 10px;
@@ -39,17 +40,20 @@ footer {
 
   #legal {
     display: flex;
-    width: 40vw;
+    width: 41%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     height: 175px;
 
-    img {
-      width: 60%;
+    a {
+      width: 70%;
+      img {
+        width: 100%;
+      }
     }
     p {
-      font-size: 55%;
+      font-size: 8px;
       margin-right: 10px;
     }
   }
@@ -61,8 +65,11 @@ footer {
   footer {
     #legal {
       padding-right: 30px;
-      img {
+      a {
         width: 40%;
+        img {
+          width: 100%;
+        }
       }
       p {
         margin-right: 15px;
@@ -80,8 +87,11 @@ footer {
     }
     #legal {
       padding-right: 30px;
-      img {
+      a {
         width: 40%;
+        img {
+          width: 100%;
+        }
       }
       p {
         font-size: 65%;
@@ -111,8 +121,11 @@ footer {
     #legal {
       height: 200px;
       padding-right: 30px;
-      img {
+      a {
         width: 38%;
+        img {
+          width: 100%;
+        }
       }
       p {
         font-size: 65%;
@@ -136,8 +149,11 @@ footer {
       }
     }
     #legal {
-      img {
+      a {
         width: 30%;
+        img {
+          width: 100%;
+        }
       }
       p {
         font-size: 14px;

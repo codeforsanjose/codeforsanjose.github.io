@@ -1,0 +1,44 @@
+$accent-color: #399fd3;
+
+#FAQ-title {
+  background: url(../img/banners/alumrockmural.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+h4 {
+  font-size: 140%;
+  font-weight: normal;
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: circle;
+  margin: 10px 0px;
+  li {
+    margin: 0 0 4px 15px;
+  }
+}
+
+a {
+  color: $accent-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

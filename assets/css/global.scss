@@ -21,6 +21,37 @@ body {
   font-size: 100%;
 }
 
+.small-hero {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 75px;
+  position: relative;
+
+  h1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+    font-size: 50px;
+    width: 85%;
+    position: absolute;
+    left: 0px;
+    bottom: -25px;
+  }
+
+  #artist-info {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    text-align: right;
+    opacity: 65%;
+    background-color: black;
+    padding: 3px 5px;
+
+    p {
+      font-size: 11px;
+      line-height: 97%;
+    }
+  }
+}
+
 h1 {
   font-size: 500%;
   font-weight: 700;
@@ -52,12 +83,11 @@ h3 {
   font-style: italic;
   position: relative;
   margin: 25px 0px;
-  margin-left: -10px;
   text-align: left;
 
   &::before {
     content: "";
-    height: 80%;
+    height: 90%;
     width: 7px;
     background-color: $accent-color;
     position: absolute;
@@ -84,17 +114,19 @@ p {
 }
 
 .container {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   margin: 0 auto;
   flex-direction: column;
 }
 
 .text-content {
-  width: 80%;
+  width: 87%;
   margin: 20px auto;
 
   p {
-    margin: 20px 0px;
+    margin: 40px 0px;
   }
 }
 
@@ -223,12 +255,6 @@ p {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
     box-shadow: 3px 0px 5px black, -3px 0px 5px black;
   }
-}
-
-// XL DESKTOP *******************************************************************
-
-@media (min-width: 1800px) {
 }

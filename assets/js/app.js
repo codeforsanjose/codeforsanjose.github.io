@@ -7,7 +7,7 @@ let projects = [
     status: "Active",
     skills: ["Developer", "UI/UX", "Web accessibility"],
     techStack: ["SMS", "landline.io", "to be determined"],
-    slackChannel: "https://codeforsanjose.slack.com/messages/ud-talk/"
+    slackChannel: "https://codeforsanjose.slack.com/messages/ud-talk/",
   },
   {
     title: "OSM South Bay Mapping",
@@ -21,16 +21,16 @@ let projects = [
       "mappers",
       "community organizers",
       "project leaders",
-      "government GIS personnel"
+      "government GIS personnel",
     ],
     techStack: ["OpenStreetMap"],
     githubUrl: "https://github.com/codeforsanjose/OSM-SouthBay",
-    slackChannel: "https://codeforsanjose.slack.com/messages/osm/"
+    slackChannel: "https://codeforsanjose.slack.com/messages/osm/",
   },
   {
     title: "Open Disclosure San José",
     description:
-      "Build a web application to inform San Jose residents about local campaign finance through data visualization",
+      "Build a web application to inform San José residents about local campaign finance through data visualization",
     lead: "Helen Skinner",
     status: "Active",
     skills: [
@@ -41,11 +41,11 @@ let projects = [
       "Policy analysis",
       "Web accessibility",
       "UI designers",
-      "UX researchers"
+      "UX researchers",
     ],
     techStack: ["Python", "JavaScript", "CSS"],
     githubUrl: "https://github.com/codeforsanjose/open-disclosure",
-    slackChannel: "https://codeforsanjose.slack.com/messages/open-disclosure/"
+    slackChannel: "https://codeforsanjose.slack.com/messages/open-disclosure/",
   },
   {
     title: "Heart of the Valley",
@@ -59,18 +59,18 @@ let projects = [
       "Backend developer",
       "Web accessibility",
       "UI designers",
-      "UX researchers"
+      "UX researchers",
     ],
     techStack: ["JavaScript", "Mapbox GL JS", "Bootstrap", "HTML", "CSS"],
     liveUrl: "https://www.codeforsanjose.com/heartofthevalley/",
     githubUrl: "https://github.com/codeforsanjose/heartofthevalley",
     slackChannel:
-      "https://codeforsanjose.slack.com/messages/heart-of-the-valley/"
+      "https://codeforsanjose.slack.com/messages/heart-of-the-valley/",
   },
   {
-    title: "San Jose Public Library Meal Tally App",
+    title: "San José Public Library Meal Tally App",
     description:
-      "Web app to help San Jose public libraries coordinate free community meals. The web app is live in production and used by 6+ libraries. Current goal is to refactor the website and improve security.",
+      "Web app to help San José public libraries coordinate free community meals. The web app is live in production and used by 6+ libraries. Current goal is to refactor the website and improve security.",
     lead: "Joseph Richardson",
     status: "Active",
     skills: [
@@ -81,11 +81,12 @@ let projects = [
       "UI Designer",
       "UX research",
       "Communication",
-      "Government/policy staff"
+      "Government/policy staff",
     ],
     techStack: ["MongoDB", "React", "JavaScript", "CSS"],
     githubUrl: "https://github.com/codeforsanjose/SJPL-MealTally/",
-    slackChannel: "https://codeforsanjose.slack.com/messages/sj-public-library/"
+    slackChannel:
+      "https://codeforsanjose.slack.com/messages/sj-public-library/",
   },
   {
     title: "Census 2020",
@@ -98,12 +99,12 @@ let projects = [
       "Language translation",
       "Web performance",
       "Front end developer",
-      "UX researcher"
+      "UX researcher",
     ],
     techStack: ["OpenStreetMap"],
     liveUrl: "https://census-2020.herokuapp.com/",
     githubUrl: "https://github.com/codeforsanjose/census2020",
-    slackChannel: "https://codeforsanjose.slack.com/messages/census2020/"
+    slackChannel: "https://codeforsanjose.slack.com/messages/census2020/",
   },
   {
     title: "Santa Clara County Probation Department Website",
@@ -119,15 +120,15 @@ let projects = [
       "UX research",
       "Government/policy staff",
       "Content writer/editor",
-      "Marketing"
+      "Marketing",
     ],
     techStack: ["Wix"],
-    slackChannel: "https://codeforsanjose.slack.com/messages/scc-probation/"
+    slackChannel: "https://codeforsanjose.slack.com/messages/scc-probation/",
   },
   {
     title: "Disaster Response",
     description:
-      "Disaster Response SJ is a React based web application that notifies people of active disaster information for San Jose and includes disaster planning resources, plus an administrative interface for disaster response managers to create/maintain active disaster updates.",
+      "Disaster Response SJ is a React based web application that notifies people of active disaster information for San José and includes disaster planning resources, plus an administrative interface for disaster response managers to create/maintain active disaster updates.",
     lead: "Joseph Richardson",
     status: "Active",
     skills: [
@@ -138,15 +139,15 @@ let projects = [
       "data analysts",
       "UI designers",
       "UX researchers",
-      "database managers"
+      "database managers",
     ],
     techStack: ["React Native", "JavaScript"],
     githubUrl: "https://github.com/codeforsanjose/disaster-response-sj",
     slackChannel:
-      "https://codeforsanjose.slack.com/messages/disaster-response-sj/"
+      "https://codeforsanjose.slack.com/messages/disaster-response-sj/",
   },
   {
-    title: "Code for San Jose website",
+    title: "Code for San José website",
     description:
       "Design and build website, identify bugs, fix issues, and maintain content on website",
     lead: "Dane Olsen",
@@ -156,12 +157,12 @@ let projects = [
       "Marketing",
       "Designer",
       "Content writer",
-      "UX Researcher"
+      "UX Researcher",
     ],
     techStack: ["HTML", "CSS", "jQuery", "JavaScript", "Bootstrap"],
     githubUrl: "https://github.com/codeforsanjose/codeforsanjose.github.io",
     slackChannel: "https://codeforsanjose.slack.com/messages/cfsj-website/",
-    liveUrl: "https://www.codeforsanjose.com/"
+    liveUrl: "https://www.codeforsanjose.com/",
   },
   {
     title: "Razing the Bar",
@@ -171,7 +172,7 @@ let projects = [
     status: "Complete",
     skills: ["UX research", "UI design", "CMS", "Wordpress"],
     techStack: ["Wordpress"],
-    liveUrl: "https://www.razingthebar.org/"
+    liveUrl: "https://www.razingthebar.org/",
   },
   {
     title: "Map of Silicon Valley development projects with Catalyze SV",
@@ -184,8 +185,8 @@ let projects = [
     liveUrl: "https://www.catalyzesv.org/map",
     githubUrl:
       "https://github.com/codeforsanjose/Map-of-Silicon-Valley-development-projects",
-    slackChannel: "https://codeforsanjose.slack.com/messages/catalyze-sv-map"
-  }
+    slackChannel: "https://codeforsanjose.slack.com/messages/catalyze-sv-map",
+  },
 ];
 
 var isMenuOpen = false;
@@ -209,19 +210,13 @@ function menu_toggle() {
   }
 }
 
-// function menuTouch(e) {
-//   console.log(e.path[0].id);
-//   let sender = document.getElementById(e.path[0].id);
-//   sender.style.background = "#444444";
-// }
-
 function checkMenuOnScroll() {
   if (window.scrollY >= 1000 && isMenuOpen == true) {
     menu_toggle();
   }
 }
 
-window.addEventListener("scroll", function(e) {
+window.addEventListener("scroll", function (e) {
   if (window.scrollY >= 600 && isMenuOpen == true) {
     menu_toggle();
   }

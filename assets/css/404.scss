@@ -1,0 +1,22 @@
+.error404 {
+  padding: 50px 0px;
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  h1 {
+    font-size: 35px;
+    margin: 20px;
+  }
+  p {
+    font-size: 24px;
+  }
+  a {
+    display: block;
+    font-size: 25px;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba($color: white, $alpha: 0.1);
+  }
+}

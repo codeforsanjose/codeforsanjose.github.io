@@ -3,23 +3,10 @@ $body-color: #222222;
 $accent-color: #399fd3;
 
 #volunteer {
-  height: 200px;
-  width: 100%;
-  background: url(../img/volunteer/volunteer_banner.jpg);
+  background: url(../img/banners/volunteer_banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 80px;
-  position: relative;
-
-  h1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
-    font-size: 300%;
-    width: 90%;
-    position: absolute;
-    left: 0px;
-    bottom: -25px;
-  }
 }
 
 .getting_started {
@@ -71,20 +58,30 @@ ol {
   }
 }
 
+a {
+  color: $accent-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .codeOfConduct {
   span {
     color: $accent-color;
     font-weight: bold;
-    font-size: 135%;
+    // font-size: 125%;
   }
 
   ul {
     font-size: 115%;
     list-style-position: inside;
+    list-style-type: circle;
     margin: 5px 0px;
     ul {
       font-size: 100%;
       margin-left: 30px;
+      list-style-type: square;
     }
   }
 }
