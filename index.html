@@ -7,6 +7,7 @@
 <!-- -Accessibility check -->
 
 <!-- FOR LATER -->
+<!-- -Switch license to CCL from GPL -->
 <!-- -Take new photos of murals -->
 <!-- -Setup Google Analytics -->
 
@@ -60,6 +61,8 @@
     crossorigin=""></script>
   <script src="./assets/js/app.js" async></script>
   <script src="./assets/js/project-info.js" async></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js">
+  </script>
 </head>
 
 <body>
@@ -283,6 +286,7 @@
 
 </body>
 
+<!-- MAPBOX SCRIPT -->
 <script>
   var mymap = L.map("mapid").setView([37.32694, -121.89699], 17);
   L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -296,6 +300,42 @@
   var marker = L.marker([37.32694, -121.89699]).addTo(mymap);
   marker.bindPopup("<span id='mapPopup'><b>ActionSpot:</b><br>453 W San Carlos St,<br>San José, CA 95110</span>")
     .openPopup();
+</script>
+
+<!-- PROJECTS FROM GOOGLE SHEETS -->
+<script type="text/javascript">
+  var public_spreadsheet_url =
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vR3vCQ3cY0xP5oEIc6-B3N23q8hhbKEzDyfvRH_neOMZA3hBS_zU2RkjRCTYrpTjcliINqUuY_G0dsE/pub?gid=684908702&single=true&output=csv';
+
+  function init() {
+    Papa.parse(public_spreadsheet_url, {
+      download: true,
+      header: true,
+      complete: showInfo
+    })
+  }
+
+  window.addEventListener('DOMContentLoaded', init)
+
+  function showInfo(results) {
+
+    var data = results.data[0]
+    data.photos = data.photos.split(", ")
+    console.log(data);
+    let workDiv = document.getElementById("modal-attach")
+    workDiv.innerHTML = results.data.map((project) => {
+      return ` <div class="project-card">
+            <p class="badge ${project.status}">${project.status}</p>
+            <img class="project-img" src="${project.photos[0]}" alt="">
+            <h4>${project.title}</h4>
+            <p>${project.project_summary}</p>
+            <a href="${project.github_url}" target="_blank" rel="noref noopener">
+            <img src="./assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="Github" class="project-gh-logo"></a>
+            <p class="tech">Tech: ${project.tech}</p>
+            <button onclick="openModal('${project.title}')" class="learn-more">Learn More</button>
+          </div>`;
+    })
+  }
 </script>
 
 </html>

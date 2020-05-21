@@ -30,7 +30,6 @@ const leaders = [
         image: "../img/leadership/team/diane.png",
         link: "https://www.linkedin.com/in/dianelabenz/",
       },
-      // { name: "Sunny Mui", image: false, link: "#" },
       {
         name: "Minh Nguyễn",
         image: "../img/leadership/team/minh.jpg",
@@ -58,6 +57,7 @@ const leaders = [
       { name: "Lorin Camargo", image: false, link: "#" },
       { name: "Namrata Challa", image: false, link: "#" },
       { name: "Erika Hudiono", image: false, link: "#" },
+      { name: "Sunny Mui", image: false, link: "#" },
       { name: "Darren Pham", image: false, link: "#" },
       { name: "Emily Ramos", image: false, link: "#" },
       { name: "Michelle Thong", image: false, link: "#" },
