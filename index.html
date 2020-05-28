@@ -1,20 +1,20 @@
 <!-- TODOS -->
 <!-- -Fix text-content class/divs -->
-<!-- -Have project cards generate from file -->
 <!-- -Add modals to home and project pages -->
 <!-- -Get complete/updated info on projects -->
 <!-- -Convert all images to WebP format -->
+<!-- -Take new photos of murals -->
 <!-- -Accessibility check -->
 
 <!-- FOR LATER -->
 <!-- -Switch license to CCL from GPL -->
-<!-- -Take new photos of murals -->
 <!-- -Setup Google Analytics -->
 
 <!-- IN PROGRESS -->
 <!-- -Get list of current leadership team/personal info      IN PROGRESS -->
 
 <!-- DONE -->
+<!-- -Have project cards generate from file                         DONE -->
 <!-- -Fix vertical margins around site                              DONE -->
 <!-- -Update leadership team/advisory board from prev newsletter    DONE -->
 <!-- -Have leadership chips generate from file                      DONE -->
@@ -60,7 +60,7 @@
     integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
     crossorigin=""></script>
   <script src="./assets/js/app.js" async></script>
-  <script src="./assets/js/project-info.js" async></script>
+  <script src="./assets/js/project-info.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js">
   </script>
 </head>
@@ -168,60 +168,7 @@
         <h2>Our Work</h2>
         <p class="sectn-subh">Look at what we're working on and get involved!</p>
         <div id="modal-attach" class="projects">
-          <div class="project-card">
-            <p class="badge active">Active</p>
-            <img class="project-img" src="./assets/img/img_archive/cfsj_2016.jpg" alt="">
-            <h4>Open Disclosure San José</h4>
-            <p>Visualizations for financial contributions to local political campaigns.</p>
-            <img src="./assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="" class="project-gh-logo">
-            <p class="tech">Tech: Python, React, Visualization Libraries, MySQL</p>
-            <button onclick="openModal('1')" class="learn-more">Learn More</button>
-          </div>
-          <div class="project-card">
-            <p class="badge active">Active</p>
-            <img class="project-img" src="./assets/img/img_archive/cfsj_2016.jpg" alt="">
-            <h4>Open Disclosure San José</h4>
-            <p>Visualizations for financial contributions to local political campaigns.</p>
-            <img src="./assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="" class="project-gh-logo">
-            <p class="tech">Tech: Python, React, Visualization Libraries, MySQL</p>
-            <button onclick="openModal('2')" class="learn-more">Learn More</button>
-          </div>
-          <div class="project-card">
-            <p class="badge active">Active</p>
-            <img class="project-img" src="./assets/img/img_archive/cfsj_2016.jpg" alt="">
-            <h4>Open Disclosure San José</h4>
-            <p>Visualizations for financial contributions to local political campaigns.</p>
-            <img src="./assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="" class="project-gh-logo">
-            <p class="tech">Tech: Python, React, Visualization Libraries, MySQL</p>
-            <button onclick="openModal('3')" class="learn-more">Learn More</button>
-          </div>
-          <div class="project-card">
-            <p class="badge active">Active</p>
-            <img class="project-img" src="./assets/img/img_archive/cfsj_2016.jpg" alt="">
-            <h4>Open Disclosure San José</h4>
-            <p>Visualizations for financial contributions to local political campaigns.</p>
-            <img src="./assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="" class="project-gh-logo">
-            <p class="tech">Tech: Python, React, Visualization Libraries, MySQL</p>
-            <button onclick="openModal('4')" class="learn-more">Learn More</button>
-          </div>
-          <div class="project-card">
-            <p class="badge active">Active</p>
-            <img class="project-img" src="./assets/img/img_archive/cfsj_2016.jpg" alt="">
-            <h4>Open Disclosure San José</h4>
-            <p>Visualizations for financial contributions to local political campaigns.</p>
-            <img src="./assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="" class="project-gh-logo">
-            <p class="tech">Tech: Python, React, Visualization Libraries, MySQL</p>
-            <button onclick="openModal('5')" class="learn-more">Learn More</button>
-          </div>
-          <div class="project-card">
-            <p class="badge active">Active</p>
-            <img class="project-img" src="./assets/img/img_archive/cfsj_2016.jpg" alt="">
-            <h4>Open Disclosure San José</h4>
-            <p>Visualizations for financial contributions to local political campaigns.</p>
-            <img src="./assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="" class="project-gh-logo">
-            <p class="tech">Tech: Python, React, Visualization Libraries, MySQL</p>
-            <button onclick="openModal('6')" class="learn-more">Learn More</button>
-          </div>
+
         </div>
         <a href="./assets/html/projects.html" id="see-more">+ See More</a>
       </div>
@@ -302,40 +249,6 @@
     .openPopup();
 </script>
 
-<!-- PROJECTS FROM GOOGLE SHEETS -->
-<script type="text/javascript">
-  var public_spreadsheet_url =
-    'https://docs.google.com/spreadsheets/d/e/2PACX-1vR3vCQ3cY0xP5oEIc6-B3N23q8hhbKEzDyfvRH_neOMZA3hBS_zU2RkjRCTYrpTjcliINqUuY_G0dsE/pub?gid=684908702&single=true&output=csv';
 
-  function init() {
-    Papa.parse(public_spreadsheet_url, {
-      download: true,
-      header: true,
-      complete: showInfo
-    })
-  }
-
-  window.addEventListener('DOMContentLoaded', init)
-
-  function showInfo(results) {
-
-    var data = results.data[0]
-    data.photos = data.photos.split(", ")
-    console.log(data);
-    let workDiv = document.getElementById("modal-attach")
-    workDiv.innerHTML = results.data.map((project) => {
-      return ` <div class="project-card">
-            <p class="badge ${project.status}">${project.status}</p>
-            <img class="project-img" src="${project.photos[0]}" alt="">
-            <h4>${project.title}</h4>
-            <p>${project.project_summary}</p>
-            <a href="${project.github_url}" target="_blank" rel="noref noopener">
-            <img src="./assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="Github" class="project-gh-logo"></a>
-            <p class="tech">Tech: ${project.tech}</p>
-            <button onclick="openModal('${project.title}')" class="learn-more">Learn More</button>
-          </div>`;
-    })
-  }
-</script>
 
 </html>
