@@ -1,7 +1,7 @@
 $accent-color: #399fd3;
 
 #projects-title {
-  background: url(../img/banners/abstractbaseball.jpg);
+  background: url(../img/banners/blue_dog.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,7 +28,9 @@ $accent-color: #399fd3;
   border-radius: 10px;
   border: 2px solid $accent-color;
   box-shadow: 0 0 0 100vw rgba($color: black, $alpha: 0.7);
-  padding: 25px 12px;
+  padding: 50px 12px;
+  display: flex;
+  flex-direction: column;
 
   i {
     position: absolute;
@@ -36,17 +38,41 @@ $accent-color: #399fd3;
     right: 10px;
   }
 
-  h2 {
-    margin: 10px auto;
-    background-color: transparent;
-  }
-  img {
-    width: 100%;
-    border-radius: 10px;
+  .modal-imgs {
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
   }
 
-  p {
-    line-height: 115%;
-    margin: 10px 0px;
+  .modal-info {
+    h2 {
+      margin: 10px auto;
+      background-color: transparent;
+      margin-top: 0px;
+    }
+
+    p {
+      line-height: 115%;
+      margin: 10px 0px;
+    }
+  }
+}
+
+@media (min-width: 780px) {
+  #openModal {
+    width: 80vw;
+    height: 90vh;
+    flex-direction: row;
+    overflow: hidden;
+
+    .modal-imgs {
+      width: 40%;
+      margin-right: 10px;
+    }
+
+    .modal-info {
+      width: 59%;
+    }
   }
 }

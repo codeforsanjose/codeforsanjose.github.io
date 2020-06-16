@@ -18,7 +18,7 @@ body {
 }
 
 .small-hero {
-  height: 250px;
+  height: 350px;
   width: 100%;
   margin-bottom: 75px;
   position: relative;
@@ -124,6 +124,14 @@ p {
   p {
     margin: 40px 0px;
   }
+}
+
+.notify {
+  font-weight: bold;
+  background-color: #e84118;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 // PHONE LANDSCAPE LAYOUT ******************************************************

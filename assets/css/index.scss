@@ -141,7 +141,7 @@ iframe {
       justify-content: space-between;
       align-items: center;
       width: 85%;
-      height: 450px;
+      height: 475px;
       border: 5px solid $accent-color;
       border-radius: 10px;
       position: relative;
@@ -179,8 +179,20 @@ iframe {
         line-height: 20px;
       }
 
-      .project-gh-logo {
-        width: 30px;
+      #project-links {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 5px 0px;
+
+        .project-gh-logo {
+          width: 35px;
+        }
+
+        a[href="."] {
+          display: none;
+        }
       }
 
       .tech {
