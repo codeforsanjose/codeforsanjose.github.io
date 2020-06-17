@@ -54,20 +54,60 @@ const leaders = [
   },
   {
     advisory: [
-      { name: "Lorin Camargo", image: false, link: "#" },
-      { name: "Namrata Challa", image: false, link: "#" },
-      { name: "Erika Hudiono", image: false, link: "#" },
-      { name: "Sunny Mui", image: false, link: "#" },
-      { name: "Darren Pham", image: false, link: "#" },
-      { name: "Emily Ramos", image: false, link: "#" },
-      { name: "Michelle Thong", image: false, link: "#" },
+      {
+        name: "Lorin Camargo",
+        image: "../img/leadership/advisory/lorin.jpg",
+        link: "https://www.linkedin.com/in/lorincamargo/",
+      },
+      {
+        name: "Namrata Challa",
+        image: "../img/leadership/advisory/namrata.jpg",
+        link: "https://www.linkedin.com/in/namratachalla/",
+      },
+      {
+        name: "Erika Hudiono",
+        image: "../img/leadership/advisory/erika.jpg",
+        link: "https://www.linkedin.com/in/erika-hudiono/",
+      },
+      {
+        name: "Sunny Mui",
+        image: "../img/leadership/advisory/sunny.jpg",
+        link: "https://www.linkedin.com/in/sunnymui/",
+      },
+      {
+        name: "Darren Pham",
+        image: "../img/leadership/advisory/darren.jpg",
+        link: "https://www.linkedin.com/in/darep-h20/",
+      },
+      {
+        name: "Emily Ramos",
+        image: "../img/leadership/advisory/emily.jpg",
+        link: "https://www.linkedin.com/in/emilyannramos/",
+      },
+      {
+        name: "Michelle Thong",
+        image: "../img/leadership/advisory/michelle.jpg",
+        link: "https://www.linkedin.com/in/mthong/",
+      },
     ],
   },
   {
     former: [
-      { name: "Vivek Bansal", image: false, link: "#" },
-      { name: "Kalen Gallagher", image: false, link: "#" },
-      { name: "Michelle Thong", image: false, link: "#" },
+      {
+        name: "Vivek Bansal",
+        image: "../img/leadership/former_captains/vivek.jpg",
+        link: "https://www.linkedin.com/in/3vivekb/",
+      },
+      {
+        name: "Kalen Gallagher",
+        image: "../img/leadership/former_captains/kalen.jpg",
+        link: "https://www.linkedin.com/in/kalengallagher/",
+      },
+      {
+        name: "Michelle Thong",
+        image: "../img/leadership/advisory/michelle.jpg",
+        link: "https://www.linkedin.com/in/mthong/",
+      },
     ],
   },
 ];
