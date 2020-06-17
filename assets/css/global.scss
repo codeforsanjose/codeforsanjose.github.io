@@ -44,6 +44,11 @@ body {
     p {
       font-size: 11px;
       line-height: 97%;
+      margin: 5px 0px;
+
+      a {
+        color: $accent-color;
+      }
     }
   }
 }
