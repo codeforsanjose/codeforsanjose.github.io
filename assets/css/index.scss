@@ -1,0 +1,586 @@
+// GLOBAL SETTING & PHONE LAYOUT
+
+$body-color: #222222;
+$accent-color: #399fd3;
+
+#home-hero {
+  height: 600px;
+  width: 100%;
+  background: url(../img/img_archive/cfsj_withcfa_at_bowersinstitute.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  position: relative;
+
+  #home-hero-content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1% 10%;
+    h1 {
+      font-size: 175%;
+      font-weight: 300;
+      text-align: left;
+    }
+
+    p {
+      font-size: 90%;
+      font-weight: 300;
+      line-height: 150%;
+    }
+
+    #home-hero-btn {
+      padding: 10px 15px;
+      background-color: #ff5131;
+      font-size: 150%;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+  }
+}
+
+iframe {
+  width: 90%;
+  height: 200px;
+}
+
+#cta {
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
+  // background: linear-gradient(rgba(97, 97, 97, 0.1), rgba(97, 97, 97, 1)),
+  //   url(../img/img_archive/group_photo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px 0px;
+  margin-bottom: 50px;
+
+  .cta-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    margin: 10px;
+    border: 5px solid $accent-color;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.75);
+
+    * {
+      margin: 3px;
+    }
+
+    a {
+      font-size: 25px;
+      padding: 6px;
+      width: 75%;
+      text-decoration: none;
+      color: white;
+      border: 3px solid white;
+      border-radius: 50px;
+      padding: 13px;
+      width: 80%;
+      background-color: rgba(64, 139, 171, 0);
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 25px;
+      width: 90%;
+      height: 20%;
+      margin: 15px 0px;
+    }
+
+    i {
+      transform: scale(0.7);
+    }
+  }
+}
+
+.sectn-subh {
+  margin-left: 7%;
+  margin-top: 2%;
+}
+
+#our-work {
+  margin: 15% 0px;
+
+  #our-work-img {
+    background: url(../img/img_archive/group_photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-bottom: 0px;
+  }
+
+  #see-more {
+    background-color: #222222;
+    border: 5px solid $accent-color;
+    border-radius: 50px;
+    font-size: 20px;
+    color: white;
+    padding: 7px 20px;
+    display: block;
+    width: 175px;
+    text-align: center;
+    margin: 0px auto;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 85%;
+      height: 475px;
+      border: 5px solid $accent-color;
+      border-radius: 10px;
+      position: relative;
+      text-align: center;
+      padding-bottom: 30px;
+      margin: 50px auto;
+
+      .badge {
+        font-size: 20px;
+        border: 5px solid #2ac940;
+        border-radius: 5px;
+        width: fit-content;
+        background-color: #222222;
+        position: absolute;
+        top: -23px;
+        left: 20px;
+        padding: 5px;
+      }
+
+      .project-img {
+        width: 100%;
+        height: 40%;
+      }
+
+      h4 {
+        width: 95%;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 115%;
+      }
+
+      p {
+        width: 95%;
+        font-size: 20px;
+        line-height: 20px;
+      }
+
+      #project-links {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 5px 0px;
+
+        .project-gh-logo {
+          width: 35px;
+        }
+
+        a[href="."] {
+          display: none;
+        }
+      }
+
+      .tech {
+        width: 95%;
+        font-size: 16px;
+      }
+
+      button {
+        border: 5px solid $accent-color;
+        border-radius: 50px;
+        color: white;
+        background-color: #222222;
+        padding: 5px 20px;
+        font-size: 16px;
+        position: absolute;
+        bottom: -22px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#sponsors {
+  margin: 25px 0px;
+
+  .sectn-subh {
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 2%;
+  }
+  #sponsorLogo {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 80%;
+      margin: 25px auto;
+    }
+  }
+
+  p {
+    width: 80%;
+  }
+}
+
+#find-us {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px;
+
+  .sectn-subh {
+    width: 80%;
+    margin: 2% 0% 5% 8%;
+  }
+  #mapid {
+    margin: 0 auto;
+    height: 225px;
+    width: 90%;
+
+    #mapPopup {
+      color: black;
+      b {
+        color: black;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// PHONE LANDSCAPE LAYOUT ******************************************************
+
+@media (orientation: landscape) {
+  #home-hero {
+    #home-hero-btn {
+      width: 50%;
+    }
+  }
+  #cta {
+    flex-direction: row;
+    .cta-card {
+      margin: 0;
+      width: 32%;
+      height: 95%;
+      padding-bottom: 15px;
+      a {
+        width: 90%;
+        font-size: 145%;
+      }
+      p {
+        width: 90%;
+        font-size: 125%;
+      }
+      * {
+        margin: 20px 0px;
+      }
+    }
+  }
+
+  #our-work {
+    .sectn-subh {
+      margin-left: 6%;
+      margin-top: 5%;
+    }
+    .projects {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 25px;
+
+      .project-card {
+        width: 45%;
+        height: 450px;
+        margin: 35px 0px;
+
+        h4 {
+          width: 90%;
+          font-size: 28px;
+        }
+
+        p {
+          width: 90%;
+          font-size: 18px;
+        }
+
+        .tech {
+          width: 90%;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  #sponsors {
+    #sponsorLogo {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      img {
+        width: 40%;
+        margin: 25px;
+      }
+    }
+  }
+  #find-us {
+    #mapid {
+      width: 75%;
+    }
+  }
+}
+
+// TABLET PORTRAIT LAYOUT ********************************************************
+
+@media (min-width: 600px) and (orientation: portrait) {
+  #home-hero {
+    #home-hero-content {
+      h1 {
+        font-size: 225%;
+      }
+      p {
+        font-size: 125%;
+      }
+      #home-hero-btn {
+        font-size: 175%;
+        width: 50%;
+      }
+    }
+  }
+  #cta {
+    flex-direction: row;
+    align-items: stretch;
+    .cta-card {
+      width: 30%;
+      padding: 15px 0px;
+      a {
+        font-size: 20px;
+      }
+      p {
+        width: 80%;
+      }
+    }
+  }
+
+  #our-work {
+    .sectn-subh {
+      margin-left: 6%;
+      margin-top: 5%;
+    }
+    .projects {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 25px;
+
+      .project-card {
+        width: 45%;
+        height: 450px;
+        margin: 35px 0px;
+
+        h4 {
+          width: 90%;
+          font-size: 28px;
+        }
+
+        p {
+          width: 90%;
+          font-size: 18px;
+        }
+
+        .tech {
+          width: 90%;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  #sponsors {
+    #sponsorLogo {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      img {
+        width: 40%;
+        margin: 25px;
+      }
+    }
+  }
+  #find-us {
+    #mapid {
+      width: 75%;
+    }
+  }
+}
+
+// TABLET LANDSCAPE LAYOUT **********************************************************
+
+@media (min-width: 600px) and (orientation: landscape) {
+  #home-hero {
+    #home-hero-content {
+      h1 {
+        font-size: 250%;
+      }
+      p {
+        font-size: 150%;
+      }
+      #home-hero-btn {
+        font-size: 175%;
+        width: 40%;
+      }
+    }
+  }
+
+  #cta {
+    flex-direction: row;
+    align-items: flex-end;
+    .cta-card {
+      width: 30%;
+      height: 90%;
+
+      i {
+        transform: scale(1);
+      }
+
+      * {
+        margin: 35px 0px;
+      }
+    }
+  }
+
+  #our-work {
+    .sectn-subh {
+      margin-left: 5%;
+      margin-top: 5%;
+      font-size: 125%;
+    }
+    .projects {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 25px;
+
+      .project-card {
+        width: 31%;
+        height: 450px;
+        margin: 35px 0px;
+
+        h4 {
+          width: 90%;
+          font-size: 28px;
+        }
+
+        p {
+          width: 90%;
+          font-size: 18px;
+        }
+
+        .tech {
+          width: 90%;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  #sponsors {
+    #sponsorLogo {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      img {
+        width: 40%;
+        margin: 25px;
+      }
+    }
+  }
+  #find-us {
+    #mapid {
+      width: 75%;
+    }
+  }
+}
+
+// DESKTOP LAYOUT ***************************************************************
+
+@media (min-width: 1200px) {
+  #home-hero {
+    #home-hero-content {
+      h1 {
+        font-size: 250%;
+      }
+      p {
+        font-size: 150%;
+      }
+      #home-hero-btn {
+        font-size: 175%;
+      }
+    }
+  }
+  #cta {
+    padding: 80px 0px;
+    .cta-card {
+      width: 300px;
+      a {
+        transition: background-color 0.25s;
+        &:hover {
+          background-color: rgb(51, 87, 102);
+        }
+      }
+    }
+  }
+
+  #our-work {
+    #see-more {
+      transition: background-color 0.5s;
+      &:hover {
+        background-color: rgb(51, 87, 102);
+      }
+    }
+    .projects {
+      .project-card {
+        width: 325px;
+        button {
+          transition: background-color 0.5s;
+          &:hover {
+            background-color: rgb(51, 87, 102);
+          }
+        }
+      }
+    }
+  }
+  #sponsors {
+    #sponsorLogo {
+      img {
+        width: 375px;
+      }
+    }
+  }
+  #find-us {
+    #mapid {
+      width: 75%;
+    }
+  }
+}

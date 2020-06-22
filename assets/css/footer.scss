@@ -1,0 +1,188 @@
+// GLOBAL SETTING & PHONE LAYOUT
+
+$body-color: #222222;
+$accent-color: #399fd3;
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 4px solid $accent-color;
+  margin-top: 50px;
+  padding-bottom: 0px;
+
+  #foot-links {
+    height: 175px;
+    display: flex;
+    width: 57%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h5 {
+        font-size: 12px;
+        border-bottom: 2px solid $accent-color;
+        margin-bottom: 4px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+      }
+    }
+  }
+
+  #legal {
+    display: flex;
+    width: 41%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 175px;
+
+    a {
+      width: 70%;
+      img {
+        width: 100%;
+      }
+    }
+    p {
+      font-size: 8px;
+      margin-right: 10px;
+    }
+  }
+}
+
+// PHONE LANDSCAPE LAYOUT
+
+@media (orientation: landscape) {
+  footer {
+    #legal {
+      padding-right: 30px;
+      a {
+        width: 40%;
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+// TABLET PORTRAIT LAYOUT
+
+@media (min-width: 600px) and (orientation: portrait) {
+  footer {
+    #foot-links {
+      width: 45%;
+    }
+    #legal {
+      padding-right: 30px;
+      a {
+        width: 40%;
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        font-size: 65%;
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+// TABLET LANDSCAPE LAYOUT
+
+@media (min-width: 600px) and (orientation: landscape) {
+  footer {
+    padding: 25px 0px;
+    #foot-links {
+      width: 45%;
+      height: 200px;
+      div {
+        h5 {
+          font-size: 14px;
+        }
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+    #legal {
+      height: 200px;
+      padding-right: 30px;
+      a {
+        width: 38%;
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        font-size: 65%;
+        margin-right: 15px;
+        line-height: 2;
+      }
+    }
+  }
+}
+
+// DESKTOP LAYOUT
+
+@media (min-width: 1200px) {
+  footer {
+    padding-top: 25px;
+    #foot-links {
+      div {
+        h5 {
+          margin-bottom: 7px;
+        }
+      }
+    }
+    #legal {
+      a {
+        width: 30%;
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        font-size: 14px;
+        margin-right: 20px;
+        line-height: 2;
+      }
+    }
+  }
+}
+
+// XL DESKTOP LAYOUT
+
+@media (min-width: 1800px) {
+  footer {
+    #foot-links {
+      width: 45%;
+      div {
+        h5 {
+          font-size: 16px;
+        }
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+    #legal {
+      img {
+        width: 25%;
+      }
+    }
+  }
+}

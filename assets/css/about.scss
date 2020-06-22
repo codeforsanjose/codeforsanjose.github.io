@@ -1,0 +1,160 @@
+// GLOBAL VARIABLES
+$body-color: #222222;
+$accent-color: #399fd3;
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+#about-title {
+  background: url(../img/banners/quetzalcóatl.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#leadership-team {
+  h3 {
+    margin-left: 35px;
+  }
+  .leader {
+    position: relative;
+    border: 3px solid $accent-color;
+    border-radius: 30px;
+    margin: 25px auto;
+    width: 300px;
+    height: 60px;
+
+    p {
+      font-size: 135%;
+      font-weight: 600;
+      position: absolute;
+      top: 5px;
+      left: 75px;
+      white-space: nowrap;
+    }
+
+    img {
+      border-radius: 50%;
+      height: 60px;
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      border: 3px solid $accent-color;
+    }
+  }
+
+  .captain {
+    border: none;
+    border-bottom: 3px solid $accent-color;
+    border-radius: 0px;
+    width: 250px;
+
+    img {
+      border: 3px solid $accent-color;
+      top: 0px;
+      left: -28px;
+    }
+
+    p {
+      left: 50px;
+      top: 10px;
+    }
+  }
+}
+
+// PHONE LANDSCAPE LAYOUT ******************************************************
+
+@media (orientation: landscape) {
+  #leadership-team {
+    flex-direction: row;
+    text-align: center;
+  }
+  .leader {
+    display: inline-block;
+    width: 250px;
+    margin: 20px 20px;
+    p {
+      top: 5px;
+    }
+  }
+  .captain {
+    width: 250px;
+  }
+}
+
+// TABLET PORTRAIT LAYOUT ********************************************************
+
+@media (min-width: 600px) and (orientation: portrait) {
+  #leadership-team {
+    flex-direction: row;
+    text-align: center;
+
+    h3 {
+      margin-left: 60px;
+    }
+
+    .leader {
+      display: inline-block;
+      width: 275px;
+      margin: 15px 20px;
+      p {
+        top: 10px;
+      }
+    }
+    .captain {
+      width: 250px;
+    }
+  }
+}
+
+// TABLET LANDSCAPE LAYOUT **********************************************************
+
+@media (min-width: 600px) and (orientation: landscape) {
+  #leadership-team {
+    flex-direction: row;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+
+    .leader {
+      display: inline-block;
+      width: 275px;
+      margin: 15px 30px;
+      p {
+        top: 10px;
+      }
+    }
+    .captain {
+      width: 250px;
+    }
+  }
+}
+
+// DESKTOP LAYOUT ***************************************************************
+
+@media (min-width: 1200px) {
+  .iframe-container {
+    width: 75%;
+    margin: 10px auto;
+  }
+}

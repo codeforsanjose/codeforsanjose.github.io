@@ -1,0 +1,102 @@
+// GLOBAL VARIABLES
+$body-color: #222222;
+$accent-color: #399fd3;
+
+#volunteer {
+  background: url(../img/banners/SJS_arch.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.getting_started {
+  padding-right: 2vw;
+  vertical-align: top;
+
+  img {
+    width: 200px;
+  }
+}
+
+.volunteer-btns {
+  display: block;
+  font-size: 140%;
+  color: $accent-color;
+  border: 2px solid $accent-color;
+  border-radius: 10px;
+  background-color: $body-color;
+  padding: 10px 35px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+ol {
+  list-style: none;
+  counter-reset: list-counter;
+
+  li {
+    margin: 20px 0px 20px 30px;
+    line-height: 1.8;
+    position: relative;
+    counter-increment: list-counter;
+  }
+
+  li::before {
+    content: counter(list-counter);
+    font-size: 130%;
+    font-weight: bold;
+    position: absolute;
+    --size: 32px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0px;
+    background: $accent-color;
+    border-radius: 50%;
+    text-align: center;
+  }
+}
+
+a {
+  color: $accent-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.codeOfConduct {
+  span {
+    color: $accent-color;
+    font-weight: bold;
+    // font-size: 125%;
+  }
+
+  ul {
+    font-size: 115%;
+    list-style-position: inside;
+    list-style-type: circle;
+    margin: 5px 0px;
+    ul {
+      font-size: 100%;
+      margin-left: 30px;
+      list-style-type: square;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #gettingStartedList {
+    display: flex;
+    li {
+      p {
+        margin: 0 0 20px 5px;
+      }
+    }
+    img {
+      width: 180px;
+      margin-left: -8px;
+    }
+  }
+}
