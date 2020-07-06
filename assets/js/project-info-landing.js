@@ -1,10 +1,7 @@
-var public_spreadsheet_url =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vR3vCQ3cY0xP5oEIc6-B3N23q8hhbKEzDyfvRH_neOMZA3hBS_zU2RkjRCTYrpTjcliINqUuY_G0dsE/pub?gid=684908702&single=true&output=csv";
-
 let projects = [];
 
 function init() {
-  Papa.parse(public_spreadsheet_url, {
+  Papa.parse("./assets/js/project_info.csv", {
     download: true,
     header: true,
     complete: showInfo,
@@ -14,6 +11,7 @@ function init() {
 window.addEventListener("DOMContentLoaded", init);
 
 function showInfo(results) {
+  console.log("RESULTS ARE:", results);
   projects = results.data;
   let workDiv = document.getElementById("modal-attach");
   workDiv.innerHTML = results.data
