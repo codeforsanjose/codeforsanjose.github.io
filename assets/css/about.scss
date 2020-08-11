@@ -18,6 +18,17 @@ a {
   background-size: cover;
 }
 
+.text-content {
+  ul {
+    list-style: none;
+    li {
+      margin: 0;
+      font-size: 22px;
+
+    }
+    
+  }
+}
 .iframe-container {
   position: relative;
   width: 100%;
