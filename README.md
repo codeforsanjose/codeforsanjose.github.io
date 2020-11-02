@@ -30,7 +30,7 @@ For set up, open the command line and run the following code.
 
 ## How to Contribute
 
-Join the discussion on our Slack channel. If you don't already have an account, sign up for our [Slack channel](https://join.slack.com/t/codeforsanjose/shared_invite/zt-iwnx99kh-motBC0J47O8ItlR3zjAIBA), and then go to this [channel](https://codeforsanjose.slack.com/messages/cfsj-website/). The project lead can assign you tasks to work on.
+Join the discussion on our Slack channel. If you don't already have an account, sign up for our [Slack channel](https://join.slack.com/t/codeforsanjose/shared_invite/zt-iwnx99kh-motBC0J47O8ItlR3zjAIBA), and then go to this [channel](https://codeforsanjose.slack.com/messages/proj-cfsj-website/). The project lead can assign you tasks to work on.
 
 # Original website readme below
 
@@ -67,4 +67,4 @@ For set up, open the command line and run the following code.
 
 ## How to Contribute
 
-Check the issues for bugs, features, or issues to contribute to. Join the discussion on our Slack channel. If you don't already have an account, sign up for our [Slack channel](https://join.slack.com/t/codeforsanjose/shared_invite/zt-iwnx99kh-motBC0J47O8ItlR3zjAIBA), and then go to this [channel](https://codeforsanjose.slack.com/messages/cfsj-website/)
+Check the issues for bugs, features, or issues to contribute to. Join the discussion on our Slack channel. If you don't already have an account, sign up for our [Slack channel](https://join.slack.com/t/codeforsanjose/shared_invite/zt-iwnx99kh-motBC0J47O8ItlR3zjAIBA), and then go to this [channel](https://codeforsanjose.slack.com/messages/proj-cfsj-website/)
