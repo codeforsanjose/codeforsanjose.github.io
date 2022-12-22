@@ -1,35 +1,16 @@
 const leaders = [
   {
     executiveDirectors: [
-
       {
         name: "Joey Richardson",
         image: "./assets/img/leadership/team/joey.png",
         title: "Interim Captain",
         link: "https://www.linkedin.com/in/joseph-richardson-97206953/",
       }
-      // ,
-      // {
-      //   name: "Yan-Yin Choy",
-      //   image: "./assets/img/leadership/exec_directors/yan-yin.png",
-      //   link: "http://linkedin.com/in/yanyinchoy",
-      // },
-      // {
-      //   name: "Annie Steenson",
-      //   image: "./assets/img/leadership/exec_directors/annie.png",
-      //   link: "http://linkedin.com/in/anniesteenson",
-      // },
     ],
   },
   {
     leader: [
-      // {
-      //   name: "Dane Olsen",
-      //   image: "./assets/img/leadership/team/dane.png",
-      //   title: "Director of Member Engagement",
-      //   link: "https://www.linkedin.com/in/danekolsen/",
-      // },
-
       {
         name: "Joey Richardson",
         image: "./assets/img/leadership/team/joey.png",
@@ -60,48 +41,6 @@ const leaders = [
         title: "Director of Design & Usability",
         link: "https://www.linkedin.com/in/dianelabenz/",
       }
-      // {
-      //   name: "Hattie Chau",
-      //   image: "./assets/img/leadership/team/hattie.jpeg",
-      //   title: "Marketing Committee Member",
-      //   link: "https://www.linkedin.com/in/hattie-chau/",
-      // },
-      // {
-      //   name: "Joey Richardson",
-      //   image: "./assets/img/leadership/team/joey.png",
-      //   title: "Director of Frontend Engineering",
-      //   link: "https://www.linkedin.com/in/joseph-richardson-97206953/",
-      // },
-      // {
-      //   name: "Karen Li",
-      //   image: "./assets/img/leadership/team/karen.jpeg",
-      //   title: "Assistant Director of Design & Usability",
-      //   link: "https://www.linkedin.com/in/li-0431/",
-      // },
-      // {
-      //   name: "Lena Tran",
-      //   image: "./assets/img/leadership/team/lena.png",
-      //   title: "Director of Data Analytics",
-      //   link: "https://www.linkedin.com/in/lenatran4/",
-      // },
-      // {
-      //   name: "Namrata Challa",
-      //   image: "./assets/img/leadership/team/namrata.jpg",
-      //   title: "Marketing Committee Member",
-      //   link: "https://www.linkedin.com/in/namratachalla/",
-      // },
-      // {
-      //   name: "Ryan Walek",
-      //   title: "Director of Fundraising",
-      //   image: "./assets/img/leadership/team/ryan.jpg",
-      //   link: "https://www.linkedin.com/in/ryanwalek",
-      // },
-      // {
-      //   name: "Trace Ohrt",
-      //   image: "./assets/img/leadership/team/trace.jpeg",
-      //   title: "Assistant Director of Backend Engineering",
-      //   link: "https://www.linkedin.com/in/trace-ohrt/",
-      // }
     ],
   },
   {
