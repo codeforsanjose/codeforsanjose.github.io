@@ -2,24 +2,20 @@ const leaders = [
   {
     executiveDirectors: [
       {
-        name: "Yan-Yin Choy",
-        image: "./assets/img/leadership/exec_directors/yan-yin.png",
-        link: "http://linkedin.com/in/yanyinchoy",
-      },
-      {
-        name: "Annie Steenson",
-        image: "./assets/img/leadership/exec_directors/annie.png",
-        link: "http://linkedin.com/in/anniesteenson",
-      },
+        name: "Joey Richardson",
+        image: "./assets/img/leadership/team/joey.png",
+        title: "Interim Captain",
+        link: "https://www.linkedin.com/in/joseph-richardson-97206953/",
+      }
     ],
   },
   {
     leader: [
       {
-        name: "Dane Olsen",
-        image: "./assets/img/leadership/team/dane.png",
-        title: "Director of Member Engagement",
-        link: "https://www.linkedin.com/in/danekolsen/",
+        name: "Joey Richardson",
+        image: "./assets/img/leadership/team/joey.png",
+        title: "Director of Frontend Engineering",
+        link: "https://www.linkedin.com/in/joseph-richardson-97206953/",
       },
       {
         name: "Darren Pham",
@@ -28,63 +24,33 @@ const leaders = [
         link: "https://www.linkedin.com/in/darep-h20/",
       },
       {
-        name: "Diane Labenz",
-        image: "./assets/img/leadership/team/diane.png",
-        title: "Director of Design & Usability",
-        link: "https://www.linkedin.com/in/dianelabenz/",
-      },
-      {
         name: "Diana Laster",
         image: "./assets/img/leadership/team/diana.jpeg",
         title: "Director of Project Management",
         link: "https://www.linkedin.com/in/dianalaster/",
       },
       {
-        name: "Hattie Chau",
-        image: "./assets/img/leadership/team/hattie.jpeg",
-        title: "Marketing Committee Member",
-        link: "https://www.linkedin.com/in/hattie-chau/",
+        name: "Erika Hudiono",
+        image: "./assets/img/leadership/former_leadership/erika.jpg",
+        title: "Director of Operations"
+        link: "https://www.linkedin.com/in/erika-hudiono/",
       },
       {
-        name: "Joey Richardson",
-        image: "./assets/img/leadership/team/joey.png",
-        title: "Director of Frontend Engineering",
-        link: "https://www.linkedin.com/in/joseph-richardson-97206953/",
-      },
-      {
-        name: "Karen Li",
-        image: "./assets/img/leadership/team/karen.jpeg",
-        title: "Assistant Director of Design & Usability",
-        link: "https://www.linkedin.com/in/li-0431/",
-      },
-      {
-        name: "Lena Tran",
-        image: "./assets/img/leadership/team/lena.png",
-        title: "Director of Data Analytics",
-        link: "https://www.linkedin.com/in/lenatran4/",
-      },
-      {
-        name: "Namrata Challa",
-        image: "./assets/img/leadership/team/namrata.jpg",
-        title: "Marketing Committee Member",
-        link: "https://www.linkedin.com/in/namratachalla/",
-      },
-      {
-        name: "Ryan Walek",
-        title: "Director of Fundraising",
-        image: "./assets/img/leadership/team/ryan.jpg",
-        link: "https://www.linkedin.com/in/ryanwalek",
-      },
-      {
-        name: "Trace Ohrt",
-        image: "./assets/img/leadership/team/trace.jpeg",
-        title: "Assistant Director of Backend Engineering",
-        link: "https://www.linkedin.com/in/trace-ohrt/",
+        name: "Diane Labenz",
+        image: "./assets/img/leadership/team/diane.png",
+        title: "Director of Design & Usability",
+        link: "https://www.linkedin.com/in/dianelabenz/",
       }
     ],
   },
   {
     projectLeaders: [
+      {
+        name: "Minh Nguyễn",
+        image: "./assets/img/leadership/former_leadership/minh.jpg",
+        title: "OpenStreetMap (OSM)",
+        link: "http://notes.1ec5.org/",
+      },
       {
         name: "Alessandro Pianetta",
         image: "./assets/img/leadership/project_leaders/alex.jpeg",
@@ -133,12 +99,7 @@ const leaders = [
         title: "City Agenda Scraper",
         link: "https://www.linkedin.com/in/mark-noack-90b7682b/",
       },
-      {
-        name: "Minh Nguyễn",
-        image: "./assets/img/leadership/former_leadership/minh.jpg",
-        title: "OpenStreetMap (OSM)",
-        link: "http://notes.1ec5.org/",
-      },
+
       {
         name: "Ryan Walek",
         title: "San José Civic User Testing (CUT) Group",
@@ -165,11 +126,7 @@ const leaders = [
         image: "./assets/img/leadership/former_leadership/minh.jpg",
         link: "http://notes.1ec5.org/",
       },
-      {
-        name: "Erika Hudiono",
-        image: "./assets/img/leadership/former_leadership/erika.jpg",
-        link: "https://www.linkedin.com/in/erika-hudiono/",
-      },
+
       {
         name: "Sunny Mui",
         image: "./assets/img/leadership/former_leadership/sunny.jpg",
@@ -208,12 +165,12 @@ const leaders = [
         name: "Michelle Thong",
         image: "./assets/img/leadership/former_captains/michelle.jpg",
         link: "https://www.linkedin.com/in/mthong/",
-      },
-      {
-        name: "Joey Richardson",
-        image: "./assets/img/leadership/team/joey.png",
-        link: "https://www.linkedin.com/in/joseph-richardson-97206953/",
-      },
+      }
+      // {
+      //   name: "Joey Richardson",
+      //   image: "./assets/img/leadership/team/joey.png",
+      //   link: "https://www.linkedin.com/in/joseph-richardson-97206953/",
+      // },
     ],
   },
 ];
