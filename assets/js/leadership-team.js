@@ -7,7 +7,7 @@ const leaders = [
         title: "Interim Captain",
         link: "https://www.linkedin.com/in/joseph-richardson-97206953/",
       }
-    ],
+    ]
   },
   {
     leader: [
@@ -32,7 +32,7 @@ const leaders = [
       {
         name: "Erika Hudiono",
         image: "./assets/img/leadership/former_leadership/erika.jpg",
-        title: "Director of Operations"
+        title: "Director of Operations",
         link: "https://www.linkedin.com/in/erika-hudiono/",
       },
       {
