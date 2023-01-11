@@ -194,6 +194,7 @@ document.getElementById("executive-directors").innerHTML = leaders[0].executiveD
 // If you add that logic, need to also update 
 // styles so it can accommodate a newline for leader title
 
+
 for (var i = 1; i < leaders.length; i++) {
   let label = Object.keys(leaders[i]);
   document.getElementById(`${label}`).innerHTML = leaders[i][`${label}`]
