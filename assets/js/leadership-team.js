@@ -7,7 +7,7 @@ const leaders = [
         title: "Interim Captain",
         link: "https://www.linkedin.com/in/joseph-richardson-97206953/",
       }
-    ],
+    ]
   },
   {
     leader: [
@@ -32,7 +32,7 @@ const leaders = [
       {
         name: "Erika Hudiono",
         image: "./assets/img/leadership/former_leadership/erika.jpg",
-        title: "Director of Operations"
+        title: "Director of Operations",
         link: "https://www.linkedin.com/in/erika-hudiono/",
       },
       {
@@ -193,6 +193,7 @@ document.getElementById("executive-directors").innerHTML = leaders[0].executiveD
 // TODO: add leader title if it exists
 // If you add that logic, need to also update 
 // styles so it can accommodate a newline for leader title
+
 
 for (var i = 1; i < leaders.length; i++) {
   let label = Object.keys(leaders[i]);
