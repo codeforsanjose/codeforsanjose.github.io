@@ -1,4 +1,4 @@
-# Temporary Readme for Code for San José website redesign branch
+# Temporary Readme for Open Source San José website redesign branch
 
 Please clone from and push changes to this branch if you are participating in the website redesign project.
 
@@ -6,7 +6,7 @@ We will be using the built in Projects tab Kanban board for project management, 
 
 ## How To Run
 
-Host a local version of the Code for San José website to make changes.
+Host a local version of the Open Source San José website to make changes.
 
 For set up, open the command line and run the following code.
 
@@ -36,15 +36,15 @@ Join the discussion on our Slack channel. If you don't already have an account, 
 
 ========================
 
-# Code for San José Website
+# Open Source San José Website
 
 # [Demo](http://www.codeforsanjose.com)
 
-Code for San José is a [Code for America brigade](https://www.codeforamerica.org/brigades). This website is the central location where people can learn aout the organization.
+Open Source San José is a local volunteer organization. This website is the central location where people can learn aout the organization.
 
 ## How To Run
 
-Host a local version of the Code for San José website to make changes.
+Host a local version of the Open Source San José website to make changes.
 
 For set up, open the command line and run the following code.
 
