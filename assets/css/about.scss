@@ -11,6 +11,7 @@ a {
   }
 }
 
+
 #about-title {
   background: url(../img/banners/quetzalcoatl.jpg);
   background-position: center;
@@ -20,15 +21,22 @@ a {
 
 .text-content {
   ul {
-    list-style: none;
+    list-style: circle;
+
     li {
-      margin: 0;
+      margin: 15px;
       font-size: 22px;
 
     }
-    
+
   }
 }
+
+.image-set {
+  width: 200px;
+  border-radius: 25px;
+}
+
 .iframe-container {
   position: relative;
   width: 100%;
@@ -47,48 +55,51 @@ a {
   h3 {
     margin-left: 35px;
   }
-  .leader {
-    position: relative;
-    border: 3px solid $accent-color;
-    border-radius: 30px;
-    margin: 25px auto;
-    width: 350px;
-    height: 60px;
 
+  .leader {
+    width: 320px;
+    padding: 20px;
+    border: 3px solid $accent-color;
+    margin: 25px auto;
+    border-radius: 25px;
+    
+
+    h2 {
+      font-size: 2rem;
+    }
     p {
       font-size: 135%;
       font-weight: 600;
-      position: absolute;
-      top: 5px;
-      left: 75px;
       white-space: nowrap;
     }
 
     img {
-      border-radius: 50%;
-      height: 60px;
-      position: absolute;
-      top: -3px;
-      left: -3px;
       border: 3px solid $accent-color;
     }
-  }
 
+
+  }
+  #former-leadership {
+    #leader {
+      img {
+        border-radius: 50%;
+        height: 60px;
+       
+        border: 3px solid $accent-color;
+      }
+    }
+  }
   .captain {
     border: none;
     border-bottom: 3px solid $accent-color;
-    border-radius: 0px;
-    width: 250px;
 
     img {
-      border: 3px solid $accent-color;
-      top: 0px;
-      left: -28px;
+      border: 3px solid $accent-color;      
     }
 
     p {
-      left: 50px;
-      top: 10px;
+      text-align: left;
+      margin: 10px;
     }
   }
 }
@@ -100,16 +111,10 @@ a {
     flex-direction: row;
     text-align: center;
   }
+
   .leader {
     display: inline-block;
-    width: 250px;
     margin: 20px 20px;
-    p {
-      top: 5px;
-    }
-  }
-  .captain {
-    width: 250px;
   }
 }
 
@@ -126,14 +131,7 @@ a {
 
     .leader {
       display: inline-block;
-      width: 350px;
       margin: 15px 20px;
-      p {
-        top: 10px;
-      }
-    }
-    .captain {
-      width: 250px;
     }
   }
 }
@@ -149,14 +147,8 @@ a {
 
     .leader {
       display: inline-block;
-      width: 350px;
       margin: 15px 30px;
-      p {
-        top: 10px;
-      }
-    }
-    .captain {
-      width: 250px;
+
     }
   }
 }

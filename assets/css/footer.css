@@ -1,0 +1,147 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 4px solid #399fd3;
+  margin-top: 50px;
+  padding-bottom: 0px;
+}
+footer #foot-links {
+  height: 175px;
+  display: flex;
+  width: 57%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px 10px;
+}
+footer #foot-links div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer #foot-links div h5 {
+  font-size: 12px;
+  border-bottom: 2px solid #399fd3;
+  margin-bottom: 4px;
+}
+footer #foot-links div a {
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+}
+footer #legal {
+  display: flex;
+  width: 41%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 175px;
+}
+footer #legal a {
+  width: 70%;
+}
+footer #legal a img {
+  width: 100%;
+}
+footer #legal p {
+  font-size: 8px;
+  margin-right: 10px;
+}
+
+@media (orientation: landscape) {
+  footer #legal {
+    padding-right: 30px;
+  }
+  footer #legal a {
+    width: 40%;
+  }
+  footer #legal a img {
+    width: 100%;
+  }
+  footer #legal p {
+    margin-right: 15px;
+  }
+}
+@media (min-width: 600px) and (orientation: portrait) {
+  footer #foot-links {
+    width: 45%;
+  }
+  footer #legal {
+    padding-right: 30px;
+  }
+  footer #legal a {
+    width: 40%;
+  }
+  footer #legal a img {
+    width: 100%;
+  }
+  footer #legal p {
+    font-size: 65%;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 600px) and (orientation: landscape) {
+  footer {
+    padding: 25px 0px;
+  }
+  footer #foot-links {
+    width: 45%;
+    height: 200px;
+  }
+  footer #foot-links div h5 {
+    font-size: 14px;
+  }
+  footer #foot-links div a {
+    font-size: 12px;
+  }
+  footer #legal {
+    height: 200px;
+    padding-right: 30px;
+  }
+  footer #legal a {
+    width: 38%;
+  }
+  footer #legal a img {
+    width: 100%;
+  }
+  footer #legal p {
+    font-size: 65%;
+    margin-right: 15px;
+    line-height: 2;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    padding-top: 25px;
+  }
+  footer #foot-links div h5 {
+    margin-bottom: 7px;
+  }
+  footer #legal a {
+    width: 30%;
+  }
+  footer #legal a img {
+    width: 100%;
+  }
+  footer #legal p {
+    font-size: 14px;
+    margin-right: 20px;
+    line-height: 2;
+  }
+}
+@media (min-width: 1800px) {
+  footer #foot-links {
+    width: 45%;
+  }
+  footer #foot-links div h5 {
+    font-size: 16px;
+  }
+  footer #foot-links div a {
+    font-size: 14px;
+  }
+  footer #legal img {
+    width: 25%;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

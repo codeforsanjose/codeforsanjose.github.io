@@ -1,0 +1,498 @@
+#home-hero {
+  height: 600px;
+  width: 100%;
+  background: url(../img/img_archive/cfsj_withcfa_at_bowersinstitute.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  position: relative;
+}
+#home-hero #home-hero-content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 45%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1% 10%;
+}
+#home-hero #home-hero-content h1 {
+  font-size: 175%;
+  font-weight: 300;
+  text-align: left;
+}
+#home-hero #home-hero-content p {
+  font-size: 90%;
+  font-weight: 300;
+  line-height: 150%;
+}
+#home-hero #home-hero-content #home-hero-btn {
+  padding: 10px 15px;
+  background-color: #ff5131;
+  font-size: 150%;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  margin: 15px 15px 15px 15px;
+}
+#home-hero #home-hero-content #volunteer-interest-form-btn {
+  padding: 10px 15px;
+  background-color: #ff5131;
+  font-size: 150%;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  margin: 15px 15px 15px 15px;
+}
+
+iframe {
+  width: 90%;
+  height: 200px;
+}
+
+#cta {
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px 0px;
+  margin-bottom: 50px;
+}
+#cta .cta-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 85%;
+  margin: 10px;
+  border: 5px solid #399fd3;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+#cta .cta-card * {
+  margin: 3px;
+}
+#cta .cta-card a {
+  font-size: 25px;
+  padding: 6px;
+  width: 75%;
+  text-decoration: none;
+  color: white;
+  border: 3px solid white;
+  border-radius: 50px;
+  padding: 13px;
+  width: 80%;
+  background-color: rgba(64, 139, 171, 0);
+}
+#cta .cta-card p {
+  font-size: 16px;
+  line-height: 25px;
+  width: 90%;
+  height: 20%;
+  margin: 15px 0px;
+}
+#cta .cta-card i {
+  transform: scale(0.7);
+}
+
+.sectn-subh {
+  margin-left: 7%;
+  margin-top: 2%;
+}
+
+#our-work {
+  margin: 15% 0px;
+}
+#our-work #our-work-img {
+  background: url(../img/img_archive/group_photo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin-bottom: 0px;
+}
+#our-work #see-more {
+  background-color: #222222;
+  border: 5px solid #399fd3;
+  border-radius: 50px;
+  font-size: 20px;
+  color: white;
+  padding: 7px 20px;
+  display: block;
+  width: 175px;
+  text-align: center;
+  margin: 0px auto;
+}
+#our-work .projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px;
+}
+#our-work .projects .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  height: 475px;
+  border: 5px solid #399fd3;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  padding-bottom: 30px;
+  margin: 50px auto;
+}
+#our-work .projects .project-card .badge {
+  font-size: 20px;
+  border: 5px solid #2ac940;
+  border-radius: 5px;
+  width: fit-content;
+  background-color: #222222;
+  position: absolute;
+  top: -23px;
+  left: 20px;
+  padding: 5px;
+}
+#our-work .projects .project-card .project-img {
+  width: 100%;
+  height: 40%;
+}
+#our-work .projects .project-card h4 {
+  width: 95%;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 115%;
+}
+#our-work .projects .project-card p {
+  width: 95%;
+  font-size: 20px;
+  line-height: 20px;
+}
+#our-work .projects .project-card #project-links {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 5px 0px;
+}
+#our-work .projects .project-card #project-links .project-gh-logo {
+  width: 35px;
+}
+#our-work .projects .project-card #project-links a[href="."] {
+  display: none;
+}
+#our-work .projects .project-card .tech {
+  width: 95%;
+  font-size: 16px;
+}
+#our-work .projects .project-card button {
+  border: 5px solid #399fd3;
+  border-radius: 50px;
+  color: white;
+  background-color: #222222;
+  padding: 5px 20px;
+  font-size: 16px;
+  position: absolute;
+  bottom: -22px;
+  cursor: pointer;
+}
+
+#sponsors {
+  margin: 25px 0px;
+}
+#sponsors .sectn-subh {
+  width: 80%;
+  margin-left: 8%;
+  margin-top: 2%;
+}
+#sponsors #sponsorLogo {
+  display: flex;
+  flex-direction: column;
+}
+#sponsors #sponsorLogo img {
+  width: 80%;
+  margin: 25px auto;
+}
+#sponsors p {
+  width: 80%;
+}
+
+#find-us {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px;
+}
+#find-us .sectn-subh {
+  width: 80%;
+  margin: 2% 0% 5% 8%;
+}
+#find-us #mapid {
+  margin: 0 auto;
+  height: 225px;
+  width: 90%;
+}
+#find-us #mapid #mapPopup {
+  color: black;
+}
+#find-us #mapid #mapPopup b {
+  color: black;
+  font-size: 14px;
+}
+
+@media (orientation: landscape) {
+  #home-hero #home-hero-btn {
+    width: 50%;
+    margin: 15px 15px 15px 15px;
+  }
+  #cta {
+    flex-direction: row;
+  }
+  #cta .cta-card {
+    margin: 0;
+    width: 32%;
+    height: 95%;
+    padding-bottom: 15px;
+  }
+  #cta .cta-card a {
+    width: 90%;
+    font-size: 145%;
+  }
+  #cta .cta-card p {
+    width: 90%;
+    font-size: 125%;
+  }
+  #cta .cta-card * {
+    margin: 20px 0px;
+  }
+  #our-work .sectn-subh {
+    margin-left: 6%;
+    margin-top: 5%;
+  }
+  #our-work .projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 25px;
+  }
+  #our-work .projects .project-card {
+    width: 45%;
+    height: 450px;
+    margin: 35px 0px;
+  }
+  #our-work .projects .project-card h4 {
+    width: 90%;
+    font-size: 28px;
+  }
+  #our-work .projects .project-card p {
+    width: 90%;
+    font-size: 18px;
+  }
+  #our-work .projects .project-card .tech {
+    width: 90%;
+    font-size: 14px;
+  }
+  #sponsors #sponsorLogo {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #sponsors #sponsorLogo img {
+    width: 40%;
+    margin: 25px;
+  }
+  #find-us #mapid {
+    width: 75%;
+  }
+}
+@media (min-width: 600px) and (orientation: portrait) {
+  #home-hero #home-hero-content h1 {
+    font-size: 225%;
+  }
+  #home-hero #home-hero-content p {
+    font-size: 125%;
+  }
+  #home-hero #home-hero-content #home-hero-btn {
+    font-size: 175%;
+    width: 50%;
+    margin: 15px 15px 15px 15px;
+  }
+  #cta {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  #cta .cta-card {
+    width: 30%;
+    padding: 15px 0px;
+  }
+  #cta .cta-card a {
+    font-size: 20px;
+  }
+  #cta .cta-card p {
+    width: 80%;
+  }
+  #our-work .sectn-subh {
+    margin-left: 6%;
+    margin-top: 5%;
+  }
+  #our-work .projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 25px;
+  }
+  #our-work .projects .project-card {
+    width: 45%;
+    height: 450px;
+    margin: 35px 0px;
+  }
+  #our-work .projects .project-card h4 {
+    width: 90%;
+    font-size: 28px;
+  }
+  #our-work .projects .project-card p {
+    width: 90%;
+    font-size: 18px;
+  }
+  #our-work .projects .project-card .tech {
+    width: 90%;
+    font-size: 14px;
+  }
+  #sponsors #sponsorLogo {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #sponsors #sponsorLogo img {
+    width: 40%;
+    margin: 25px;
+  }
+  #find-us #mapid {
+    width: 75%;
+  }
+}
+@media (min-width: 600px) and (orientation: landscape) {
+  #home-hero #home-hero-content h1 {
+    font-size: 250%;
+  }
+  #home-hero #home-hero-content p {
+    font-size: 150%;
+  }
+  #home-hero #home-hero-content #home-hero-btn {
+    font-size: 175%;
+    margin: 15px 15px 15px 15px;
+    width: 40%;
+  }
+  #cta {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  #cta .cta-card {
+    width: 30%;
+    height: 90%;
+  }
+  #cta .cta-card i {
+    transform: scale(1);
+  }
+  #cta .cta-card * {
+    margin: 35px 0px;
+  }
+  #our-work .sectn-subh {
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: 125%;
+  }
+  #our-work .projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 25px;
+  }
+  #our-work .projects .project-card {
+    width: 31%;
+    height: 450px;
+    margin: 35px 0px;
+  }
+  #our-work .projects .project-card h4 {
+    width: 90%;
+    font-size: 28px;
+  }
+  #our-work .projects .project-card p {
+    width: 90%;
+    font-size: 18px;
+  }
+  #our-work .projects .project-card .tech {
+    width: 90%;
+    font-size: 14px;
+  }
+  #sponsors #sponsorLogo {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #sponsors #sponsorLogo img {
+    width: 40%;
+    margin: 25px;
+  }
+  #find-us #mapid {
+    width: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  #home-hero #home-hero-content h1 {
+    font-size: 250%;
+  }
+  #home-hero #home-hero-content p {
+    font-size: 150%;
+  }
+  #home-hero #home-hero-content #home-hero-btn {
+    font-size: 175%;
+    margin: 15px 15px 15px 15px;
+  }
+  #cta {
+    padding: 80px 0px;
+  }
+  #cta .cta-card {
+    width: 300px;
+  }
+  #cta .cta-card a {
+    transition: background-color 0.25s;
+  }
+  #cta .cta-card a:hover {
+    background-color: rgb(51, 87, 102);
+  }
+  #our-work #see-more {
+    transition: background-color 0.5s;
+  }
+  #our-work #see-more:hover {
+    background-color: rgb(51, 87, 102);
+  }
+  #our-work .projects .project-card {
+    width: 325px;
+  }
+  #our-work .projects .project-card button {
+    transition: background-color 0.5s;
+  }
+  #our-work .projects .project-card button:hover {
+    background-color: rgb(51, 87, 102);
+  }
+  #sponsors #sponsorLogo img {
+    width: 375px;
+  }
+  #find-us #mapid {
+    width: 75%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

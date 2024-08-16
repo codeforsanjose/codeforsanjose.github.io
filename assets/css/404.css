@@ -1,0 +1,24 @@
+.error404 {
+  padding: 50px 0px;
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+.error404 h1 {
+  font-size: 35px;
+  margin: 20px;
+}
+.error404 p {
+  font-size: 24px;
+}
+.error404 a {
+  display: block;
+  font-size: 25px;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*# sourceMappingURL=404.css.map */

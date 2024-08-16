@@ -1,0 +1,250 @@
+header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #399fd3;
+}
+header a {
+  width: 29%;
+}
+header a #navlogo {
+  width: 100%;
+}
+
+#menu-btn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 85%;
+  width: 50px;
+  height: 50px;
+  display: block;
+  z-index: 10;
+  border-radius: 50%;
+}
+#menu-btn i {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+#navlinks {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: -100%;
+  padding-top: 50px;
+  background-color: #181818;
+  transition: left 0.4s ease-in-out;
+}
+#navlinks #links {
+  width: 50%;
+  padding-right: 1%;
+}
+#navlinks #links a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  text-align: left;
+  font-size: 7vw;
+  width: 100%;
+  display: block;
+  padding: 11px 11px 11px 40px;
+  border-bottom: 2px solid #399fd3;
+}
+#navlinks #sociallinks {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding: 10px 15px;
+}
+#navlinks #sociallinks a {
+  width: 29%;
+  margin: 10px;
+}
+#navlinks #sociallinks a img {
+  width: 100%;
+}
+
+.tooltiptext {
+  display: none;
+}
+
+@media (orientation: landscape) {
+  #navlinks {
+    width: 50vw;
+    flex-direction: column;
+    background-color: #222222;
+  }
+  header a {
+    width: 10%;
+  }
+  header #links a {
+    font-size: 22px;
+    padding: 5px 40px;
+  }
+  header #sociallinks a {
+    width: 10%;
+  }
+}
+@media (min-width: 560px) and (orientation: portrait) {
+  header a {
+    width: 15%;
+  }
+  #menu-btn {
+    display: none;
+  }
+  #navlinks {
+    flex-direction: column;
+    background-color: #222222;
+    position: static;
+    width: 75%;
+    justify-content: space-around;
+    padding: 0;
+    padding-top: 25px;
+  }
+  #navlinks #links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #navlinks #links a {
+    text-align: right;
+    font-size: 18px;
+    border: none;
+    padding: 0;
+    width: fit-content;
+  }
+  #navlinks #sociallinks {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    padding-right: 3%;
+  }
+  #navlinks #sociallinks a {
+    width: 6%;
+  }
+  #navlinks #sociallinks a img {
+    border: none;
+  }
+}
+@media (min-width: 560px) and (orientation: landscape) {
+  #menu-btn {
+    display: none;
+  }
+  header a {
+    width: 15%;
+  }
+  #navlinks {
+    width: 33vw;
+    background-color: #222222;
+  }
+  #navlinks {
+    background-color: #222222;
+    position: static;
+    width: 75%;
+    justify-content: space-around;
+    padding: 0;
+    padding-top: 15px;
+  }
+  #navlinks #links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #navlinks #links a {
+    width: fit-content;
+    text-align: right;
+    font-size: 2.2vw;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  #navlinks #sociallinks {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    padding-right: 1.85%;
+  }
+  #navlinks #sociallinks a {
+    width: 6%;
+  }
+  #navlinks #sociallinks a img {
+    border: none;
+  }
+}
+@media (min-width: 1200px) {
+  header a {
+    width: 13%;
+  }
+  #navlinks {
+    width: 70%;
+    justify-content: space-evenly;
+    background-color: #222222;
+  }
+  #navlinks #links {
+    width: 100%;
+    height: 39px;
+    margin-bottom: 15px;
+  }
+  #navlinks #links a {
+    font-size: 25px;
+    padding-bottom: 3px;
+    border-bottom: solid 0px #399fd3;
+    transition: border-bottom 0.1s linear;
+  }
+  #navlinks #links a:hover {
+    border-bottom-width: 3px;
+  }
+  #navlinks #sociallinks {
+    padding-right: 1.25%;
+  }
+  #navlinks #sociallinks a {
+    width: 5%;
+    margin-right: 3%;
+  }
+  .tooltip {
+    position: relative;
+  }
+  .tooltiptext {
+    display: inline;
+  }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: #111111;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -50px;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

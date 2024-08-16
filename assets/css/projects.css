@@ -1,0 +1,68 @@
+#projects-title {
+  background: url(../img/banners/blue_dog.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projectsIntro {
+  margin-top: 100px;
+}
+
+#our-work {
+  margin-top: 0px;
+}
+
+#openModal {
+  position: fixed;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 90%;
+  height: 95%;
+  overflow: scroll;
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid #399fd3;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+  padding: 50px 12px;
+  display: flex;
+  flex-direction: column;
+}
+#openModal i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#openModal .modal-imgs img {
+  width: 100%;
+  border-radius: 10px;
+}
+#openModal .modal-info h2 {
+  margin: 10px auto;
+  background-color: transparent;
+  margin-top: 0px;
+}
+#openModal .modal-info p {
+  line-height: 115%;
+  margin: 10px 0px;
+}
+
+@media (min-width: 780px) {
+  #openModal {
+    width: 80vw;
+    height: 90vh;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  #openModal .modal-imgs {
+    width: 40%;
+    margin-right: 10px;
+  }
+  #openModal .modal-info {
+    width: 59%;
+  }
+}
+
+/*# sourceMappingURL=projects.css.map */
