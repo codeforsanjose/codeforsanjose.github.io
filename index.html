@@ -233,7 +233,7 @@
 
 <!-- MAPBOX SCRIPT -->
 <script>
-  var mymap = L.map("mapid").setView([37.32694, -121.89699], 17);
+  var mymap = L.map("mapid").setView([37.3381, -121.8854], 17);
   L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
@@ -242,8 +242,8 @@
     zoomOffset: -1,
     accessToken: 'pk.eyJ1IjoiZGFuZWtvbHNlbiIsImEiOiJjazl4ZXl5OGwwam5kM2hta2tiZG1hMmRhIn0.TuyZ8-gvC9b9Wm_nOj25kw'
   }).addTo(mymap);
-  var marker = L.marker([37.32694, -121.89699]).addTo(mymap);
-  marker.bindPopup("<span id='mapPopup'><b>ActionSpot:</b><br>453 W San Carlos St,<br>San José, CA 95110</span>")
+  var marker = L.marker([37.3381, -121.8854]).addTo(mymap);
+  marker.bindPopup("<span id='mapPopup'><b>City Hall Rm 118:</b><br>200 East Santa Clara,<br>San José, CA 95113</span>")
     .openPopup();
 </script>
 
