@@ -1,0 +1,36 @@
+title: Open Source San José
+copyright: Open Source San José
+url: https://opensourcesanjose.org/
+start: 2014
+ein: 99-4612294
+directors:
+  - Joey Richardson
+  - Nick Katsantones
+hack_night:
+  schedule: the fourth Thursday of the month at 6:30 p.m.
+  location: San José City Hall Room 118
+  address: |
+    200 E. Santa Clara St.
+    San José, CA 95113
+  latitude: 37.3381
+  longitude: -121.8854
+  zoom: 17
+# Contact
+contact:
+  discord: https://discord.gg/hjSVPBsEhf
+  email: admin@opensourcesanjose.org
+  eventbrite: opensourcesanjose
+  facebook: codeforsanjose
+  github: codeforsanjose
+  mastodon: opensourcesanjose@sfba.social
+  medium: code-for-san-jose
+  meetup: Code-for-San-Jose
+  share_idea_form: https://forms.gle/ui7hCCaXCKXTVvN89
+  twitter: OpenSourceSJ
+  volunteer_signup_form: https://forms.gle/pfLfKGidXK3HJGKf6
+# Google Analytics
+gtag: G-26B6FB8T8P
+mapbox: eyJ1IjoiZGFuZWtvbHNlbiIsImEiOiJjazl4ZXl5OGwwam5kM2hta2tiZG1hMmRhIn0.TuyZ8-gvC9b9Wm_nOj25kw
+exclude:
+  - LICENSE
+  - README

@@ -1,0 +1,43 @@
+<a href="index.html">
+  <img src="./assets/img/logonav.png" id="navlogo" alt="Open Source San José logo">
+</a>
+<div id="menu-btn">
+  <i onclick="menu_toggle()" id="fa-btn" class="fas fa-2x fa-bars"></i>
+</div>
+<div id="navlinks">
+  <div id="links">
+    <a href="./index.html">Home</a>
+    {% include navigation.html %}
+  </div>
+  <div id="sociallinks">
+    <a class="tooltip" href="{{ site.contact.discord }}" target="_blank" rel="noopener noref">
+      <img src="./assets/img/social_logos/Discord_Mark.png" alt="Discord logo" class="socialnav" />
+      <span class="tooltiptext">Discord</span>
+    </a>
+    <a class="tooltip" href="https://{{ site.contact.eventbrite }}.eventbrite.com/" target="_blank" rel="noopener noref">
+      <img src="./assets/img/social_logos/Eventbrite_logo_blog1.png" alt="Eventbright logo" class="socialnav" />
+      <span class="tooltiptext">Eventbrite</span>
+    </a>
+    <a class="tooltip" href="{%- include mastodon.html -%}" target="_blank" rel="me noopener noref">
+      <img src="./assets/img/social_logos/mastodon.svg" alt="Mastodon logo" class="socialnav" />
+      <span class="tooltiptext">Mastodon</span>
+    </a>
+    <a class="tooltip" href="https://www.facebook.com/{{ site.contact.facebook }}/" target="_blank" rel="noopener noref">
+      <img src="./assets/img/social_logos/f_logo_RGB-Blue_512.png" alt="Facebook logo" class="socialnav" />
+      <span class="tooltiptext">Facebook</span>
+    </a>
+    <a class="tooltip" href="https://twitter.com/{{ site.contact.twitter }}" target="_blank" rel="noopener noref">
+      <img src="./assets/img/social_logos/Twitter_Social_Icon_Circle_Color.svg" alt="Twitter logo"
+        class="socialnav" />
+      <span class="tooltiptext">Twitter</span>
+    </a>
+    <a class="tooltip" href="https://github.com/{{ site.contact.github }}/" target="_blank" rel="noopener noref">
+      <img src="./assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="Github logo" class="socialnav" />
+      <span class="tooltiptext">Github</span>
+    </a>
+    <a class="tooltip" href="https://medium.com/{{ site.contact.medium }}" target="_blank" rel="noopener noref">
+      <img src="./assets/img/social_logos/Monogram.svg" alt="Medium logo" class="socialnav" />
+      <span class="tooltiptext">Medium</span>
+    </a>
+  </div>
+</div>
