@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <title>{%- if page.title -%} {{ page.title }} @ {% endif -%} {{ site.title }}</title>
+  <!-- meta -->
+  <meta charset="utf-8" />
+  {%- if page.description -%}
+    <meta name="description" content="{{ page.description }}">
+  {%- endif -%}
+  <meta name="author" content="Open Source San José">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  {{ page.meta }}
+  {%- if page.verify_mastodon -%}
+    <link rel="me" href="{% include mastodon.html %}">
+  {%- endif -%}
+  <!-- mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- styles -->
+  <link rel="stylesheet" href="./assets/css/global.min.css">
+  <link rel="stylesheet" href="./assets/css/header.min.css">
+  <link rel="stylesheet" href="./assets/css/footer.min.css">
+  {{ page.styles }}
+  <script src="https://kit.fontawesome.com/a5c8bf6536.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap"
+    rel="stylesheet">
+  <script src="./assets/js/app.js" async></script>
+  {{ page.scripts }}
+  {% include analytics.html %}
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      {% include header.html %}
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      {% include footer.html %}
+    </footer>
+  </div>
+
+</body>
+
+</html>

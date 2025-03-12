@@ -1,165 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Civic User Testing Group
+styles: |
+  <link rel="stylesheet" href="./assets/css/faq.min.css">
+---
+<div class="small-hero" id="FAQ-title">
+    <h1>Civic User Testing Group</h1>
+    <div id="artist-info">
+        <p>Anno Domini Collage</p>
+        <p>Carolyn Ryder Cooley, Lena Wolff, Daniel Jesse Lewis, Jessie Rose Vala,</p>
+        <p> David Choe, Bruno 9Li, Klone, Adrian Lee, and Know Hope</p>
+        <p><a href="http://galleryad.com/">Anno Domini Gallery</a></p>
+    </div>
+</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Source San José - FAQ</title>
-    <link rel="stylesheet" href="./assets/css/global.min.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<div class="text-content" id="FAQ">
+    <h3>What it is.</h3>
+    <p>
+        Open Source San José's Civic User Testing (CUT) Group is a group of
+        community members who are participate in user studies to investigate the
+        usability of websites produced both by the San José City Government, as well
+        as Open Source San José.
+    </p>
 
-    <link rel="stylesheet" href="./assets/css/header.min.css">
-    <link rel="stylesheet" href="./assets/css/footer.min.css">
-    <link rel="stylesheet" href="./assets/css/faq.min.css">
-    <script src="https://kit.fontawesome.com/a5c8bf6536.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap"
-        rel="stylesheet">
-    <script src="./assets/js/app.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-26B6FB8T8P"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-26B6FB8T8P');
-    </script>
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <a href="./index.html">
-                <img src="./assets/img/logonav.png" id="navlogo" alt="Open Source San José logo">
-            </a>
-            <div id="menu-btn">
-                <i onclick="menu_toggle()" id="fa-btn" class="fas fa-2x fa-bars"></i>
-            </div>
-            <div id="navlinks">
-                <div id="links">
-                    <a href="./index.html">Home</a>
-                    <a href="./volunteer.html">Volunteer</a>
-                    <a href="./about.html">About Us</a>
-                    <a href="./projects.html">Projects</a>
-                    <a href="https://www.meetup.com/Code-for-San-Jose/" target="_blank" rel="noopener noref">Events</a>
-                    <!-- <a href="https://www.codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20San%20Jose&utm_source=CodeforSanJose%20site"
-                        target="_blank" rel="noopener noref">Donate</a> -->
-                    <a href="./faq.html">FAQ</a>
-                </div>
-                <div id="sociallinks">
-                    <a class="tooltip" href="https://discord.gg/XMrqrCfprT" target="_blank" rel="noopener noref">
-                        <img src="./assets/img/social_logos/Discord_Mark.png" alt="Discord logo" class="socialnav" />
-                        <span class="tooltiptext">Discord</span>
-                      </a>
-                    <a class="tooltip" href="https://www.meetup.com/Code-for-San-Jose/" target="_blank"
-                        rel="noopener noref">
-                        <img src="./assets/img/social_logos/meetup-logo-m-swarm.png" alt="Meetup logo"
-                            class="socialnav" />
-                        <span class="tooltiptext">Meetup</span>
-                    </a>
-                    <a class="tooltip" href="https://www.facebook.com/codeforsanjose/" target="_blank"
-                        rel="noopener noref">
-                        <img src="./assets/img/social_logos/f_logo_RGB-Blue_512.png" alt="Facebook logo"
-                            class="socialnav" />
-                        <span class="tooltiptext">Facebook</span>
-                    </a>
-                    <a class="tooltip" href="https://twitter.com/codeforsanjose" target="_blank" rel="noopener noref">
-                        <img src="./assets/img/social_logos/Twitter_Social_Icon_Circle_Color.svg" alt="Twitter logo"
-                            class="socialnav" />
-                        <span class="tooltiptext">Twitter</span>
-                    </a>
-                    <a class="tooltip" href="https://github.com/codeforsanjose/" target="_blank" rel="noopener noref">
-                        <img src="./assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="Github logo"
-                            class="socialnav" />
-                        <span class="tooltiptext">Github</span>
-                    </a>
-                    <a class="tooltip" href="https://medium.com/code-for-san-jose" target="_blank" rel="noopener noref">
-                        <img src="./assets/img/social_logos/Monogram.svg" alt="Medium logo" class="socialnav" />
-                        <span class="tooltiptext">Medium</span>
-                    </a>
-                </div>
-            </div>
-        </header>
-
-        <main>
-            <div class="small-hero" id="FAQ-title">
-                <h1>Civic User Testing Group</h1>
-                <div id="artist-info">
-                    <p>Anno Domini Collage</p>
-                    <p>Carolyn Ryder Cooley, Lena Wolff, Daniel Jesse Lewis, Jessie Rose Vala,</p>
-                    <p> David Choe, Bruno 9Li, Klone, Adrian Lee, and Know Hope</p>
-                    <p><a href="http://galleryad.com/">Anno Domini Gallery</a></p>
-                </div>
-            </div>
-
-            <div class="text-content" id="FAQ">
-                <h3>What it is.</h3>
-                <p>
-                    Open Source San José's Civic User Testing (CUT) Group is a group of
-                    community members who are participate in user studies to investigate the
-                    usability of websites produced both by the San José City Government, as well
-                    as Open Source San José.
-                </p>
-
-                <h3>What we are looking for.</h3>
-                <p>
-                    We are seeking San José community members who are willing to participate in user
-                    studies. No experience is required, and we are open to people at any skill level
-                    when it comes to technology.  Tech novices are welcome!
-                </p>
+    <h3>What we are looking for.</h3>
+    <p>
+        We are seeking San José community members who are willing to participate in user
+        studies. No experience is required, and we are open to people at any skill level
+        when it comes to technology.  Tech novices are welcome!
+    </p>
 
 
-                <h3>How to sign up.</h3>
-                <p>Start by filling out this sign up form.
-                    <a href="https://airtable.com/shrXv3JjqcEt9KdVI"
-                        target="_blank" rel="noref noopener">Signup Form</a>
-                    <a href="https://airtable.com/shrXv3JjqcEt9KdVI"
-                        target="_blank" rel="noref noopener">(Spanish)</a>
-                    <a href="https://airtable.com/shrXv3JjqcEt9KdVI"
-                        target="_blank" rel="noref noopener">(Vietnamese)</a></p>
-                <p>
-                    After you submit this form, we'll send a quick email your way to confirm
-                    that we received your information.  The next time we have a website that
-                    we want to test, we will email users to invite you to participate in the
-                    user study. Users who participate in a user study will be provided a gift
-                    card to say thanks.
-                </p>
-            </div>
-        </main>
-
-
-
-        <footer>
-            <div id="foot-links">
-                <div id="site-map">
-                    <h5>Site Map</h5>
-                    <a href="./volunteer.html">Volunteer</a>
-                    <a href="./about.html">About Us</a>
-                    <a href="./projects.html">Projects</a>
-                    <!-- <a href="https://www.codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20San%20Jose&utm_source=CodeforSanJose%20site"
-                        target="_blank" rel="noopener noref">Donate</a> -->
-                    <a href="https://www.meetup.com/Code-for-San-Jose/" target="_blank" rel="noopener noref">Events</a>
-                    <a href="./faq.html">FAQ</a>
-                </div>
-                <div id="social-footer">
-                    <h5>Social Media</h5>
-                    <a href="https://discord.gg/XMrqrCfprT" target="_blank" rel="noopener noref">Discord</a>
-                    <!-- <a href="https://www.meetup.com/Open-Source-San-Jose/" target="_blank" rel="noopener noref">Meetup</a> -->
-                    <a href-"https://sfba.social/@opensourcesanjose" target="_blank" rel="noopener noref">Mastodon</a>
-                    <a href="https://www.facebook.com/opensourcesanjose/" target="_blank" rel="noopener noref">Facebook</a>
-                    <a href="https://medium.com/code-for-san-jose" target="_blank" rel="noopener noref">Medium</a>
-                    <a href="https://github.com/codeforsanjose/" target="_blank" rel="noopener noref">Github</a>
-                    <a href="https://twitter.com/OpenSourceSJ" target="_blank" rel="noopener noref">Twitter</a>
-                </div>
-            </div>
-            <div id="legal">
-                <a href="./index.html">
-                    <img src="./assets/img/logonav.png" alt="Open Source San José Logo">
-                </a>
-                <p>Got feedback? <a href="mailto:admin@opensourcesanjose.org">Let us know!</a></p>
-                <p>&copy Open Source San José 2014 - 2025</p>
-            </div>
-        </footer>
-</body>
-
-</html>
+    <h3>How to sign up.</h3>
+    <p>Start by filling out this sign up form.
+        <a href="https://airtable.com/shrXv3JjqcEt9KdVI"
+            target="_blank" rel="noref noopener">Signup Form</a>
+        <a href="https://airtable.com/shrXv3JjqcEt9KdVI"
+            target="_blank" rel="noref noopener">(Spanish)</a>
+        <a href="https://airtable.com/shrXv3JjqcEt9KdVI"
+            target="_blank" rel="noref noopener">(Vietnamese)</a></p>
+    <p>
+        After you submit this form, we'll send a quick email your way to confirm
+        that we received your information.  The next time we have a website that
+        we want to test, we will email users to invite you to participate in the
+        user study. Users who participate in a user study will be provided a gift
+        card to say thanks.
+    </p>
+</div>

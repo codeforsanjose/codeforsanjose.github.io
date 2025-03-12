@@ -1,326 +1,209 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>Open Source San José - About</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
-  <link rel="stylesheet" href="./assets/css/global.min.css" />
-  <link rel="stylesheet" href="./assets/css/header.min.css" />
-  <link rel="stylesheet" href="./assets/css/footer.min.css" />
+---
+layout: default
+title: About Us
+styles: |
   <link rel="stylesheet" href="./assets/css/about.css" />
-  <script src="https://kit.fontawesome.com/a5c8bf6536.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap"
-    rel="stylesheet" />
-  <script src="./assets/js/app.js"></script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-26B6FB8T8P"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-26B6FB8T8P');
-  </script>
-</head>
-
-<body>
-  <div class="container">
-    <header>
-      <a href="./index.html">
-        <img src="./assets/img/logonav.png" id="navlogo" alt="Open Source San José logo" />
-      </a>
-      <div id="menu-btn">
-        <i onclick="menu_toggle()" id="fa-btn" class="fas fa-2x fa-bars"></i>
-      </div>
-      <div id="navlinks">
-        <div id="links">
-          <a href="./index.html">Home</a>
-          <a href="./volunteer.html">Volunteer</a>
-          <a href="./about.html">About Us</a>
-          <a href="./projects.html">Projects</a>
-          <a href="https://www.opensourcesanjose.eventbrite.com/" target="_blank" rel="noopener noref">Events</a>
-          <!-- <a href="https://www.codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20San%20Jose&utm_source=CodeforSanJose%20site"
-            target="_blank" rel="noopener noref">Donate</a> -->
-          <a href="./faq.html">FAQ</a>
-        </div>
-        <div id="sociallinks">
-
-          <a class="tooltip" href="https://discord.gg/XMrqrCfprT" target="_blank" rel="noopener noref">
-            <img src="./assets/img/social_logos/Discord_Mark.png" alt="Discord logo" class="socialnav" />
-            <span class="tooltiptext">Discord</span>
-          </a>
-          <a class="tooltip" href="https://www.opensourcesanjose.eventbrite.com/" target="_blank" rel="noopener noref">
-            <img src="./assets/img/social_logos/Eventbrite_logo_blog1.png" alt="Meetup logo" class="socialnav" />
-            <span class="tooltiptext">Eventbrite</span>
-          <a class="tooltip" href="https://www.meetup.com/open-source-san-jose/" target="_blank" rel="noopener noref">
-            <img src="./assets/img/social_logos/meetup-logo-m-swarm.png" alt="Meetup logo" class="socialnav" />
-            <span class="tooltiptext">Meetup</span>
-          </a>
-          <a class="tooltip" href="https://sfba.social/@opensourcesanjose" target="_blank" rel="noopener noref">
-            <img src="./assets/img/social_logos/mastodon.svg" alt="Mastodon logo" class="socialnav" />
-            <span class="tooltiptext">Mastodon</span>
-          </a>
-          <a class="tooltip" href="https://www.facebook.com/codeforsanjose/" target="_blank" rel="noopener noref">
-            <img src="./assets/img/social_logos/f_logo_RGB-Blue_512.png" alt="Facebook logo" class="socialnav" />
-            <span class="tooltiptext">Facebook</span>
-          </a>
-          <a class="tooltip" href="https://twitter.com/OpenSourceSJ" target="_blank" rel="noopener noref">
-            <img src="./assets/img/social_logos/Twitter_Social_Icon_Circle_Color.svg" alt="Twitter logo"
-              class="socialnav" />
-            <span class="tooltiptext">Twitter</span>
-          </a>
-          <a class="tooltip" href="https://github.com/codeforsanjose/" target="_blank" rel="noopener noref">
-            <img src="./assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="Github logo" class="socialnav" />
-            <span class="tooltiptext">Github</span>
-          </a>
-          <a class="tooltip" href="https://medium.com/code-for-san-jose" target="_blank" rel="noopener noref">
-            <img src="./assets/img/social_logos/Monogram.svg" alt="Medium logo" class="socialnav" />
-            <span class="tooltiptext">Medium</span>
-          </a>
-        </div>
-      </div>
-    </header>
-
-
-    <main>
-      <div class="small-hero" id="about-title">
-        <h1>About Us</h1>
-        <div id="artist-info">
-          <p>Plumed Serpent (Quetzalcóatl)</p>
-          <p>Robert Graham</p>
-          <p><a
-              href="https://www.robertgrahamartist.com/plumed-serpent/">https://www.robertgrahamartist.com/plumed-serpent/</a>
-          </p>
-        </div>
-      </div>
-      <div class="text-content">
-        <h3>What is Open Source San José?</h3>
-        <p>
-          We are a group of volunteer developers, designers, researchers,
-          community organizers, and more who collaborate on technical projects
-          that better our community, including websites, civic apps, data
-          visualizations, and media projects.
-        </p>
-        <p>
-          We create a space for San José’s civic tech community to meet,
-          experiment and collaborate on all kinds of projects through our twice-
-          monthly Civic Hack Nights.
-        </p>
-        <p>
-          We typically meet twice a month on Thursdays 6:30-9:00pm in downtown
-          San José. Find our next events by joining our
-          <a href="https://www.opensourcesanjose.eventbrite.com/">Eventbrite group</a>.
-        </p>
-        <p>
-          Technical skills are not required to contribute. Project managers,
-          subject matter experts, communications specialists, writers,
-          researchers, community organizers, creatives, designers, developers,
-          data scientists are all welcome!
-        </p>
-        <h3>Core Values</h3>
-        <ul>
-          <li>We are civic innovators for good – we experiment, we build, we push boundaries to discover better ways to
-            do things.</li>
-          <li>We believe community members’ ideas, skills and experiences can benefit our city when applied to civic
-            challenges.</li>
-          <li>We believe technology can enable change, but it is far less important than the change it can support when
-            used effectively.</li>
-          <li>We work in the open, prioritizing open source technology that others can use freely to improve their
-            communities.</li>
-          <li>We are nonpartisan and do not endorse candidates for elected office.</li>
-          <li>We are anti-racist. We stand against systemic oppression of minorities – especially BIPOC (Black,
-            Indigenous, People of Color) –, racism, bigotry, prejudice, and white supremacy.</li>
-        </ul>
-
-        <h3>Our Approach</h3>
-        <ul>
-          <li>We openly collaborate with others seeking to improve our community for all.</li>
-          <li>We design with those we seek to serve rather than designing for them.</li>
-          <li>We value human-centered design and always consider technology to be secondary to the real needs of people
-            using the technology.</li>
-          <li>We work using agile methods- we experiment, build fast, learn and adapt rather than assume we know the
-            perfect solution to begin with.</li>
-        </ul>
-
-        <h3>On Government</h3>
-        <ul>
-          <li>We believe government is a powerful engine of change.</li>
-          <li>We value and respect public service while simultaneously working to improve and update our city
-            government.</li>
-          <li>We believe an open government is more responsive, less corrupt and more accessible to the community.</li>
-          <li>We believe our city will be stronger with more opportunities for San José residents to participate in our
-            civic society when the government better engages all communities.</li>
-        </ul>
-        <h3>On Community</h3>
-        <ul>
-          <li>We believe that powerful change comes from the community.</li>
-          <li>We value nonprofits and community-based organizations that serve to improve the quality of life for
-            residents in San José and the wider South Bay.</li>
-          <li>We believe inclusive and connected communities make our city stronger by providing more opportunities for
-            civic engagement.</li>
-          <li>We believe we build better solutions by listening to our community.</li>
-        </ul>
-
-        <a href="https://issuu.com/content-magazine/docs/serve7.5_digital" target="_blank" rel="noref noopener">Content Magazine
-          article</a>
-        <div class="in-the-news">
-          <img src="assets/img/contentMagArticle1.png" />
-          <img src="assets/img/contentMagArticle2.png" />
-        </div>
-        <div class="in-the-podcasts">
-          <h3>Podcast 1</h3>
-          <p><a href="https://civictech.chat/2021/09/citizen-and-immigration-information-tool" target="_blank" rel="noref noopener">Citizen and Immigration Information Tool</a></p>
-          <p>
-            Sep 30, 2021</p>
-        </div>
-        <p>
-          Have more questions about our history and how we operate?
-          <a href="./faq.html">See our FAQ (Frequently Asked Questions) page.</a>
-        </p>
-        <h3>Let's collaborate!</h3>
-        <p>
-          Pitch a design, data or coding project for our volunteers to work on.
-          You can
-          <a href="https://forms.gle/ui7hCCaXCKXTVvN89" target="_blank" rel="noref noopener">share your
-            idea</a>
-          or <a href="mailto:opensourcesanjose@gmail.com">email us</a>.
-        </p>
-        <p>Check out our <a href="./faq.html">FAQ</a> for more details on how the proposal process works.</p>
-      </div>
-      <div class="h2bar"></div>
-      <h2>Our Executive Team</h2>
-      <div id="leadership-team">
-        <h3>Executive Directors</h3>
-        <div id="leader" class="leader">
-          <h2>Joey Richardson</h2>
-          <img class="image-set" src="assets/img/leadership/exec_directors/joey.png" />
-          <p>Co-Director</p>
-        </div>
-        <div id="leader" class="leader">
-          <h2>Nick Katsantones</h2>
-          <img class="image-set" src="assets/img/leadership/exec_directors/nick.png" />
-          <p>Co-Director</p>
-        </div>
-        <h3>Board Members Team</h3>
-        <div id="leader" class="leader">
-          <h2>Janet Sosa</h2>
-          <img class="image-set" src="assets/img/leadership/exec_directors/janetSorsa.png" />
-          <p>Board Member Treasurer</p>
-        </div>
-        <div id="leader" class="leader">
-          <h2>Valdo Drozdek</h2>
-          <img class="image-set" src="assets/img/leadership/exec_directors/valdoDrozdek.png" />
-          <p>Board Member Secretary</p>
-        </div>
-        <h3>Project Leaders</h3>
-        <div id="projectLeaders">
-
-        </div>
-        <h3>Former Leadership</h3>
-        <div id="formerLeadership">
-          <div id="leader" class="captain">
-            <h2>Ellina Yin</h2>
-            <img class="image-set" src="assets/img/leadership/former_leadership/ellinaYin.jpg" />
-            <p>Co-Director</p>
-          </div>
-        </div>
-        <div id="formerLeadership">
-          <div id="leader" class="captain">
-            <h2>Kalen Gallagher</h2>
-            <img class="image-set" src="assets/img/leadership/former_leadership/kalenGallagher.png" />
-            <p>Co-founder and Co-Captain 2014 - 2017</p>
-          </div>
-          <div id="leader" class="captain">
-            <h2>Michelle Thong</h2>
-            <img class="image-set" src="assets/img/leadership/former_leadership/michellleThong.jpg" />
-            <p>Co-founder and Co-Captain 2014 - 2019</p>
-          </div>
-          <div id="leader" class="captain">
-            <h2>Vivek Bansal</h2>
-            <img class="image-set" src="assets/img/leadership/former_captains/vivek.jpg" />
-            <p>Co-Captain 2014 - 2019
-              Vivek was a Co-Captain and Project Manager with Code for San José.  His overall goal was inspiring people to 
-              contribute to local government and non-profits.
-              </p>
-            <p>
-              He worked on projects like Open Disclosure and starting up the South Bay OpenStreetMap team.  One of his most stressful and time consuming projects was leading the <a href="https://wiki.openstreetmap.org/wiki/Santa_Clara_County,_California/San_Jose_Sidewalk_Import">San Jose sidewalk import</a>
-              with Minh.
-            </p>
-          </div>
-          <div id="leader" class="captain">
-            <h2>Yan Yin Choy</h2>
-            <img class="image-set" src="assets/img/leadership/former_captains/yanYinChoy.png" />
-            <p>I was involved with Open Source San José from Dec 2016-2020, as a project leader, engineer, researcher,
-              and as a Captain/Executive Director. I worked closely with OSSJ leadership team to coordinate our biweekly
-              civic hack nights, cultivate program partnerships, coach product teams and manage our budget. I loved
-              collaborating with kind people who were passionate about contributing to meaningful projects to help San
-              José and the Bay Area, especially on Renter's Rights Guide, Heart of the Valley, state benefit application
-              audits in collaboration with Code for America, and design audits of DMV's website with the State of
-              California. </p>
-
-            <p>In 2017, I led a team to launch Renter's Rights Guide, a website to inform San José renters about their
-              rights and resources. I led a team to conduct user research, learning that Santa Clara County renters
-              faced difficulties understanding policy jargon and navigating challenging website user interfaces to
-              understand renter's rights, policies, eviction process, and finding affordable housing. I presented our
-              findings to government stakeholders, to advocate for plain language and simpler information architecture
-              for easier navigation. From 2017-2019 we maintained the website, keeping it up to date with any policy
-              changes from the City of San José. We archived the website in Jan 2020 because the city improved the user
-              experience of their housing department's website, integrating some of the insights from our user research.
-              From 2019-2021, we collaborated with Tenant Together's SMS Helpline for Tenants Project, providing our
-              support with user research, marketing and community engagement on tools that help tenants facing eviction.
-            </p>
-
-            <p>In 2018, I launched Heart of the Valley, a map that OSSJ continues to maintain. The map takes public data
-              from the City of San José on public art and murals, as well as information made available publicly, to map
-              the incredible murals and public art in South Bay (also known as "Valley of Heart's Delight", South Bay
-              Area). This open source project aims to raise awareness of the beautiful public art that makes our
-              communities vibrant, and discover local artists and creative leaders from the South Bay. </p>
-
-            <p>I started discussing this idea with Jennifer Ahn and Juan Carlos Araujo of Empire Seven Studios, a local
-              art studio located in Japantown, San José, California. We brainstormed ideas for the map, and Juan Carlos
-              came up with the name Heart of the Valley. The map project began! I worked with a team of OSSJ volunteers
-              to add more data to the map, and handed it over in 2020 to the current team to continue to develop the
-              map. I'm excited to see the map evolve. </p>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div id="foot-links">
-        <div id="site-map">
-          <h5>Site Map</h5>
-          <a href="./volunteer.html">Volunteer</a>
-          <a href="./about.html">About Us</a>
-          <a href="./projects.html">Projects</a>
-          <a href="https://www.meetup.com/open-source-san-jose/" target="_blank" rel="noopener noref">Events</a>
-          <a href="./faq.html">FAQ</a>
-        </div>
-        <div id="social-footer">
-          <h5>Social Media</h5>
-
-          <a href="https://discord.gg/hjSVPBsEhf" target="_blank" rel="noopener noref">Discord</a>
-          <a href="https://www.opensourcesanjose.eventbrite.com/" target="_blank" rel="noopener noref">Eventbrite</a>
-          <a href="https://sfba.social/@opensourcesanjose" target="_blank" rel="noopener noref">Mastodon</a>
-          <a href="https://www.meetup.com/Open-Source-San-Jose/" target="_blank" rel="noopener noref">Meetup</a>
-          <a href="https://www.facebook.com/opensourcesanjose/" target="_blank" rel="noopener noref">Facebook</a>
-          <a href="https://medium.com/code-for-san-jose" target="_blank" rel="noopener noref">Medium</a>
-          <a href="https://github.com/codeforsanjose/" target="_blank" rel="noopener noref">Github</a>
-          <a href="https://twitter.com/OpenSourceSJ" target="_blank" rel="noopener noref">Twitter</a>
-        </div>
-      </div>
-      <div id="legal">
-        <a href="./index.html">
-          <img src="./assets/img/logonav.png" alt="Open Source San José Logo">
-        </a>
-        <p>Got feedback? <a href="mailto:codeforsanjose@gmail.com">Let us know!</a></p>
-        <p>&copy Open Source San José 2014 - 2024</p>
-      </div>
-    </footer>
+---
+<div class="small-hero" id="about-title">
+  <h1>About Us</h1>
+  <div id="artist-info">
+    <p>Plumed Serpent (Quetzalcóatl)</p>
+    <p>Robert Graham</p>
+    <p><a
+        href="https://www.robertgrahamartist.com/plumed-serpent/">https://www.robertgrahamartist.com/plumed-serpent/</a>
+    </p>
   </div>
-</body>
-<script src="./assets/js/leadership-team.js"></script>
+</div>
+<div class="text-content">
+  <h3>What is Open Source San José?</h3>
+  <p>
+    We are a group of volunteer developers, designers, researchers,
+    community organizers, and more who collaborate on technical projects
+    that better our community, including websites, civic apps, data
+    visualizations, and media projects.
+  </p>
+  <p>
+    We create a space for San José’s civic tech community to meet,
+    experiment and collaborate on all kinds of projects through our twice-
+    monthly Civic Hack Nights.
+  </p>
+  <p>
+    We typically meet twice a month on Thursdays 6:30-9:00pm in downtown
+    San José. Find our next events by joining our
+    <a href="https://{{ site.contact.eventbrite }}.eventbrite.com/">Eventbrite group</a>.
+  </p>
+  <p>
+    Technical skills are not required to contribute. Project managers,
+    subject matter experts, communications specialists, writers,
+    researchers, community organizers, creatives, designers, developers,
+    data scientists are all welcome!
+  </p>
+  <h3>Core Values</h3>
+  <ul>
+    <li>We are civic innovators for good – we experiment, we build, we push boundaries to discover better ways to
+      do things.</li>
+    <li>We believe community members’ ideas, skills and experiences can benefit our city when applied to civic
+      challenges.</li>
+    <li>We believe technology can enable change, but it is far less important than the change it can support when
+      used effectively.</li>
+    <li>We work in the open, prioritizing open source technology that others can use freely to improve their
+      communities.</li>
+    <li>We are nonpartisan and do not endorse candidates for elected office.</li>
+    <li>We are anti-racist. We stand against systemic oppression of minorities – especially BIPOC (Black,
+      Indigenous, People of Color) –, racism, bigotry, prejudice, and white supremacy.</li>
+  </ul>
 
-</html>
+  <h3>Our Approach</h3>
+  <ul>
+    <li>We openly collaborate with others seeking to improve our community for all.</li>
+    <li>We design with those we seek to serve rather than designing for them.</li>
+    <li>We value human-centered design and always consider technology to be secondary to the real needs of people
+      using the technology.</li>
+    <li>We work using agile methods- we experiment, build fast, learn and adapt rather than assume we know the
+      perfect solution to begin with.</li>
+  </ul>
+
+  <h3>On Government</h3>
+  <ul>
+    <li>We believe government is a powerful engine of change.</li>
+    <li>We value and respect public service while simultaneously working to improve and update our city
+      government.</li>
+    <li>We believe an open government is more responsive, less corrupt and more accessible to the community.</li>
+    <li>We believe our city will be stronger with more opportunities for San José residents to participate in our
+      civic society when the government better engages all communities.</li>
+  </ul>
+  <h3>On Community</h3>
+  <ul>
+    <li>We believe that powerful change comes from the community.</li>
+    <li>We value nonprofits and community-based organizations that serve to improve the quality of life for
+      residents in San José and the wider South Bay.</li>
+    <li>We believe inclusive and connected communities make our city stronger by providing more opportunities for
+      civic engagement.</li>
+    <li>We believe we build better solutions by listening to our community.</li>
+  </ul>
+
+  <a href="https://issuu.com/content-magazine/docs/serve7.5_digital" target="_blank" rel="noref noopener">Content Magazine
+    article</a>
+  <div class="in-the-news">
+    <img src="assets/img/contentMagArticle1.png" />
+    <img src="assets/img/contentMagArticle2.png" />
+  </div>
+  <div class="in-the-podcasts">
+    <h3>Podcast 1</h3>
+    <p><a href="https://civictech.chat/2021/09/citizen-and-immigration-information-tool" target="_blank" rel="noref noopener">Citizen and Immigration Information Tool</a></p>
+    <p>
+      Sep 30, 2021</p>
+  </div>
+  <p>
+    Have more questions about our history and how we operate?
+    <a href="./faq.html">See our FAQ (Frequently Asked Questions) page.</a>
+  </p>
+  <h3>Let's collaborate!</h3>
+  <p>
+    Pitch a design, data or coding project for our volunteers to work on.
+    You can
+    <a href="{{ site.contact.share_idea_form }}" target="_blank" rel="noref noopener">share your
+      idea</a>
+    or <a href="mailto:{{ site.contact.email }}">email us</a>.
+  </p>
+  <p>Check out our <a href="./faq.html">FAQ</a> for more details on how the proposal process works.</p>
+</div>
+<div class="h2bar"></div>
+<h2>Our Executive Team</h2>
+<div id="leadership-team">
+  <h3>Executive Directors</h3>
+  <div id="leader" class="leader">
+    <h2>Joey Richardson</h2>
+    <img class="image-set" src="assets/img/leadership/exec_directors/joey.png" />
+    <p>Co-Director</p>
+  </div>
+  <div id="leader" class="leader">
+    <h2>Nick Katsantones</h2>
+    <img class="image-set" src="assets/img/leadership/exec_directors/nick.png" />
+    <p>Co-Director</p>
+  </div>
+  <h3>Board Members Team</h3>
+  <div id="leader" class="leader">
+    <h2>Janet Sosa</h2>
+    <img class="image-set" src="assets/img/leadership/exec_directors/janetSorsa.png" />
+    <p>Board Member Treasurer</p>
+  </div>
+  <div id="leader" class="leader">
+    <h2>Valdo Drozdek</h2>
+    <img class="image-set" src="assets/img/leadership/exec_directors/valdoDrozdek.png" />
+    <p>Board Member Secretary</p>
+  </div>
+  <h3>Project Leaders</h3>
+  <div id="projectLeaders">
+
+  </div>
+  <h3>Former Leadership</h3>
+  <div id="formerLeadership">
+    <div id="leader" class="captain">
+      <h2>Ellina Yin</h2>
+      <img class="image-set" src="assets/img/leadership/former_leadership/ellinaYin.jpg" />
+      <p>Co-Director</p>
+    </div>
+  </div>
+  <div id="formerLeadership">
+    <div id="leader" class="captain">
+      <h2>Kalen Gallagher</h2>
+      <img class="image-set" src="assets/img/leadership/former_leadership/kalenGallagher.png" />
+      <p>Co-founder and Co-Captain 2014 - 2017</p>
+    </div>
+    <div id="leader" class="captain">
+      <h2>Michelle Thong</h2>
+      <img class="image-set" src="assets/img/leadership/former_leadership/michellleThong.jpg" />
+      <p>Co-founder and Co-Captain 2014 - 2019</p>
+    </div>
+    <div id="leader" class="captain">
+      <h2>Vivek Bansal</h2>
+      <img class="image-set" src="assets/img/leadership/former_captains/vivek.jpg" />
+      <p>Co-Captain 2014 - 2019
+        Vivek was a Co-Captain and Project Manager with Code for San José.  His overall goal was inspiring people to 
+        contribute to local government and non-profits.
+        </p>
+      <p>
+        He worked on projects like Open Disclosure and starting up the South Bay OpenStreetMap team.  One of his most stressful and time consuming projects was leading the <a href="https://wiki.openstreetmap.org/wiki/Santa_Clara_County,_California/San_Jose_Sidewalk_Import">San Jose sidewalk import</a>
+        with Minh.
+      </p>
+    </div>
+    <div id="leader" class="captain">
+      <h2>Yan Yin Choy</h2>
+      <img class="image-set" src="assets/img/leadership/former_captains/yanYinChoy.png" />
+      <p>I was involved with Open Source San José from Dec 2016-2020, as a project leader, engineer, researcher,
+        and as a Captain/Executive Director. I worked closely with OSSJ leadership team to coordinate our biweekly
+        civic hack nights, cultivate program partnerships, coach product teams and manage our budget. I loved
+        collaborating with kind people who were passionate about contributing to meaningful projects to help San
+        José and the Bay Area, especially on Renter's Rights Guide, Heart of the Valley, state benefit application
+        audits in collaboration with Code for America, and design audits of DMV's website with the State of
+        California. </p>
+
+      <p>In 2017, I led a team to launch Renter's Rights Guide, a website to inform San José renters about their
+        rights and resources. I led a team to conduct user research, learning that Santa Clara County renters
+        faced difficulties understanding policy jargon and navigating challenging website user interfaces to
+        understand renter's rights, policies, eviction process, and finding affordable housing. I presented our
+        findings to government stakeholders, to advocate for plain language and simpler information architecture
+        for easier navigation. From 2017-2019 we maintained the website, keeping it up to date with any policy
+        changes from the City of San José. We archived the website in Jan 2020 because the city improved the user
+        experience of their housing department's website, integrating some of the insights from our user research.
+        From 2019-2021, we collaborated with Tenant Together's SMS Helpline for Tenants Project, providing our
+        support with user research, marketing and community engagement on tools that help tenants facing eviction.
+      </p>
+
+      <p>In 2018, I launched Heart of the Valley, a map that OSSJ continues to maintain. The map takes public data
+        from the City of San José on public art and murals, as well as information made available publicly, to map
+        the incredible murals and public art in South Bay (also known as "Valley of Heart's Delight", South Bay
+        Area). This open source project aims to raise awareness of the beautiful public art that makes our
+        communities vibrant, and discover local artists and creative leaders from the South Bay. </p>
+
+      <p>I started discussing this idea with Jennifer Ahn and Juan Carlos Araujo of Empire Seven Studios, a local
+        art studio located in Japantown, San José, California. We brainstormed ideas for the map, and Juan Carlos
+        came up with the name Heart of the Valley. The map project began! I worked with a team of OSSJ volunteers
+        to add more data to the map, and handed it over in 2020 to the current team to continue to develop the
+        map. I'm excited to see the map evolve. </p>
+    </div>
+  </div>
+</div>
+
+<script src="./assets/js/leadership-team.js"></script>

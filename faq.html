@@ -1,293 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Frequently Asked Questions
+styles: |
+  <link rel="stylesheet" href="./assets/css/faq.min.css">
+---
+<div class="small-hero" id="FAQ-title">
+    <h1>Frequently Asked Questions</h1>
+    <!-- <div id="artist-info">
+        <p>Anno Domini Collage</p>
+        <p>Carolyn Ryder Cooley, Lena Wolff, Daniel Jesse Lewis, Jessie Rose Vala,</p>
+        <p> David Choe, Bruno 9Li, Klone, Adrian Lee, and Know Hope</p>
+        <p><a href="http://galleryad.com/">Anno Domini Gallery</a></p>
+    </div> -->
+</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Source San José - FAQ</title>
-    <link rel="stylesheet" href="./assets/css/global.min.css">
-    <link rel="stylesheet" href="./assets/css/header.min.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<div class="text-content" id="FAQ">
+    <h3>Do I need to know how to code to participate?</h3>
+    <p>
+        No, you do not need to know coding to participate.
+        There are many ways to contribute non-technical skills,
+        e.g. user research, design, blogging, social media, onboarding volunteers,
+        event organizing, fundraising, etc.
+    </p>
+    
 
-    <link rel="stylesheet" href="./assets/css/footer.min.css">
-    <link rel="stylesheet" href="./assets/css/faq.min.css">
-    <script src="https://kit.fontawesome.com/a5c8bf6536.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap"
-        rel="stylesheet">
-    <script src="./assets/js/app.js"></script>
+    <h3>Will Open Source San José teach me how to code?</h3>
+    <p>
+        No, Open Source San José is not a place that teaches members how to code. We are here on our free time to make progress working together, guiding one another.
+    </p>
+    <p>
+        Check out online
+        resources such as <a href="https://www.sjpl.org/blog/learn-how-code">San José Public Library</a>,
+        <a href="https://www.sjpl.org/treehouseaccount">Team Treehouse</a>, <a
+            href="https://www.freecodecamp.org/">FreeCodeCamp.org</a>, or
+        <a href="https://www.sjpl.org/eresource/lyndacom">Lynda</a> to learn new skills.
+    </p>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-26B6FB8T8P"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-26B6FB8T8P');
-    </script>
-</head>
+    <h3>How do I submit a project idea to Open Source San José?</h3>
+    <p>Start by filling out our project proposal form here. <a href="{{ site.contact.share_idea_form }}"
+            target="_blank" rel="noref noopener">Submit Idea</a></p>
 
-<body>
-    <div class="container">
-        <header>
-            <a href="./index.html">
-                <img src="./assets/img/logonav.png" id="navlogo" alt="Open Source San José logo">
-            </a>
-            <div id="menu-btn">
-                <i onclick="menu_toggle()" id="fa-btn" class="fas fa-2x fa-bars"></i>
-            </div>
-            <div id="navlinks">
-                <div id="links">
-                    <a href="./index.html">Home</a>
-                    <a href="./volunteer.html">Volunteer</a>
-                    <a href="./about.html">About Us</a>
-                    <a href="./projects.html">Projects</a>
-                    <a href="https://www.opensourcesanjose.eventbrite.com/" target="_blank" rel="noopener noref">Events</a>
-                    <!-- <a href="https://www.codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20San%20Jose&utm_source=CodeforSanJose%20site"
-                        target="_blank" rel="noopener noref">Donate</a> -->
-                    <a href="./faq.html">FAQ</a>
-                </div>
-                <div id="sociallinks">
-                    <a class="tooltip" href="https://discord.gg/XMrqrCfprT" target="_blank" rel="noopener noref">
-                        <img src="./assets/img/social_logos/Discord_Mark.png" alt="Discord logo" class="socialnav" />
-                        <span class="tooltiptext">Discord</span>
-                      </a>
-                      <a class="tooltip" href="https://www.opensourcesanjose.eventbrite.com/" target="_blank" rel="noopener noref">
-                        <img src="./assets/img/social_logos/Eventbrite_logo_blog1.png" alt="Meetup logo" class="socialnav" />
-                        <span class="tooltiptext">Eventbrite</span>
-                      </a>
-                    <a class="tooltip" href="https://www.meetup.com/Code-for-San-Jose/" target="_blank"
-                        rel="noopener noref">
-                        <img src="./assets/img/social_logos/meetup-logo-m-swarm.png" alt="Meetup logo"
-                            class="socialnav" />
-                        <span class="tooltiptext">Meetup</span>
-                    </a>
-                    <a class="tooltip" href="https://sfba.social/@opensourcesanjose" target="_blank"
-                        rel="noopener noref">
-                        <img src="./assets/img/social_logos/mastodon.svg" alt="Mastodon logo"
-                            class="socialnav" />
-                        <span class="tooltiptext">Mastodon</span>
-                    </a>
-                    <a class="tooltip" href="https://www.facebook.com/codeforsanjose/" target="_blank"
-                        rel="noopener noref">
-                        <img src="./assets/img/social_logos/f_logo_RGB-Blue_512.png" alt="Facebook logo"
-                            class="socialnav" />
-                        <span class="tooltiptext">Facebook</span>
-                    </a>
-                    <a class="tooltip" href="https://twitter.com/OpenSourceSJ" target="_blank" rel="noopener noref">
-                        <img src="./assets/img/social_logos/Twitter_Social_Icon_Circle_Color.svg" alt="Twitter logo"
-                            class="socialnav" />
-                        <span class="tooltiptext">Twitter</span>
-                    </a>
-                    <a class="tooltip" href="https://github.com/codeforsanjose/" target="_blank" rel="noopener noref">
-                        <img src="./assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="Github logo"
-                            class="socialnav" />
-                        <span class="tooltiptext">Github</span>
-                    </a>
-                    <a class="tooltip" href="https://medium.com/code-for-san-jose" target="_blank" rel="noopener noref">
-                        <img src="./assets/img/social_logos/Monogram.svg" alt="Medium logo" class="socialnav" />
-                        <span class="tooltiptext">Medium</span>
-                    </a>
-                </div>
-            </div>
-        </header>
+    <p>After you submit a project proposal, our leadership team will review the project idea, discuss if the
+        project fits our mission and if we have capacity to take on the project. If we have any questions
+        about the project scope and proposal, we will reach out to you. If your project idea is approved, a
+        potential next step is speaking at a Civic Hack night to pitch the project and recruit
+        volunteers.</p>
 
-        <main>
-            <div class="small-hero" id="FAQ-title">
-                <h1>Frequently Asked Questions</h1>
-                <!-- <div id="artist-info">
-                    <p>Anno Domini Collage</p>
-                    <p>Carolyn Ryder Cooley, Lena Wolff, Daniel Jesse Lewis, Jessie Rose Vala,</p>
-                    <p> David Choe, Bruno 9Li, Klone, Adrian Lee, and Know Hope</p>
-                    <p><a href="http://galleryad.com/">Anno Domini Gallery</a></p>
-                </div> -->
-            </div>
-
-            <div class="text-content" id="FAQ">
-                <h3>Do I need to know how to code to participate?</h3>
-                <p>
-                    No, you do not need to know coding to participate.
-                    There are many ways to contribute non-technical skills,
-                    e.g. user research, design, blogging, social media, onboarding volunteers,
-                    event organizing, fundraising, etc.
-                </p>
-                
-
-                <h3>Will Open Source San José teach me how to code?</h3>
-                <p>
-                    No, Open Source San José is not a place that teaches members how to code. We are here on our free time to make progress working together, guiding one another.
-                </p>
-                <p>
-                    Check out online
-                    resources such as <a href="https://www.sjpl.org/blog/learn-how-code">San José Public Library</a>,
-                    <a href="https://www.sjpl.org/treehouseaccount">Team Treehouse</a>, <a
-                        href="https://www.freecodecamp.org/">FreeCodeCamp.org</a>, or
-                    <a href="https://www.sjpl.org/eresource/lyndacom">Lynda</a> to learn new skills.
-                </p>
-
-                <h3>How do I submit a project idea to Open Source San José?</h3>
-                <p>Start by filling out our project proposal form here. <a href="https://forms.gle/ui7hCCaXCKXTVvN89"
-                        target="_blank" rel="noref noopener">Submit Idea</a></p>
-
-                <p>After you submit a project proposal, our leadership team will review the project idea, discuss if the
-                    project fits our mission and if we have capacity to take on the project. If we have any questions
-                    about the project scope and proposal, we will reach out to you. If your project idea is approved, a
-                    potential next step is speaking at a Civic Hack night to pitch the project and recruit
-                    volunteers.</p>
-
-                <h3>How did Open Source San José begin?</h3>
-                <p>
-                    In March 2014, <a href="https://www.linkedin.com/in/kalengallagher">Kalen Gallagher</a> and <a
-                        href="https://www.linkedin.com/in/mthong">Michelle Thong</a> co-founded Code for San José, a
-                    local Code for America brigade. In 2023, this group became Open Source San José as Code for America
-                    disbanded its brigade network. We are a group of volunteers who are
-                    passionate about using our skills to advance civic innovation in San José.
-                    Our members represent a range of skill sets and interests, e.g. web development, design, marketing,
-                    communication, event planning, researcher, community organizers, and more. We collaborate on
-                    technical projects that better our community, including websites, civic apps, data visualizations,
-                    and media projects.
-                </p>
-                <h3>What is Civic Hacking?</h3>
-                <p>
-                    Civic hacking is when citizens see something in the public realm that they can make better,
-                    and they take it upon themselves to create a solution.
-                </p>
-                <p>
-                    A civic hacker can be anyone – technologist, public servant, designer, entrepreneur,
-                    engineer – who is willing to collaborate with others to address local challenges and
-                    make their cities better for everyone.
-                </p>
-                <p>
-                    A hacker is someone who uses a minimum of resources and a maximum of brainpower and
-                    ingenuity to create, enhance or fix something. Although in some circumstances the term
-                    is used in a negative sense, the term is not inherently negative, nor does it even have
-                    to be related to technology.
-                </p>
-                <h3>What is Open Data?</h3>
-                <p>
-                    Open data is data that can be freely used, reused and redistributed by anyone. The U.S.
-                    government
-                    defines open data as publicly available data structured in a way that enables the data to be
-                    fully
-                    discoverable and usable by end users.
-                </p>
-                <p>
-                    Governments around the US are opening their data, allowing civic hackers to build tools,
-                    apps and
-                    other solutions that benefit their communities.
-                </p>
-                <h3 id="openGov">What is Open Government?</h3>
-                <p>
-                    Open government promotes greater citizen participation, collaboration, and transparency in
-                    government. This includes promoting government accountability via improved citizen access to public
-                    government information, decision-making, and representatives.
-                </p>
-                <p>
-                    Many public agencies already abide by open government laws that were developed in the 1970s
-                    prior
-                    to the Internet. These laws tend to be focused on making sure meetings are held in public
-                    and that
-                    agencies respond to requests for information.
-                </p>
-                <p>
-                    Today, open government increasingly overlaps with the idea that governments should
-                    provide
-                    citizens with open data on its actions, performance and decisions.
-                </p>
-                <h3>Open Data Sources</h3>
-                <h4>Local Data Sources</h4>
-                <ul>
-                    <li><a href="https://github.com/vta/GIS-Resources-Santa-Clara-County" target="_blank"
-                            rel="noopener noref">GIS Resources in Santa
-                            Clara County</a></li>
-                    <li><a href="http://data.sanjoseca.gov/home/" target="_blank" rel="noopener noref">City of San
-                            José’s existing data catalog</a>
-                    </li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1XQcEmeoR3JDb0xyg4iOnufAoE3X9VToupfXguZRyl9w/edit#gid=0"
-                            target="_blank" rel="noopener noref">Open Source San José’s San José Data Inventory</a>
-                        (this is a work-in-progress, please
-                        add
-                        to it!)
-                    </li>
-                    <li><a href="https://data.vta.org/" target="_blank" rel="noopener noref">VTA Open Data Portal</a>
-                    </li>
-                    <li><a href="http://capvmt.us-west-2.elasticbeanstalk.com/data" target="_blank"
-                            rel="noopener noref">Vehicle Miles Traveled Data Portal</a></li>
-                    <li><a href="http://mtc.ca.gov/tools-resources/data-tools/open-data-library" target="_blank"
-                            rel="noopener noref">MTC Open Data Library</a></li>
-                </ul>
-                <p>
-                    Looking for local government data but cannot find it? Post a data request
-                    as a <a href="https://github.com/codeforsanjose/data-requests" target="_blank"
-                        rel="noopener noref">Github issue</a> and Open Source
-                    San José's municipal liaison, Michelle
-                    Thong, will help you track it down, if it exists.
-                </p>
-                <h4>Other sources in the region</h4>
-                <ul>
-                    <li><a href="http://data.cityofpaloalto.org/home" target="_blank" rel="noopener noref">Palo Alto
-                            Open Data Portal</a></li>
-                    <li><a href="http://data-mountainview.opendata.arcgis.com/" target="_blank"
-                            rel="noopener noref">Mountain View Open GIS Data Portal</a></li>
-                    <li><a href="https://data.smcgov.org/" target="_blank" rel="noopener noref">San Mateo County Open
-                            Data Portal</a></li>
-                    <li><a href="https://datasf.org/opendata/" target="_blank" rel="noopener noref">San Fransico Open
-                            Data Portal</a></li>
-                    <li><a href="https://data.oaklandnet.com/" target="_blank" rel="noopener noref">Oakland Open Data
-                            Portal</a></li>
-                    <li><a href="http://egis-cofgis.opendata.arcgis.com/" target="_blank" rel="noopener noref">Fremont
-                            Open GIS Data Portal</a></li>
-                    <li><a href="https://data.acgov.org/" target="_blank" rel="noopener noref">Alameda County Open Data
-                            Portal</a></li>
-                </ul>
-                <h4>Federal Data Sources</h4>
-                <ul>
-                    <li><a href="https://www.data.gov/" target="_blank" rel="noopener noref">U.S. Government open data
-                            portal</a></li>
-                    <li>U.S. Census Data on <a href="https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml"
-                            target="_blank" rel="noopener noref">American Factfinder</a> or via
-                        the <a href="https://www.census.gov/developers/">Census API</a></li>
-                    <li>Third-party
-                        sources of U.S Census Data such as
-                        <a href="https://censusreporter.org/" target="_blank" rel="noopener noref">Census Reporter</a>
-                        and <a href="http://www.socialexplorer.com/" target="_blank" rel="noopener noref">Social
-                            Explorer</a>
-                    </li>
-                </ul>
-            </div>
-        </main>
-
-
-
-        <footer>
-            <div id="foot-links">
-                <div id="site-map">
-                    <h5>Site Map</h5>
-                    <a href="./volunteer.html">Volunteer</a>
-                    <a href="./about.html">About Us</a>
-                    <a href="./projects.html">Projects</a>
-                    <a href="https://www.meetup.com/Open-Source-San-Jose/" target="_blank" rel="noopener noref">Events</a>
-                    <a href="./faq.html">FAQ</a>
-                </div>
-                <div id="social-footer">
-                    <h5>Social Media</h5>
-                    <a href="https://discord.gg/hjSVPBsEhf" target="_blank" rel="noopener noref">Discord</a>
-                    <a href="https://www.opensourcesanjose.eventbrite.com/" target="_blank" rel="noopener noref">Eventbrite</a>
-                    <a href="https://sfba.social/@opensourcesanjose" target="_blank" rel="noopener noref">Mastodon</a>
-                    <a href="https://www.meetup.com/Open-Source-San-Jose/" target="_blank" rel="noopener noref">Meetup</a>
-                    <a href="https://www.facebook.com/opensourcesanjose/" target="_blank" rel="noopener noref">Facebook</a>
-                    <a href="https://medium.com/code-for-san-jose" target="_blank" rel="noopener noref">Medium</a>
-                    <a href="https://github.com/codeforsanjose/" target="_blank" rel="noopener noref">Github</a>
-                    <a href="https://twitter.com/OpenSourceSJ" target="_blank" rel="noopener noref">Twitter</a>
-                </div>
-            </div>
-            <div id="legal">
-                <a href="./index.html">
-                    <img src="./assets/img/logonav.png" alt="Open Source San José Logo">
-                </a>
-                <p>Got feedback? <a href="mailto:codeforsanjose@gmail.com">Let us know!</a></p>
-                <p>&copy Open Source San José 2014 - 2024</p>
-            </div>
-        </footer>
-</body>
-
-</html>
+    <h3>How did Open Source San José begin?</h3>
+    <p>
+        In March 2014, <a href="https://www.linkedin.com/in/kalengallagher">Kalen Gallagher</a> and <a
+            href="https://www.linkedin.com/in/mthong">Michelle Thong</a> co-founded Code for San José, a
+        local Code for America brigade. In 2023, this group became Open Source San José as Code for America
+        disbanded its brigade network. We are a group of volunteers who are
+        passionate about using our skills to advance civic innovation in San José.
+        Our members represent a range of skill sets and interests, e.g. web development, design, marketing,
+        communication, event planning, researcher, community organizers, and more. We collaborate on
+        technical projects that better our community, including websites, civic apps, data visualizations,
+        and media projects.
+    </p>
+    <h3>What is Civic Hacking?</h3>
+    <p>
+        Civic hacking is when citizens see something in the public realm that they can make better,
+        and they take it upon themselves to create a solution.
+    </p>
+    <p>
+        A civic hacker can be anyone – technologist, public servant, designer, entrepreneur,
+        engineer – who is willing to collaborate with others to address local challenges and
+        make their cities better for everyone.
+    </p>
+    <p>
+        A hacker is someone who uses a minimum of resources and a maximum of brainpower and
+        ingenuity to create, enhance or fix something. Although in some circumstances the term
+        is used in a negative sense, the term is not inherently negative, nor does it even have
+        to be related to technology.
+    </p>
+    <h3>What is Open Data?</h3>
+    <p>
+        Open data is data that can be freely used, reused and redistributed by anyone. The U.S.
+        government
+        defines open data as publicly available data structured in a way that enables the data to be
+        fully
+        discoverable and usable by end users.
+    </p>
+    <p>
+        Governments around the US are opening their data, allowing civic hackers to build tools,
+        apps and
+        other solutions that benefit their communities.
+    </p>
+    <h3 id="openGov">What is Open Government?</h3>
+    <p>
+        Open government promotes greater citizen participation, collaboration, and transparency in
+        government. This includes promoting government accountability via improved citizen access to public
+        government information, decision-making, and representatives.
+    </p>
+    <p>
+        Many public agencies already abide by open government laws that were developed in the 1970s
+        prior
+        to the Internet. These laws tend to be focused on making sure meetings are held in public
+        and that
+        agencies respond to requests for information.
+    </p>
+    <p>
+        Today, open government increasingly overlaps with the idea that governments should
+        provide
+        citizens with open data on its actions, performance and decisions.
+    </p>
+    <h3>Open Data Sources</h3>
+    <h4>Local Data Sources</h4>
+    <ul>
+        <li><a href="https://github.com/vta/GIS-Resources-Santa-Clara-County" target="_blank"
+                rel="noopener noref">GIS Resources in Santa
+                Clara County</a></li>
+        <li><a href="http://data.sanjoseca.gov/home/" target="_blank" rel="noopener noref">City of San
+                José’s existing data catalog</a>
+        </li>
+        <li><a href="https://docs.google.com/spreadsheets/d/1XQcEmeoR3JDb0xyg4iOnufAoE3X9VToupfXguZRyl9w/edit#gid=0"
+                target="_blank" rel="noopener noref">Open Source San José’s San José Data Inventory</a>
+            (this is a work-in-progress, please
+            add
+            to it!)
+        </li>
+        <li><a href="https://data.vta.org/" target="_blank" rel="noopener noref">VTA Open Data Portal</a>
+        </li>
+        <li><a href="http://capvmt.us-west-2.elasticbeanstalk.com/data" target="_blank"
+                rel="noopener noref">Vehicle Miles Traveled Data Portal</a></li>
+        <li><a href="http://mtc.ca.gov/tools-resources/data-tools/open-data-library" target="_blank"
+                rel="noopener noref">MTC Open Data Library</a></li>
+    </ul>
+    <p>
+        Looking for local government data but cannot find it? Post a data request
+        as a <a href="https://github.com/{{ site.contact.github }}/data-requests" target="_blank"
+            rel="noopener noref">Github issue</a> and Open Source
+        San José's municipal liaison, Michelle
+        Thong, will help you track it down, if it exists.
+    </p>
+    <h4>Other sources in the region</h4>
+    <ul>
+        <li><a href="http://data.cityofpaloalto.org/home" target="_blank" rel="noopener noref">Palo Alto
+                Open Data Portal</a></li>
+        <li><a href="http://data-mountainview.opendata.arcgis.com/" target="_blank"
+                rel="noopener noref">Mountain View Open GIS Data Portal</a></li>
+        <li><a href="https://data.smcgov.org/" target="_blank" rel="noopener noref">San Mateo County Open
+                Data Portal</a></li>
+        <li><a href="https://datasf.org/opendata/" target="_blank" rel="noopener noref">San Fransico Open
+                Data Portal</a></li>
+        <li><a href="https://data.oaklandnet.com/" target="_blank" rel="noopener noref">Oakland Open Data
+                Portal</a></li>
+        <li><a href="http://egis-cofgis.opendata.arcgis.com/" target="_blank" rel="noopener noref">Fremont
+                Open GIS Data Portal</a></li>
+        <li><a href="https://data.acgov.org/" target="_blank" rel="noopener noref">Alameda County Open Data
+                Portal</a></li>
+    </ul>
+    <h4>Federal Data Sources</h4>
+    <ul>
+        <li><a href="https://www.data.gov/" target="_blank" rel="noopener noref">U.S. Government open data
+                portal</a></li>
+        <li>U.S. Census Data on <a href="https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml"
+                target="_blank" rel="noopener noref">American Factfinder</a> or via
+            the <a href="https://www.census.gov/developers/">Census API</a></li>
+        <li>Third-party
+            sources of U.S Census Data such as
+            <a href="https://censusreporter.org/" target="_blank" rel="noopener noref">Census Reporter</a>
+            and <a href="http://www.socialexplorer.com/" target="_blank" rel="noopener noref">Social
+                Explorer</a>
+        </li>
+    </ul>
+</div>
