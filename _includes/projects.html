@@ -1,5 +1,6 @@
 <div id="modal-attach" class="projects">
-  {% for project in site.data.projects %}
+  {% for project in site.data.projects limit: include.limit %}
+  {% unless include.status and include.status != project.status %}
   <div class="project-card"
     data-title="{{ project.title | xml_escape }}"
     data-description="{{ project.project_description | xml_escape }}"
@@ -21,5 +22,6 @@
     <p class="tech">Tech: {{ project.tech | xml_escape }}</p>
     <button onclick="openModal(this.parentElement)" class="learn-more">Learn More</button>
   </div>
+  {% endunless %}
   {% endfor %}
 </div>
