@@ -27,8 +27,6 @@ contact:
   share_idea_form: https://forms.gle/ui7hCCaXCKXTVvN89
   twitter: OpenSourceSJ
   volunteer_signup_form: https://forms.gle/pfLfKGidXK3HJGKf6
-# Google Analytics
-gtag: G-26B6FB8T8P
 mapbox: eyJ1IjoiZGFuZWtvbHNlbiIsImEiOiJjazl4ZXl5OGwwam5kM2hta2tiZG1hMmRhIn0.TuyZ8-gvC9b9Wm_nOj25kw
 exclude:
   - LICENSE
