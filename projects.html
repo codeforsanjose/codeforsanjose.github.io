@@ -6,8 +6,6 @@ styles: |
   <link rel="stylesheet" href="./assets/css/projects.min.css">
 scripts: |
   <script src="./assets/js/project-info-projects.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js">
-  </script>
 ---
 <div class="small-hero" id="projects-title">
     <h1>Projects</h1>
@@ -27,7 +25,5 @@ scripts: |
     </p>
 </div>
 <div id="our-work">
-    <div id="modal-attach" class="projects">
-
-    </div>
+    {% include projects.html %}
 </div>

@@ -1,0 +1,25 @@
+<div id="modal-attach" class="projects">
+  {% for project in site.data.projects %}
+  <div class="project-card"
+    data-title="{{ project.title | xml_escape }}"
+    data-description="{{ project.project_description | xml_escape }}"
+    data-skills="{{ project.skills | xml_escape }}"
+    data-partner="{{ project.partner | xml_escape }}"
+    data-photo2="{{ project.photo2 | xml_escape }}"
+    data-photo2-alt="{{ project.photo2_alt | xml_escape }}"
+    data-photo3="{{ project.photo3 | xml_escape }}"
+    data-photo3-alt="{{ project.photo3_alt | xml_escape }}">
+    <p class="badge {{ project.status }}">{{ project.status }}</p>
+    <img onerror='this.style.display = "none"' class="project-img" src="../assets{{ project.photo1 }}" alt="{{ project.photo1_alt | xml_escape }}" />
+    <h4>{{ project.title | xml_escape }}</h4>
+    <p>{{ project.project_summary | xml_escape }}</p>
+    <div id="project-links">
+      <a href="{{ project.github_url }}" target="_blank" rel="noref noopener">
+        <img src="./assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="Github" class="project-gh-logo"></a>
+      <a href='{{ project.live_url }}' target="_blank" rel="noref noopener"><i class="fas fa-2x fa-external-link-alt"></i></a>
+    </div>
+    <p class="tech">Tech: {{ project.tech | xml_escape }}</p>
+    <button onclick="openModal(this.parentElement)" class="learn-more">Learn More</button>
+  </div>
+  {% endfor %}
+</div>
