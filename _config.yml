@@ -8,12 +8,12 @@ directors:
   - Nick Katsantones
 hack_night:
   schedule: the fourth Thursday of the month at 6:30 p.m.
-  location: San José City Hall Room 118
+  location: Mountain Mikes Pizza
   address: |
-    200 E. Santa Clara St.
-    San José, CA 95113
-  latitude: 37.3381
-  longitude: -121.8854
+    29 S Third St
+    San Jose, CA 95113
+  latitude: 37.336604
+  longitude: -121.888158
   zoom: 17
 # Contact
 contact:
