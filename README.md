@@ -1,14 +1,21 @@
-# Temporary Readme for Open Source San José website redesign branch
+# Open Source San José Website
 
-Please clone from and push changes to this branch if you are participating in the website redesign project.
+Please clone this repository and push any changes to the branch you are working on.  
 
-We will be using the built in Projects tab Kanban board for project management, following Bonnie Wolfe's(of Hack for LA) process.
+We use the built-in **Projects tab Kanban board** for task tracking and project management, following best practices inspired by Bonnie Wolfe (Hack for LA).
+
+## Introduction
+
+Open Source San José is a local volunteer organization dedicated to advancing civic innovation in South Bay Area.  
+This website serves as the central hub for learning about the organization, its projects, and ways to contribute.  
+
+Our redesign branch focuses on improving usability, accessibility, and maintainability of the site, while making it easier for new contributors to get involved.
 
 ## How To Run
 
 Host a local version of the Open Source San José website to make changes.
 
-For set up, open the command line and run the following code.
+To run a local version of the Open Source South Bay Area website and make changes, follow these steps:
 
 1. **Clone the project** to download the project file onto your local computer.
    `git clone https://github.com/codeforsanjose/codeforsanjose.github.io`
@@ -36,9 +43,11 @@ For set up, open the command line and run the following code.
 
 ## How to Contribute
 
-Join the discussion on our [Discord server](https://discord.gg/XMrqrCfprT).
+Join the discussion on our [Discord server](https://discord.gg/XMrqrCfprT). to get involved, ask questions, and collaborate with other contributors.
 
-# Original website readme below
+## Legacy Information
+
+The section below contains content from the original website README for reference.
 
 ========================
 
@@ -52,15 +61,15 @@ Open Source San José is a local volunteer organization. This website is the cen
 
 Host a local version of the Open Source San José website to make changes.
 
-For set up, open the command line and run the following code.
+To set up, open the command line and run the following steps:
 
 1. **Clone the project** to download the project file onto your local computer.
    `git clone https://github.com/codeforsanjose/codeforsanjose.github.io`
 
-2. **Enter the directory** moves your command line into the project folder so you can make changes.
+2. **Enter the project directory** to begin making changes:
    `cd codeforsanjose.github.io`
 
-3. Open your browser and enter the path to this file:
+3. **Open your browser** and navigate to:
    `codeforsanjose.github.io/index.html`
 
 ## Technologies
@@ -73,4 +82,4 @@ For set up, open the command line and run the following code.
 
 ## How to Contribute
 
-Join the discussion on our [Discord server](https://discord.gg/XMrqrCfprT).
+Join the discussion on our [Discord server](https://discord.gg/XMrqrCfprT). to collaborate, ask questions, and get involved.
