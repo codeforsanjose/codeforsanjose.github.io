@@ -2,8 +2,6 @@
 
 Please clone this repository and push any changes to the branch you are working on.  
 
-We use the built-in **Projects tab Kanban board** for task tracking and project management, following best practices inspired by Bonnie Wolfe (Hack for LA).
-
 ## Introduction
 
 Open Source San José is a local volunteer organization dedicated to advancing civic innovation in South Bay Area.  
