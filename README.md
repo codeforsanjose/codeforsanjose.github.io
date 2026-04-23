@@ -9,6 +9,16 @@ This website serves as the central hub for learning about the organization, its 
 
 Our redesign branch focuses on improving usability, accessibility, and maintainability of the site, while making it easier for new contributors to get involved.
 
+## Project Structure
+
+The repository is organized as a Jekyll-based static site:
+- `_layouts/` – Page templates used across the site  
+- `_includes/` – Reusable components (header, footer, etc.)  
+- `_posts/` – Blog posts and announcements  
+- `assets/` – Images, stylesheets, and JavaScript files  
+- `_config.yml` – Jekyll configuration file  
+- `index.html` – Main landing page  
+
 ## How To Run
 
 Host a local version of the Open Source San José website to make changes.
@@ -29,8 +39,33 @@ To run a local version of the Open Source South Bay Area website and make change
    bundle exec jekyll serve
    ``` 
 
-5. Open your browser and enter the path to this file:
+5. Open your browser and view the site:
+
+- If running locally with Jekyll:
+  http://localhost:4000
+
+- If opening the static file directly:
    `codeforsanjose.github.io/index.html`
+
+## How to Contribute
+
+Join the discussion on our [Discord server](https://discord.gg/XMrqrCfprT) to get involved, ask questions, and collaborate with other contributors.
+
+## Contribution Workflow
+
+1. Fork the repository
+2. Create a new feature branch
+3. Make your changes
+4. Test locally using Jekyll
+5. Submit a pull request
+
+## Handoff Notes
+
+- This project uses Jekyll for static site generation
+- Always test changes locally before pushing
+- Ensure dependencies are installed via Bundler
+- Keep changes focused and small for easier review
+- Follow existing code and design patterns to maintain consistency
 
 ## Technologies
 
@@ -38,10 +73,6 @@ To run a local version of the Open Source South Bay Area website and make change
 - HTML
 - SASS/CSS
 - JavaScript
-
-## How to Contribute
-
-Join the discussion on our [Discord server](https://discord.gg/XMrqrCfprT). to get involved, ask questions, and collaborate with other contributors.
 
 ## Legacy Information
 
@@ -53,9 +84,9 @@ The section below contains content from the original website README for referenc
 
 # [Demo](http://www.codeforsanjose.com)
 
-Open Source San José is a local volunteer organization. This website is the central location where people can learn aout the organization.
+Open Source San José is a local volunteer organization. This website is the central location where people can learn about the organization.
 
-## How To Run
+## How to Run
 
 Host a local version of the Open Source San José website to make changes.
 
@@ -77,7 +108,3 @@ To set up, open the command line and run the following steps:
 - HTML
 - CSS
 - Bootstrap
-
-## How to Contribute
-
-Join the discussion on our [Discord server](https://discord.gg/XMrqrCfprT). to collaborate, ask questions, and get involved.
