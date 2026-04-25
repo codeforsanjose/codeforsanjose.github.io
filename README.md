@@ -49,7 +49,7 @@ To run a local version of the Open Source South Bay Area website and make change
 
 ## How to Contribute
 
-Join the discussion on our [Discord server](https://discord.gg/XMrqrCfprT) to get involved, ask questions, and collaborate with other contributors.
+Join the discussion on our [Discord server](https://discord.gg/hjSVPBsEhf) to get involved, ask questions, and collaborate with other contributors.
 
 ## Contribution Workflow
 
